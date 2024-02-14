@@ -3,306 +3,4813 @@
          alt="Strava">
 </p>
 
-<p align="center">
-<a href="https://github.com/robiningelbrecht/strava-activities-template/actions/workflows/ci.yml"><img src="https://github.com/robiningelbrecht/strava-activities-template/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
-<a href="https://codecov.io/gh/robiningelbrecht/strava-activities-template" ><img src="https://codecov.io/gh/robiningelbrecht/strava-activities-template/graph/badge.svg?token=EomLHqg4JY" alt="Codecov.io"/></a>
-<a href="https://github.com/robiningelbrecht/strava-activities-template/blob/master/LICENSE"><img src="https://img.shields.io/github/license/robiningelbrecht/strava-activities-template?color=428f7e&logo=open%20source%20initiative&logoColor=white" alt="License"></a>
-<a href="https://phpstan.org/"><img src="https://img.shields.io/badge/PHPStan-level%208-succes.svg?logo=php&logoColor=white&color=31C652" alt="PHPStan Enabled"></a>
-<a href="https://php.net/"><img src="https://img.shields.io/packagist/php-v/robiningelbrecht/strava-activities-template/dev-master?color=%23777bb3&logo=php&logoColor=white" alt="PHP"></a>
-</p>
+Since I began cycling `12 years and 11 months` ago on `06-03-2012`,
+I had `2399 cycling days`.<br />
+I recorded a total distance of `198 322 km`
+(`4.95` trips around the world 🌍 and
+`0.516` trips to the moon 🌕),
+an elevation of `892 278 m`
+(`100.8` times Mount Everest 🏔)
+and a total time of `9mos 4d 2h 51m` 🎉
+
+That's a daily average of `45 km`,
+a weekly average of `318 km` and a
+monthly average of `1 377 km` 🐣
+
+I burned `4356655 calories` doing so, that's about `16 136` pizza slices 🍕
 
 ---
 
-# Strava activities template
-
-This repository contains the template code to generate your own Strava statistics pages.
-Just follow the steps below. If you experience any issues with any of the steps,
-feel free to [open an issue](https://github.com/robiningelbrecht/strava-activities-template/issues/new). I'll be glad to help you out 💅.
-
-## 🦄 Examples
-
-* Markdown version: https://github.com/robiningelbrecht/strava-activities
-* HTML version: https://strava-statistics.robiningelbrecht.be/
-
-## 🪄 What you'll need
-
-* A Strava API key
-* A GitHub account
-
-## 🛠️ Installation
-
-* Make sure your logged in with your GitHub account
-* Start off by showing some ❤️ and give this repo a star
-* Create a new repository using this template by clicking [HERE](https://github.com/new?template_name=strava-activities-template&template_owner=robiningelbrecht) and filling out the required fields
-* Navigate to your newly created repository `Actions secrets and variables` page (https://github.com/[YOUR-GITHUB-USERNAME]/[REPOSITORY-NAME]/settings/secrets/actions)
-  Keep this page open, you will need to add several secrets here
-* Next, navigate to your [Strava API settings page](https://www.strava.com/settings/api).
-  Copy the `client ID` and `client secret`
-  ![Strava API keys](files/install/strava-api-keys.png)
-* Create two new repository secrets
-  ![Repo secrets](files/install/repository-secrets.png)
-    * __name__: STRAVA_CLIENT_ID, __value__: `client ID` copied from Strava API settings page
-    * __name__: STRAVA_CLIENT_SECRET, __value__: `client secret` copied from Strava API settings page
-* Now you need to obtain a `Strava API refresh token`. This might be the hardest step.
-    * Navigate to https://developers.strava.com/docs/getting-started/#d-how-to-authenticate
-      and scroll down to "_For demonstration purposes only, here is how to reproduce the graph above with cURL:_"
-    * Follow the 11 steps explained there
-    * Make sure you set the `scope` in step 2 to `activity:read_all` to make sure your refresh token has access to all activities
-      ![Refresh token](files/install/strava-refresh-token.png)
-    * Create a repository secret with the refresh token you obtained: __name__: STRAVA_REFRESH_TOKEN, __value__: The `refresh token` you just obtained
-* You should end up with these repository secrets:
-  ![Repository secrets](files/install/secrets-example.png)
-* After this you need to make sure the automated workflow is able to push changes to your repo.
-    * Navigate to https://github.com/[YOUR-GITHUB-USERNAME]/[REPOSITORY-NAME]/settings/actions
-    * Scroll down to `Workflow permissions` and make sure `Read and write permissions` is checked
-      ![Workflow permissions](files/install/workflow-permissions.png)
-* The last thing you need to do is edit the workflow files `update-strava-activities.yml`, `update-ftp.yml` and `update-key-value-store.yml`:
-    * Navigate to https://github.com/[YOUR-GITHUB-USERNAME]/[REPOSITORY-NAME]/edit/master/.github/workflows
-    * Edit the file
-      ![Edit workflow](files/install/edit-workflow.png)
-    * Uncomment line 4 and 5 by removing the `#` character
-    * Scroll down to:
-        ```yml
-        name: Initialize GIT
-        run: |
-          git config --global user.name 'YOUR_GITHUB_USERNAME'
-          git config --global user.email 'YOUR_GITHUB_USERNAME@users.noreply.github.com'
-        ```
-
-        * Replace `YOUR_GITHUB_USERNAME` with your own username
-        * Click `commit changes` at the top right-hand corner
-    * Do this again for the other 2 files
-
-## Configuration
-
-Before running the first activity import, you need to 
-
-__!!! It's important you wait until a workflow is done, before running another one !!!__
-
-* Set your birthday. This is required to 1) accurately calculate the intensity of your activities 
-  in case no power data is available, 2) determine your heart rate zones
-  * Navigate to https://github.com/[YOUR-GITHUB-USERNAME]/[REPOSITORY-NAME]/actions/workflows/update-key-value-store.yml
-  * Fill out your birthday using date format `YYYY-MM-DD` and run the workflow
-  ![Update birthday](files/install/update-birthday.png)
-* (Optional, but recommended) Configure your FTP (= Functional Threshold Power) history.
-  * Navigate to https://github.com/[YOUR-GITHUB-USERNAME]/[REPOSITORY-NAME]/actions/workflows/update-ftp.yml
-  * Fill out the FTP and the date (`YYYY-MM-DD`) you've set the FTP on and run the workflow
-  ![Update FTP](files/install/update-ftp.png)
-  * Do this for every FTP you've set
-* (Optional) Strava does not allow to fetch all your completed challenges and trophies (see <a href="#some-things-to-consider">Some things to consider</a>), 
-   but there's a little workaround if you'd like to import those:
-  * Navigate to https://www.strava.com/athletes/[YOUR_ATHLETE_ID]/trophy-case
-  * Open the page's source code and copy everything
-    ![UTrophy case source code](files/install/trophy-case-source-code.png)
-  * Next navigate to https://github.com/[YOUR-GITHUB-USERNAME]/[REPOSITORY-NAME]/edit/master/files/strava-challenge-history.html
-  * Paste the source code you just copied and `commit changes` at the top right-hand corner
-  * On the next run of the `import activities` workflow, all your challenges will be imported
-
-## ☁️ Hosting the HTML version
-
-There's also a HTML versions available with a lot more features. You can easily host this for free
-on https://vercel.com:
-
-* Create an account and login
-* Make sure your connect to your GirHub account (https://vercel.com/account/login-connections)
-* Create a new project and reference your repository
-* For the `Framework preset` setting use `Other`
-* Make sure the `Root directory` is set to `build/html`
-* You can uncheck the option `Include source files outside of the Root Directory in the Build Step.`
-* You should be good to go
-
-## 🧐 Some things to consider
-
-* Any new feature or update added to the template, will automatically end up in your repository 🪄
-* Only (virtual) bike rides are imported, other sports are not relevant for these stats
-* Because of technical (Strava) limitations, not all Strava challenges
-  can be imported. Only the visible ones on your public profile can be imported 
-  (please be sure that your profile is public, otherwise this won't work)
-* Strava statistics will be re-calculated once a day. If you want to
-  re-calculate these manually, navigate to https://github.com/[YOUR-GITHUB-USERNAME]/[REPOSITORY-NAME]/actions/workflows/update-strava-activities.yml
-  and click `Run workflow` at the right-hand side
-* Running the import for the first time can take a while, depending on how many activities you have on Strava.
-  Strava's API has a rate limit of 100 request per 15 minutes and a 1000 requests per day. We have to make sure
-  this limit is not exceeded. See https://developers.strava.com/docs/rate-limits/. If you have more than 500 activities,
-  you might run into the daily rate limit. If you do so, the app will import the remaining activities the next day(s).
-* If you get following error `App\Infrastructure\Exception\EntityNotFound: KeyValue "athlete_birthday" not found`,
-  it means that you have not set your birthday. Run the "Update athlete birthday" workflow
-
-## ❌ Getting errors while updating FTP / KeyValue store?
-
-This is because I introduced breaking changes without realising it. Yeah, I know stupid.
-GitHub does not allow you to automatically update workflow files from a template, so you'll have to 
-do this manually.
-
-Update the following files in your own repository to the latest versions:
-* https://github.com/robiningelbrecht/strava-activities-template/blob/master/.github/workflows/update-ftp.yml
-* https://github.com/robiningelbrecht/strava-activities-template/blob/master/.github/workflows/update-key-value-store.yml
-
-## 💡 Feature request?
-
-For any feedback, help or feature requests, please [open a new issue](https://github.com/robiningelbrecht/strava-activities-template/issues/new)
-
-## 💻 Local development
-
-If you want to add features or fix bugs yourself, you can do this by setting up the project on your local machine.
-Just clone this git repository and you should be good to go.
-
-The project can be run in a single `Docker` container which uses PHP. 
-There's also a `Make` file to... make things easier:
-
-```bash
-# Run a docker-compose command.
-make dc cmd="run"
-
-# Run "composer" command in the php-cli container.
-make dcr cmd="composer"
-
-# Run an app console command
-make console arg="app:some:command"
-
-# Run the test suite.
-make phpunit
-
-# Run PHPStan
-make phpstan
-```
-
-For other useful `Make` commands, check [Makefile](Makefile)
-
-## 📓 Change Log
-All notable changes to this project will be documented in this file.
-
-#### [2023-01-17]
-
-* Added hours of riding to weekly stats chart
-* Fixed bug where importing of segments crashed on first run (thanks to [dylix](https://github.com/dylix) for reporting)
-
-#### [2023-01-13]
-
-* Added yearly stats
-
-#### [2023-01-05]
-
-* Refactored activity and segment overview to be way faster
-
-#### [2023-01-01]
-
-* Added first version of heatmap
-
-#### [2023-12-28]
-
-* Show segments in activity modal
-* Several small improvements and bug fixes
-
-#### [2023-12-24]
-
-* Fix bug where rendering of HTML crashed on non-Zwift virtual activities.
-  (thanks to [pdoteter](https://github.com/pdoteter))
-
-#### [2023-12-23]
-
-* Delete orphaned activities (thanks to [mdleye](https://github.com/mdleye))
-
-#### [2023-12-21]
-
-* Split up database into multiple databases, one for each year there is data for.
-  (thanks to [pdoteter](https://github.com/pdoteter) for testing with huge dataset)
-
-#### [2023-12-19]
-
-* Render and display segments and efforts
-
-#### [2023-12-18]
-
-* Reduced DB size by over 50%
-* Import and process segments
-
-#### [2023-12-03]
-
-* Added challenge consistency table (thanks to [rubenbuysse](https://github.com/rubenbuysse))
-
-#### [2023-12-01]
-
-* Added a monthly calendar view for activities
-* Fixed bug in router
-
-#### [2023-11-25]
-
-* Moved gear stats to separate page
-
-#### [2023-11-18]
-
-* Added Power and heart rate distribution charts
-
-#### [2023-11-13]
-
-* Changed activity drawer with modal
-
-#### [2023-11-09]
-
-* Added average speed and distance to multiple stats
-
-#### [2023-11-07]
-
-* Allow to import challenge/trophy case history
-* Fix import of double challenges
-
-#### [2023-11-04]
-
-* Better masonry layout
-* Show number of photos on tabs
-* Fixed workflow database errors (thanks to [mdleye](https://github.com/mdleye))
-
-#### [2023-11-02]
-
-* Added "Time in heart rate zone" charts
-* Optimized existing charts
-
-#### [2023-10-30]
-
-* Render FTP history chart
-
-#### [2023-10-29]
-
-* Show FTP history
-* More accurate calculation of activity intensity
-
-#### [2023-10-26]
-
-* Better moving time formatting
-
-#### [2023-10-25]
-
-* Added better tooltips to charts
-
-#### [2023-10-25]
-
-* Show longest consecutive streak
-
-#### [2023-10-24]
-
-* Added activity stream chart in activity drawer
-
-#### [2023-10-21]
-
-* Migrated weather data to separate field
-
-#### [2023-10-20]
-
-* Added distance breakdown table
-* Added daytime stats
-* Monthly stats: filter out months that have no activities (thanks to  [mdleye](https://github.com/mdleye))
-* Add sorting to the activity list
-* Reworked weekday stats
-
-#### [2023-10-19]
-
-* Fixed bug when deploying new template version
-
-#### [2023-10-15]
-
-* Initial stable release of the template
-
-#### [2023-10-12]
-
-* Bug fixes while importing large sets of Strava activities (thanks to [rubenbuysse](https://github.com/rubenbuysse) for testing)
+<kbd><a href="#weekly-distances">Weekly distances</a></kbd> |
+<kbd><a href="#activities">Activities</a></kbd> |
+<kbd><a href="#monthly-stats">Monthly stats</a></kbd> |
+<kbd><a href="#activity-intensity">Activity intensity</a></kbd> |
+<kbd><a href="#stats-per-weekday">Stats per weekday</a></kbd> |
+<kbd><a href="#daytime-stats">Daytime stats</a></kbd> |
+<kbd><a href="#stats-per-bike">Stats per bike</a></kbd> |
+<kbd><a href="#best-power-outputs-over-time">Power outputs</a></kbd> |
+<kbd><a href="#eddington-chart">Eddington</a></kbd> |
+<kbd><a href="#yearly-distances">Yearly distances</a></kbd> |
+<kbd><a href="#distance-breakdown">Distance breakdown</a></kbd> |
+<kbd><a href="#challenge-consistency">Challenge consistency</a></kbd> |
+<kbd><a href="#completed-challenges">Completed challenges</a></kbd>
+
+## Weekly distances
+
+<img src="build/charts/chart_1000_300.svg" alt="Weekly distances"/>
+
+## Activities
+
+<table>
+    <tr>
+        <th></th>
+        <th></th>
+        <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/distance.svg" width="30" alt="distance" title="distance"/></th>
+        <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/elevation.svg" width="30" alt="elevation" title="elevation"/></th>
+        <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/time.svg" width="30" alt="time" title="time"/></th>
+        <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/average-watt.svg" width="30" alt="average watts" title="average watts"/></th>
+        <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/average-speed.svg" width="30" alt="average speed" title="average speed"/></th>
+        <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/heart-rate.svg" width="30" alt="average heart rate" title="average heart rate"/></th>
+    </tr>
+            <tr>
+            <td>13-02-24</td>
+            <td>
+                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Group Ride: 3R PedalPlay EVOLVE Interval Ride [~2.9-3.2 w/kg avg] (C) on Tempus Fugit in Watopia" title="Group Ride: 3R PedalPlay EVOLVE Interval Ride [~2.9-3.2 w/kg avg] (C) on Tempus Fugit in Watopia"/>
+<a href="https://www.strava.com/activities/10755604807" title="Kcal: 1242 | Gear: Tacx Neo Bike Smart ">Group Ride: 3R PedalPlay E...</a>
+            </td>
+            <td align="center">62 <sup><sub>km</sub></sup></td>
+            <td align="center">95 <sup><sub>m</sub></sup></td>
+            <td align="center">1:31:16</td>
+            <td align="center">237 <sup><sub>w</sub></sup></td>
+            <td align="center">41 <sup><sub>km/h</sub></sup></td>
+            <td align="center">113</td>
+        </tr>
+            <tr>
+            <td>12-02-24</td>
+            <td>
+                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Group Ride: ZTO Powerpush (C) on Tempus Fugit in Watopia" title="Group Ride: ZTO Powerpush (C) on Tempus Fugit in Watopia"/>
+<a href="https://www.strava.com/activities/10749490279" title="Kcal: 691 | Gear: Tacx Neo Bike Smart ">Group Ride: ZTO Powerpush ...</a>
+            </td>
+            <td align="center">40 <sup><sub>km</sub></sup></td>
+            <td align="center">63 <sup><sub>m</sub></sup></td>
+            <td align="center">1:05:00</td>
+            <td align="center">184 <sup><sub>w</sub></sup></td>
+            <td align="center">37.3 <sup><sub>km/h</sub></sup></td>
+            <td align="center">91</td>
+        </tr>
+            <tr>
+            <td>12-02-24</td>
+            <td>
+                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Recovery on Tempus Fugit in Watopia" title="Recovery on Tempus Fugit in Watopia"/>
+<a href="https://www.strava.com/activities/10749079653" title="Kcal: 413 | Gear: Tacx Neo Bike Smart ">Recovery on Tempus Fugit i...</a>
+            </td>
+            <td align="center">22 <sup><sub>km</sub></sup></td>
+            <td align="center">33 <sup><sub>m</sub></sup></td>
+            <td align="center">34:53</td>
+            <td align="center">207 <sup><sub>w</sub></sup></td>
+            <td align="center">38.2 <sup><sub>km/h</sub></sup></td>
+            <td align="center">96</td>
+        </tr>
+            <tr>
+            <td>11-02-24</td>
+            <td>
+                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Group Ride: Stage 8 | Ride | Tour de Zwift 2024  (B) on Big Flat 8 in Watopia" title="Group Ride: Stage 8 | Ride | Tour de Zwift 2024  (B) on Big Flat 8 in Watopia"/>
+<a href="https://www.strava.com/activities/10741438102" title="Kcal: 647 | Gear: Tacx Neo Bike Smart ">Group Ride: Stage 8 | Ride...</a>
+            </td>
+            <td align="center">40 <sup><sub>km</sub></sup></td>
+            <td align="center">123 <sup><sub>m</sub></sup></td>
+            <td align="center">1:07:12</td>
+            <td align="center">168 <sup><sub>w</sub></sup></td>
+            <td align="center">36 <sup><sub>km/h</sub></sup></td>
+            <td align="center">106</td>
+        </tr>
+            <tr>
+            <td>11-02-24</td>
+            <td>
+                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Group Ride: EVO CC Endurance Base Ride [3.0-3.2w/kg avg] (B) on Beach Island Loop in Watopia" title="Group Ride: EVO CC Endurance Base Ride [3.0-3.2w/kg avg] (B) on Beach Island Loop in Watopia"/>
+<a href="https://www.strava.com/activities/10739461168" title="Kcal: 3041 | Gear: Tacx Neo Bike Smart ">Group Ride: EVO CC Enduran...</a>
+            </td>
+            <td align="center">162 <sup><sub>km</sub></sup></td>
+            <td align="center">612 <sup><sub>m</sub></sup></td>
+            <td align="center">4:04:39</td>
+            <td align="center">217 <sup><sub>w</sub></sup></td>
+            <td align="center">39.8 <sup><sub>km/h</sub></sup></td>
+            <td align="center">108</td>
+        </tr>
+        </table>
+<details>
+    <summary>Older activities</summary>
+    <table>
+        <tr>
+            <th></th>
+            <th></th>
+            <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/distance.svg" width="30" alt="distance" title="distance"/></th>
+            <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/elevation.svg" width="30" alt="elevation" title="elevation"/></th>
+            <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/time.svg" width="30" alt="time" title="time"/></th>
+            <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/average-watt.svg" width="30" alt="average watts" title="average watts"/></th>
+            <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/average-speed.svg" width="30" alt="average speed" title="average speed"/></th>
+            <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/heart-rate.svg" width="30" alt="average heart rate" title="average heart rate"/></th>
+        </tr>
+                    <tr>
+                <td>10-02-24</td>
+                <td>
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Group Ride: BMTR Flat 100 (Miles) (C) on Neon Flats in Makuri Islands" title="Group Ride: BMTR Flat 100 (Miles) (C) on Neon Flats in Makuri Islands"/>
+<a href="https://www.strava.com/activities/10734579173" title="Kcal: 1466 | Gear: Tacx Neo Bike Smart ">Group Ride: BMTR Flat 100 ...</a>
+                </td>
+                <td align="center">85 <sup><sub>km</sub></sup></td>
+                <td align="center">408 <sup><sub>m</sub></sup></td>
+                <td align="center">2:18:31</td>
+                <td align="center">184 <sup><sub>w</sub></sup></td>
+                <td align="center">36.9 <sup><sub>km/h</sub></sup></td>
+                <td align="center">103</td>
+            </tr>
+                    <tr>
+                <td>10-02-24</td>
+                <td>
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Pacer Group Ride: Sugar Cookie in Watopia with Coco" title="Pacer Group Ride: Sugar Cookie in Watopia with Coco"/>
+<a href="https://www.strava.com/activities/10733470857" title="Kcal: 208 | Gear: Tacx Neo Bike Smart ">Pacer Group Ride: Sugar Co...</a>
+                </td>
+                <td align="center">12 <sup><sub>km</sub></sup></td>
+                <td align="center">70 <sup><sub>m</sub></sup></td>
+                <td align="center">18:47</td>
+                <td align="center">193 <sup><sub>w</sub></sup></td>
+                <td align="center">38.5 <sup><sub>km/h</sub></sup></td>
+                <td align="center">108</td>
+            </tr>
+                    <tr>
+                <td>10-02-24</td>
+                <td>
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Group Ride: Stage 8 | Ride | Tour de Zwift 2024  (B) on Big Flat 8 in Watopia" title="Group Ride: Stage 8 | Ride | Tour de Zwift 2024  (B) on Big Flat 8 in Watopia"/>
+<a href="https://www.strava.com/activities/10732765096" title="Kcal: 276 | Gear: Tacx Neo Bike Smart ">Group Ride: Stage 8 | Ride...</a>
+                </td>
+                <td align="center">16 <sup><sub>km</sub></sup></td>
+                <td align="center">44 <sup><sub>m</sub></sup></td>
+                <td align="center">25:08</td>
+                <td align="center">189 <sup><sub>w</sub></sup></td>
+                <td align="center">38.9 <sup><sub>km/h</sub></sup></td>
+                <td align="center">108</td>
+            </tr>
+                    <tr>
+                <td>10-02-24</td>
+                <td>
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Group Ride: Endurance Group ride hosted by ZTBR- Zwift Team Brazil (E) on The Big Ring in Watopia" title="Group Ride: Endurance Group ride hosted by ZTBR- Zwift Team Brazil (E) on The Big Ring in Watopia"/>
+<a href="https://www.strava.com/activities/10732478072" title="Kcal: 304 | Gear: Tacx Neo Bike Smart ">Group Ride: Endurance Grou...</a>
+                </td>
+                <td align="center">19 <sup><sub>km</sub></sup></td>
+                <td align="center">69 <sup><sub>m</sub></sup></td>
+                <td align="center">36:21</td>
+                <td align="center">146 <sup><sub>w</sub></sup></td>
+                <td align="center">31.5 <sup><sub>km/h</sub></sup></td>
+                <td align="center">97</td>
+            </tr>
+                    <tr>
+                <td>10-02-24</td>
+                <td>
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Group Ride: 3R Endurance Steady Ride (C) on Big Flat 8 in Watopia" title="Group Ride: 3R Endurance Steady Ride (C) on Big Flat 8 in Watopia"/>
+<a href="https://www.strava.com/activities/10732182231" title="Kcal: 1689 | Gear: Tacx Neo Bike Smart ">Group Ride: 3R Endurance S...</a>
+                </td>
+                <td align="center">101 <sup><sub>km</sub></sup></td>
+                <td align="center">373 <sup><sub>m</sub></sup></td>
+                <td align="center">2:43:09</td>
+                <td align="center">181 <sup><sub>w</sub></sup></td>
+                <td align="center">37.2 <sup><sub>km/h</sub></sup></td>
+                <td align="center">107</td>
+            </tr>
+                    <tr>
+                <td>09-02-24</td>
+                <td>
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Group Ride: Stage 8 | Ride | Tour de Zwift 2024  (B) on Big Flat 8 in Watopia" title="Group Ride: Stage 8 | Ride | Tour de Zwift 2024  (B) on Big Flat 8 in Watopia"/>
+<a href="https://www.strava.com/activities/10729149723" title="Kcal: 1233 | Gear: Tacx Neo Bike Smart ">Group Ride: Stage 8 | Ride...</a>
+                </td>
+                <td align="center">60 <sup><sub>km</sub></sup></td>
+                <td align="center">151 <sup><sub>m</sub></sup></td>
+                <td align="center">1:30:16</td>
+                <td align="center">237 <sup><sub>w</sub></sup></td>
+                <td align="center">40.1 <sup><sub>km/h</sub></sup></td>
+                <td align="center">110</td>
+            </tr>
+                    <tr>
+                <td>08-02-24</td>
+                <td>
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Pacer Group Ride: Volcano Circuit in Watopia with Miguel" title="Pacer Group Ride: Volcano Circuit in Watopia with Miguel"/>
+<a href="https://www.strava.com/activities/10723298040" title="Kcal: 410 | Gear: Tacx Neo Bike Smart ">Pacer Group Ride: Volcano ...</a>
+                </td>
+                <td align="center">28 <sup><sub>km</sub></sup></td>
+                <td align="center">131 <sup><sub>m</sub></sup></td>
+                <td align="center">53:53</td>
+                <td align="center">133 <sup><sub>w</sub></sup></td>
+                <td align="center">30.8 <sup><sub>km/h</sub></sup></td>
+                <td align="center">91</td>
+            </tr>
+                    <tr>
+                <td>08-02-24</td>
+                <td>
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="TTT: WTRL Team Time Trial - Zone 16 (ESPRESSO/DOPPIO) on Richmond 2015 Worlds Reverse in Richmond" title="TTT: WTRL Team Time Trial - Zone 16 (ESPRESSO/DOPPIO) on Richmond 2015 Worlds Reverse in Richmond"/>
+<a href="https://www.strava.com/activities/10722909463" title="Kcal: 795 | Gear: Tacx Neo Bike Smart ">TTT: WTRL Team Time Trial ...</a>
+                </td>
+                <td align="center">32 <sup><sub>km</sub></sup></td>
+                <td align="center">315 <sup><sub>m</sub></sup></td>
+                <td align="center">45:20</td>
+                <td align="center">301 <sup><sub>w</sub></sup></td>
+                <td align="center">42.8 <sup><sub>km/h</sub></sup></td>
+                <td align="center">144</td>
+            </tr>
+                    <tr>
+                <td>08-02-24</td>
+                <td>
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Just The Basics in Watopia" title="Just The Basics in Watopia"/>
+<a href="https://www.strava.com/activities/10722600245" title="Kcal: 311 | Gear: Tacx Neo Bike Smart ">Just The Basics in Watopia</a>
+                </td>
+                <td align="center">16 <sup><sub>km</sub></sup></td>
+                <td align="center">26 <sup><sub>m</sub></sup></td>
+                <td align="center">23:35</td>
+                <td align="center">230 <sup><sub>w</sub></sup></td>
+                <td align="center">40.9 <sup><sub>km/h</sub></sup></td>
+                <td align="center">114</td>
+            </tr>
+                    <tr>
+                <td>07-02-24</td>
+                <td>
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Group Ride: Stage 8 | Ride | Tour de Zwift 2024  (A) on Spiral into the Volcano in Watopia" title="Group Ride: Stage 8 | Ride | Tour de Zwift 2024  (A) on Spiral into the Volcano in Watopia"/>
+<a href="https://www.strava.com/activities/10717237060" title="Kcal: 1107 | Gear: Tacx Neo Bike Smart ">Group Ride: Stage 8 | Ride...</a>
+                </td>
+                <td align="center">60 <sup><sub>km</sub></sup></td>
+                <td align="center">365 <sup><sub>m</sub></sup></td>
+                <td align="center">1:37:40</td>
+                <td align="center">197 <sup><sub>w</sub></sup></td>
+                <td align="center">37.1 <sup><sub>km/h</sub></sup></td>
+                <td align="center">108</td>
+            </tr>
+                    <tr>
+                <td>07-02-24</td>
+                <td>
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Pacer Group Ride: Volcano Flat in Watopia with Yumi" title="Pacer Group Ride: Volcano Flat in Watopia with Yumi"/>
+<a href="https://www.strava.com/activities/10716563453" title="Kcal: 393 | Gear: Tacx Neo Bike Smart ">Pacer Group Ride: Volcano ...</a>
+                </td>
+                <td align="center">22 <sup><sub>km</sub></sup></td>
+                <td align="center">89 <sup><sub>m</sub></sup></td>
+                <td align="center">32:18</td>
+                <td align="center">212 <sup><sub>w</sub></sup></td>
+                <td align="center">40 <sup><sub>km/h</sub></sup></td>
+                <td align="center">109</td>
+            </tr>
+                    <tr>
+                <td>07-02-24</td>
+                <td>
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="3R Steady State zwift crash" title="3R Steady State zwift crash"/>
+<a href="https://www.strava.com/activities/10717790327" title="Kcal: 511 | Gear: Tacx Neo Bike Smart ">3R Steady State zwift crash</a>
+                </td>
+                <td align="center">23 <sup><sub>km</sub></sup></td>
+                <td align="center">94 <sup><sub>m</sub></sup></td>
+                <td align="center">33:43</td>
+                <td align="center">227 <sup><sub>w</sub></sup></td>
+                <td align="center">41 <sup><sub>km/h</sub></sup></td>
+                <td align="center">111</td>
+            </tr>
+                    <tr>
+                <td>07-02-24</td>
+                <td>
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Group Ride: Stage 8 | Ride | Tour de Zwift 2024  (C) on Castle Crit in Makuri Islands" title="Group Ride: Stage 8 | Ride | Tour de Zwift 2024  (C) on Castle Crit in Makuri Islands"/>
+<a href="https://www.strava.com/activities/10716003641" title="Kcal: 525 | Gear: Tacx Neo Bike Smart ">Group Ride: Stage 8 | Ride...</a>
+                </td>
+                <td align="center">25 <sup><sub>km</sub></sup></td>
+                <td align="center">253 <sup><sub>m</sub></sup></td>
+                <td align="center">41:00</td>
+                <td align="center">218 <sup><sub>w</sub></sup></td>
+                <td align="center">37.1 <sup><sub>km/h</sub></sup></td>
+                <td align="center">109</td>
+            </tr>
+                    <tr>
+                <td>06-02-24</td>
+                <td>
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Pacer Group Ride: Volcano Circuit in Watopia with Miguel + Bernie" title="Pacer Group Ride: Volcano Circuit in Watopia with Miguel + Bernie"/>
+<a href="https://www.strava.com/activities/10710161836" title="Kcal: 254 | Gear: Tacx Neo Bike Smart ">Pacer Group Ride: Volcano ...</a>
+                </td>
+                <td align="center">20 <sup><sub>km</sub></sup></td>
+                <td align="center">91 <sup><sub>m</sub></sup></td>
+                <td align="center">42:16</td>
+                <td align="center">105 <sup><sub>w</sub></sup></td>
+                <td align="center">28.8 <sup><sub>km/h</sub></sup></td>
+                <td align="center">90</td>
+            </tr>
+                    <tr>
+                <td>06-02-24</td>
+                <td>
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="TTT: Zwift Racing League - Open EMEAE Western 1 (South) A1 on R.G.V. in France" title="TTT: Zwift Racing League - Open EMEAE Western 1 (South) A1 on R.G.V. in France"/>
+<a href="https://www.strava.com/activities/10709831377" title="Kcal: 612 | Gear: Tacx Neo Bike Smart ">TTT: Zwift Racing League -...</a>
+                </td>
+                <td align="center">25 <sup><sub>km</sub></sup></td>
+                <td align="center">133 <sup><sub>m</sub></sup></td>
+                <td align="center">32:56</td>
+                <td align="center">320 <sup><sub>w</sub></sup></td>
+                <td align="center">46 <sup><sub>km/h</sub></sup></td>
+                <td align="center">160</td>
+            </tr>
+                    <tr>
+                <td>06-02-24</td>
+                <td>
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Just The Basics in Watopia" title="Just The Basics in Watopia"/>
+<a href="https://www.strava.com/activities/10709552784" title="Kcal: 312 | Gear: Tacx Neo Bike Smart ">Just The Basics in Watopia</a>
+                </td>
+                <td align="center">16 <sup><sub>km</sub></sup></td>
+                <td align="center">26 <sup><sub>m</sub></sup></td>
+                <td align="center">23:42</td>
+                <td align="center">230 <sup><sub>w</sub></sup></td>
+                <td align="center">40.7 <sup><sub>km/h</sub></sup></td>
+                <td align="center">119</td>
+            </tr>
+                    <tr>
+                <td>05-02-24</td>
+                <td>
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Renewal on Tempus Fugit" title="Renewal on Tempus Fugit"/>
+<a href="https://www.strava.com/activities/10703234560" title="Kcal: 548 | Gear: Tacx Neo Bike Smart ">Renewal on Tempus Fugit</a>
+                </td>
+                <td align="center">35 <sup><sub>km</sub></sup></td>
+                <td align="center">54 <sup><sub>m</sub></sup></td>
+                <td align="center">1:02:13</td>
+                <td align="center">154 <sup><sub>w</sub></sup></td>
+                <td align="center">34.2 <sup><sub>km/h</sub></sup></td>
+                <td align="center">90</td>
+            </tr>
+                    <tr>
+                <td>05-02-24</td>
+                <td>
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="SZR Joyride" title="SZR Joyride"/>
+<a href="https://www.strava.com/activities/10702784639" title="Kcal: 608 | Gear: Tacx Neo Bike Smart ">SZR Joyride</a>
+                </td>
+                <td align="center">27 <sup><sub>km</sub></sup></td>
+                <td align="center">180 <sup><sub>m</sub></sup></td>
+                <td align="center">43:49</td>
+                <td align="center">208 <sup><sub>w</sub></sup></td>
+                <td align="center">36.9 <sup><sub>km/h</sub></sup></td>
+                <td align="center">97</td>
+            </tr>
+                    <tr>
+                <td>04-02-24</td>
+                <td>
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Pacer Group Ride: Tempus Fugit in Watopia with Taylor" title="Pacer Group Ride: Tempus Fugit in Watopia with Taylor"/>
+<a href="https://www.strava.com/activities/10696043958" title="Kcal: 50 | Gear: Tacx Neo Bike Smart ">Pacer Group Ride: Tempus F...</a>
+                </td>
+                <td align="center">5 <sup><sub>km</sub></sup></td>
+                <td align="center">9 <sup><sub>m</sub></sup></td>
+                <td align="center">11:26</td>
+                <td align="center">76 <sup><sub>w</sub></sup></td>
+                <td align="center">26.3 <sup><sub>km/h</sub></sup></td>
+                <td align="center">80</td>
+            </tr>
+                    <tr>
+                <td>04-02-24</td>
+                <td>
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Group Ride: 3R Endurance Steady Ride (C) on Wandering Flats in Makuri Islands" title="Group Ride: 3R Endurance Steady Ride (C) on Wandering Flats in Makuri Islands"/>
+<a href="https://www.strava.com/activities/10695942878" title="Kcal: 765 | Gear: Tacx Neo Bike Smart ">Group Ride: 3R Endurance S...</a>
+                </td>
+                <td align="center">40 <sup><sub>km</sub></sup></td>
+                <td align="center">202 <sup><sub>m</sub></sup></td>
+                <td align="center">1:02:35</td>
+                <td align="center">211 <sup><sub>w</sub></sup></td>
+                <td align="center">38.6 <sup><sub>km/h</sub></sup></td>
+                <td align="center">110</td>
+            </tr>
+                    <tr>
+                <td>04-02-24</td>
+                <td>
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Pacer Group Ride: Tempus Fugit in Watopia with Taylor" title="Pacer Group Ride: Tempus Fugit in Watopia with Taylor"/>
+<a href="https://www.strava.com/activities/10693342755" title="Kcal: 23 | Gear: Tacx Neo Bike Smart ">Pacer Group Ride: Tempus F...</a>
+                </td>
+                <td align="center">2 <sup><sub>km</sub></sup></td>
+                <td align="center">5 <sup><sub>m</sub></sup></td>
+                <td align="center">5:13</td>
+                <td align="center">77 <sup><sub>w</sub></sup></td>
+                <td align="center">26.1 <sup><sub>km/h</sub></sup></td>
+                <td align="center">86</td>
+            </tr>
+                    <tr>
+                <td>04-02-24</td>
+                <td>
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Group Ride: EVO CC Endurance Base Ride [3.0-3.2w/kg avg] (B) on Triple Flat Loops in Watopia" title="Group Ride: EVO CC Endurance Base Ride [3.0-3.2w/kg avg] (B) on Triple Flat Loops in Watopia"/>
+<a href="https://www.strava.com/activities/10693282494" title="Kcal: 3305 | Gear: Tacx Neo Bike Smart ">Group Ride: EVO CC Enduran...</a>
+                </td>
+                <td align="center">165 <sup><sub>km</sub></sup></td>
+                <td align="center">761 <sup><sub>m</sub></sup></td>
+                <td align="center">4:03:25</td>
+                <td align="center">237 <sup><sub>w</sub></sup></td>
+                <td align="center">40.7 <sup><sub>km/h</sub></sup></td>
+                <td align="center">113</td>
+            </tr>
+                    <tr>
+                <td>03-02-24</td>
+                <td>
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Group Ride: Stage 7 | Ride | Tour de Zwift 2024  (C) on Richmond Rollercoaster in Richmond" title="Group Ride: Stage 7 | Ride | Tour de Zwift 2024  (C) on Richmond Rollercoaster in Richmond"/>
+<a href="https://www.strava.com/activities/10688360814" title="Kcal: 386 | Gear: Tacx Neo Bike Smart ">Group Ride: Stage 7 | Ride...</a>
+                </td>
+                <td align="center">23 <sup><sub>km</sub></sup></td>
+                <td align="center">180 <sup><sub>m</sub></sup></td>
+                <td align="center">39:11</td>
+                <td align="center">170 <sup><sub>w</sub></sup></td>
+                <td align="center">34.6 <sup><sub>km/h</sub></sup></td>
+                <td align="center">103</td>
+            </tr>
+                    <tr>
+                <td>03-02-24</td>
+                <td>
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Pacer Group Ride: Tempus Fugit in Watopia with Taylor" title="Pacer Group Ride: Tempus Fugit in Watopia with Taylor"/>
+<a href="https://www.strava.com/activities/10688015155" title="Kcal: 398 | Gear: Tacx Neo Bike Smart ">Pacer Group Ride: Tempus F...</a>
+                </td>
+                <td align="center">27 <sup><sub>km</sub></sup></td>
+                <td align="center">41 <sup><sub>m</sub></sup></td>
+                <td align="center">47:43</td>
+                <td align="center">145 <sup><sub>w</sub></sup></td>
+                <td align="center">34 <sup><sub>km/h</sub></sup></td>
+                <td align="center">95</td>
+            </tr>
+                    <tr>
+                <td>03-02-24</td>
+                <td>
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Zwift crash 🙄" title="Zwift crash 🙄"/>
+<a href="https://www.strava.com/activities/10687643814" title="Kcal: 621 | Gear: Tacx Neo Bike Smart ">Zwift crash 🙄</a>
+                </td>
+                <td align="center">33 <sup><sub>km</sub></sup></td>
+                <td align="center">118 <sup><sub>m</sub></sup></td>
+                <td align="center">53:35</td>
+                <td align="center">173 <sup><sub>w</sub></sup></td>
+                <td align="center">37.1 <sup><sub>km/h</sub></sup></td>
+                <td align="center">108</td>
+            </tr>
+                    <tr>
+                <td>03-02-24</td>
+                <td>
+                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Los &amp; naar de werken gaan kijken 👀" title="Los &amp; naar de werken gaan kijken 👀"/>
+<a href="https://www.strava.com/activities/10686672957" title="Kcal: 56 | Gear: Canyon Grizl CF SLX 8 Di2 ">Los &amp; naar de werken gaan ...</a>
+                </td>
+                <td align="center">3 <sup><sub>km</sub></sup></td>
+                <td align="center">7 <sup><sub>m</sub></sup></td>
+                <td align="center">10:18</td>
+                <td align="center">65 <sup><sub>w</sub></sup></td>
+                <td align="center">16.1 <sup><sub>km/h</sub></sup></td>
+                <td align="center">93</td>
+            </tr>
+                    <tr>
+                <td>03-02-24</td>
+                <td>
+                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="VTT Zomergem/Lievegem + H/T 🏡💨" title="VTT Zomergem/Lievegem + H/T 🏡💨"/>
+<a href="https://www.strava.com/activities/10686674150" title="Kcal: 3844 | Gear: Canyon Grizl CF SLX 8 Di2 ">VTT Zomergem/Lievegem + H/...</a>
+                </td>
+                <td align="center">115 <sup><sub>km</sub></sup></td>
+                <td align="center">386 <sup><sub>m</sub></sup></td>
+                <td align="center">4:01:14</td>
+                <td align="center">241 <sup><sub>w</sub></sup></td>
+                <td align="center">28.7 <sup><sub>km/h</sub></sup></td>
+                <td align="center">135</td>
+            </tr>
+                    <tr>
+                <td>02-02-24</td>
+                <td>
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Pacer Group Ride: Volcano Circuit in Watopia with Maria" title="Pacer Group Ride: Volcano Circuit in Watopia with Maria"/>
+<a href="https://www.strava.com/activities/10679009842" title="Kcal: 392 | Gear: Tacx Neo Bike Smart ">Pacer Group Ride: Volcano ...</a>
+                </td>
+                <td align="center">21 <sup><sub>km</sub></sup></td>
+                <td align="center">102 <sup><sub>m</sub></sup></td>
+                <td align="center">34:34</td>
+                <td align="center">197 <sup><sub>w</sub></sup></td>
+                <td align="center">36.6 <sup><sub>km/h</sub></sup></td>
+                <td align="center">107</td>
+            </tr>
+                    <tr>
+                <td>02-02-24</td>
+                <td>
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Group Ride: 3R VOLT Interval Ride [~2.6-3.2 w/kg avg] on Sprinter&#039;s Playground in Makuri Islands" title="Group Ride: 3R VOLT Interval Ride [~2.6-3.2 w/kg avg] on Sprinter&#039;s Playground in Makuri Islands"/>
+<a href="https://www.strava.com/activities/10678891802" title="Kcal: 972 | Gear: Tacx Neo Bike Smart ">Group Ride: 3R VOLT Interv...</a>
+                </td>
+                <td align="center">42 <sup><sub>km</sub></sup></td>
+                <td align="center">228 <sup><sub>m</sub></sup></td>
+                <td align="center">1:05:48</td>
+                <td align="center">256 <sup><sub>w</sub></sup></td>
+                <td align="center">38.7 <sup><sub>km/h</sub></sup></td>
+                <td align="center">124</td>
+            </tr>
+                    <tr>
+                <td>02-02-24</td>
+                <td>
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="😴" title="😴"/>
+<a href="https://www.strava.com/activities/10678899231" title="Kcal: 28 | Gear: Tacx Neo Bike Smart ">😴</a>
+                </td>
+                <td align="center">1 <sup><sub>km</sub></sup></td>
+                <td align="center">13 <sup><sub>m</sub></sup></td>
+                <td align="center">2:16</td>
+                <td align="center">213 <sup><sub>w</sub></sup></td>
+                <td align="center">32.4 <sup><sub>km/h</sub></sup></td>
+                <td align="center">110</td>
+            </tr>
+                    <tr>
+                <td>01-02-24</td>
+                <td>
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Pacer Group Ride: Volcano Circuit in Watopia with Maria" title="Pacer Group Ride: Volcano Circuit in Watopia with Maria"/>
+<a href="https://www.strava.com/activities/10676290111" title="Kcal: 335 | Gear: Tacx Neo Bike Smart ">Pacer Group Ride: Volcano ...</a>
+                </td>
+                <td align="center">20 <sup><sub>km</sub></sup></td>
+                <td align="center">98 <sup><sub>m</sub></sup></td>
+                <td align="center">32:58</td>
+                <td align="center">177 <sup><sub>w</sub></sup></td>
+                <td align="center">36.6 <sup><sub>km/h</sub></sup></td>
+                <td align="center">105</td>
+            </tr>
+                    <tr>
+                <td>01-02-24</td>
+                <td>
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="TTT: WTRL Team Time Trial - Zone 16 (ESPRESSO/DOPPIO) on Figure 8 in Watopia" title="TTT: WTRL Team Time Trial - Zone 16 (ESPRESSO/DOPPIO) on Figure 8 in Watopia"/>
+<a href="https://www.strava.com/activities/10676045047" title="Kcal: 721 | Gear: Tacx Neo Bike Smart ">TTT: WTRL Team Time Trial ...</a>
+                </td>
+                <td align="center">30 <sup><sub>km</sub></sup></td>
+                <td align="center">256 <sup><sub>m</sub></sup></td>
+                <td align="center">40:45</td>
+                <td align="center">305 <sup><sub>w</sub></sup></td>
+                <td align="center">44.5 <sup><sub>km/h</sub></sup></td>
+                <td align="center">145</td>
+            </tr>
+                    <tr>
+                <td>01-02-24</td>
+                <td>
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Just The Basics in Watopia" title="Just The Basics in Watopia"/>
+<a href="https://www.strava.com/activities/10675741501" title="Kcal: 314 | Gear: Tacx Neo Bike Smart ">Just The Basics in Watopia</a>
+                </td>
+                <td align="center">16 <sup><sub>km</sub></sup></td>
+                <td align="center">26 <sup><sub>m</sub></sup></td>
+                <td align="center">23:27</td>
+                <td align="center">234 <sup><sub>w</sub></sup></td>
+                <td align="center">41.2 <sup><sub>km/h</sub></sup></td>
+                <td align="center">116</td>
+            </tr>
+                    <tr>
+                <td>31-01-24</td>
+                <td>
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Pacer Group Ride: Tempus Fugit in Watopia with Taylor" title="Pacer Group Ride: Tempus Fugit in Watopia with Taylor"/>
+<a href="https://www.strava.com/activities/10670198768" title="Kcal: 176 | Gear: Tacx Neo Bike Smart ">Pacer Group Ride: Tempus F...</a>
+                </td>
+                <td align="center">13 <sup><sub>km</sub></sup></td>
+                <td align="center">20 <sup><sub>m</sub></sup></td>
+                <td align="center">25:32</td>
+                <td align="center">120 <sup><sub>w</sub></sup></td>
+                <td align="center">31.1 <sup><sub>km/h</sub></sup></td>
+                <td align="center">93</td>
+            </tr>
+                    <tr>
+                <td>31-01-24</td>
+                <td>
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Group Ride: 3R Steady State Endurance Ride (B) on Big Flat 8 in Watopia" title="Group Ride: 3R Steady State Endurance Ride (B) on Big Flat 8 in Watopia"/>
+<a href="https://www.strava.com/activities/10670042430" title="Kcal: 2319 | Gear: Tacx Neo Bike Smart ">Group Ride: 3R Steady Stat...</a>
+                </td>
+                <td align="center">103 <sup><sub>km</sub></sup></td>
+                <td align="center">354 <sup><sub>m</sub></sup></td>
+                <td align="center">2:30:40</td>
+                <td align="center">268 <sup><sub>w</sub></sup></td>
+                <td align="center">41.1 <sup><sub>km/h</sub></sup></td>
+                <td align="center">128</td>
+            </tr>
+                    <tr>
+                <td>31-01-24</td>
+                <td>
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Pacer Group Ride: Volcano Circuit in Watopia with Maria" title="Pacer Group Ride: Volcano Circuit in Watopia with Maria"/>
+<a href="https://www.strava.com/activities/10668957203" title="Kcal: 88 | Gear: Tacx Neo Bike Smart ">Pacer Group Ride: Volcano ...</a>
+                </td>
+                <td align="center">4 <sup><sub>km</sub></sup></td>
+                <td align="center">21 <sup><sub>m</sub></sup></td>
+                <td align="center">5:59</td>
+                <td align="center">253 <sup><sub>w</sub></sup></td>
+                <td align="center">41.7 <sup><sub>km/h</sub></sup></td>
+                <td align="center">115</td>
+            </tr>
+                    <tr>
+                <td>30-01-24</td>
+                <td>
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Pacer Group Ride: Flat Route in Watopia with Coco" title="Pacer Group Ride: Flat Route in Watopia with Coco"/>
+<a href="https://www.strava.com/activities/10662841951" title="Kcal: 110 | Gear: Tacx Neo Bike Smart ">Pacer Group Ride: Flat Rou...</a>
+                </td>
+                <td align="center">10 <sup><sub>km</sub></sup></td>
+                <td align="center">51 <sup><sub>m</sub></sup></td>
+                <td align="center">23:03</td>
+                <td align="center">83 <sup><sub>w</sub></sup></td>
+                <td align="center">26.5 <sup><sub>km/h</sub></sup></td>
+                <td align="center">89</td>
+            </tr>
+                    <tr>
+                <td>30-01-24</td>
+                <td>
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Race: Zwift Racing League - Open EMEAE Western 1 (South) A1 on Island Hopper in Makuri Islands" title="Race: Zwift Racing League - Open EMEAE Western 1 (South) A1 on Island Hopper in Makuri Islands"/>
+<a href="https://www.strava.com/activities/10662644248" title="Kcal: 893 | Gear: Tacx Neo Bike Smart ">Race: Zwift Racing League ...</a>
+                </td>
+                <td align="center">36 <sup><sub>km</sub></sup></td>
+                <td align="center">261 <sup><sub>m</sub></sup></td>
+                <td align="center">48:26</td>
+                <td align="center">317 <sup><sub>w</sub></sup></td>
+                <td align="center">44.7 <sup><sub>km/h</sub></sup></td>
+                <td align="center">152</td>
+            </tr>
+                    <tr>
+                <td>30-01-24</td>
+                <td>
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="ZRL Warmup in Watopia" title="ZRL Warmup in Watopia"/>
+<a href="https://www.strava.com/activities/10662226948" title="Kcal: 440 | Gear: Tacx Neo Bike Smart ">ZRL Warmup in Watopia</a>
+                </td>
+                <td align="center">22 <sup><sub>km</sub></sup></td>
+                <td align="center">33 <sup><sub>m</sub></sup></td>
+                <td align="center">33:06</td>
+                <td align="center">232 <sup><sub>w</sub></sup></td>
+                <td align="center">40.3 <sup><sub>km/h</sub></sup></td>
+                <td align="center">114</td>
+            </tr>
+                    <tr>
+                <td>29-01-24</td>
+                <td>
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Pacer Group Ride: Volcano Circuit in Watopia with Maria" title="Pacer Group Ride: Volcano Circuit in Watopia with Maria"/>
+<a href="https://www.strava.com/activities/10655664686" title="Kcal: 237 | Gear: Tacx Neo Bike Smart ">Pacer Group Ride: Volcano ...</a>
+                </td>
+                <td align="center">16 <sup><sub>km</sub></sup></td>
+                <td align="center">74 <sup><sub>m</sub></sup></td>
+                <td align="center">26:33</td>
+                <td align="center">155 <sup><sub>w</sub></sup></td>
+                <td align="center">36.3 <sup><sub>km/h</sub></sup></td>
+                <td align="center">82</td>
+            </tr>
+                    <tr>
+                <td>29-01-24</td>
+                <td>
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Group Ride: Stage 6 | Ride | Tour de Zwift 2024 (C) on Legends and Lava in Watopia" title="Group Ride: Stage 6 | Ride | Tour de Zwift 2024 (C) on Legends and Lava in Watopia"/>
+<a href="https://www.strava.com/activities/10655465080" title="Kcal: 912 | Gear: Tacx Neo Bike Smart ">Group Ride: Stage 6 | Ride...</a>
+                </td>
+                <td align="center">45 <sup><sub>km</sub></sup></td>
+                <td align="center">448 <sup><sub>m</sub></sup></td>
+                <td align="center">1:12:04</td>
+                <td align="center">220 <sup><sub>w</sub></sup></td>
+                <td align="center">37.6 <sup><sub>km/h</sub></sup></td>
+                <td align="center">100</td>
+            </tr>
+                    <tr>
+                <td>28-01-24</td>
+                <td>
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Pacer Group Ride: Tempus Fugit in Watopia with Bernie" title="Pacer Group Ride: Tempus Fugit in Watopia with Bernie"/>
+<a href="https://www.strava.com/activities/10647928365" title="Kcal: 269 | Gear: Tacx Neo Bike Smart ">Pacer Group Ride: Tempus F...</a>
+                </td>
+                <td align="center">23 <sup><sub>km</sub></sup></td>
+                <td align="center">32 <sup><sub>m</sub></sup></td>
+                <td align="center">46:07</td>
+                <td align="center">101 <sup><sub>w</sub></sup></td>
+                <td align="center">29.4 <sup><sub>km/h</sub></sup></td>
+                <td align="center">86</td>
+            </tr>
+                    <tr>
+                <td>28-01-24</td>
+                <td>
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Group Ride: BMTR Short Adventure (C) on Big Flat 8 in Watopia" title="Group Ride: BMTR Short Adventure (C) on Big Flat 8 in Watopia"/>
+<a href="https://www.strava.com/activities/10647486793" title="Kcal: 763 | Gear: Tacx Neo Bike Smart ">Group Ride: BMTR Short Adv...</a>
+                </td>
+                <td align="center">45 <sup><sub>km</sub></sup></td>
+                <td align="center">148 <sup><sub>m</sub></sup></td>
+                <td align="center">1:10:55</td>
+                <td align="center">188 <sup><sub>w</sub></sup></td>
+                <td align="center">38.1 <sup><sub>km/h</sub></sup></td>
+                <td align="center">109</td>
+            </tr>
+                    <tr>
+                <td>28-01-24</td>
+                <td>
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Pacer Group Ride: Tempus Fugit in Watopia with Bernie" title="Pacer Group Ride: Tempus Fugit in Watopia with Bernie"/>
+<a href="https://www.strava.com/activities/10646838631" title="Kcal: 169 | Gear: Tacx Neo Bike Smart ">Pacer Group Ride: Tempus F...</a>
+                </td>
+                <td align="center">13 <sup><sub>km</sub></sup></td>
+                <td align="center">21 <sup><sub>m</sub></sup></td>
+                <td align="center">24:06</td>
+                <td align="center">122 <sup><sub>w</sub></sup></td>
+                <td align="center">31.4 <sup><sub>km/h</sub></sup></td>
+                <td align="center">99</td>
+            </tr>
+                    <tr>
+                <td>28-01-24</td>
+                <td>
+                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Winter is fijn en doet soms eens pijn 😬💨" title="Winter is fijn en doet soms eens pijn 😬💨"/>
+<a href="https://www.strava.com/activities/10645927143" title="Kcal: 3869 | Gear: Ridley Fenix SLX Disc ">Winter is fijn en doet som...</a>
+                </td>
+                <td align="center">139 <sup><sub>km</sub></sup></td>
+                <td align="center">352 <sup><sub>m</sub></sup></td>
+                <td align="center">4:03:46</td>
+                <td align="center">239 <sup><sub>w</sub></sup></td>
+                <td align="center">34.2 <sup><sub>km/h</sub></sup></td>
+                <td align="center">129</td>
+            </tr>
+                    <tr>
+                <td>27-01-24</td>
+                <td>
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Pacer Group Ride: Tempus Fugit in Watopia with Bernie" title="Pacer Group Ride: Tempus Fugit in Watopia with Bernie"/>
+<a href="https://www.strava.com/activities/10640263272" title="Kcal: 26 | Gear: Tacx Neo Bike Smart ">Pacer Group Ride: Tempus F...</a>
+                </td>
+                <td align="center">3 <sup><sub>km</sub></sup></td>
+                <td align="center">4 <sup><sub>m</sub></sup></td>
+                <td align="center">7:34</td>
+                <td align="center">60 <sup><sub>w</sub></sup></td>
+                <td align="center">23.9 <sup><sub>km/h</sub></sup></td>
+                <td align="center">78</td>
+            </tr>
+                    <tr>
+                <td>27-01-24</td>
+                <td>
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Group Ride: BMTR Flat 100 (Miles) (C) on Greater London Flat in London" title="Group Ride: BMTR Flat 100 (Miles) (C) on Greater London Flat in London"/>
+<a href="https://www.strava.com/activities/10640189234" title="Kcal: 1062 | Gear: Tacx Neo Bike Smart ">Group Ride: BMTR Flat 100 ...</a>
+                </td>
+                <td align="center">62 <sup><sub>km</sub></sup></td>
+                <td align="center">301 <sup><sub>m</sub></sup></td>
+                <td align="center">1:39:07</td>
+                <td align="center">186 <sup><sub>w</sub></sup></td>
+                <td align="center">37.6 <sup><sub>km/h</sub></sup></td>
+                <td align="center">104</td>
+            </tr>
+                    <tr>
+                <td>27-01-24</td>
+                <td>
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Pacer Group Ride: Tempus Fugit in Watopia with Bernie" title="Pacer Group Ride: Tempus Fugit in Watopia with Bernie"/>
+<a href="https://www.strava.com/activities/10639396169" title="Kcal: 135 | Gear: Tacx Neo Bike Smart ">Pacer Group Ride: Tempus F...</a>
+                </td>
+                <td align="center">9 <sup><sub>km</sub></sup></td>
+                <td align="center">15 <sup><sub>m</sub></sup></td>
+                <td align="center">14:21</td>
+                <td align="center">165 <sup><sub>w</sub></sup></td>
+                <td align="center">35.6 <sup><sub>km/h</sub></sup></td>
+                <td align="center">104</td>
+            </tr>
+                    <tr>
+                <td>27-01-24</td>
+                <td>
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Pacer Group Ride: Tempus Fugit in Watopia with Bernie" title="Pacer Group Ride: Tempus Fugit in Watopia with Bernie"/>
+<a href="https://www.strava.com/activities/10638580208" title="Kcal: 19 | Gear: Tacx Neo Bike Smart ">Pacer Group Ride: Tempus F...</a>
+                </td>
+                <td align="center">2 <sup><sub>km</sub></sup></td>
+                <td align="center">3 <sup><sub>m</sub></sup></td>
+                <td align="center">5:11</td>
+                <td align="center">63 <sup><sub>w</sub></sup></td>
+                <td align="center">25.4 <sup><sub>km/h</sub></sup></td>
+                <td align="center">84</td>
+            </tr>
+                    <tr>
+                <td>27-01-24</td>
+                <td>
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Group Ride: EVO CC Endurance Base Ride [2.5-2.7w/kg avg] on Big Flat 8 in Watopia" title="Group Ride: EVO CC Endurance Base Ride [2.5-2.7w/kg avg] on Big Flat 8 in Watopia"/>
+<a href="https://www.strava.com/activities/10638531982" title="Kcal: 3072 | Gear: Tacx Neo Bike Smart ">Group Ride: EVO CC Enduran...</a>
+                </td>
+                <td align="center">167 <sup><sub>km</sub></sup></td>
+                <td align="center">576 <sup><sub>m</sub></sup></td>
+                <td align="center">4:20:50</td>
+                <td align="center">205 <sup><sub>w</sub></sup></td>
+                <td align="center">38.4 <sup><sub>km/h</sub></sup></td>
+                <td align="center">111</td>
+            </tr>
+            </table>
+</details>
+
+
+## Monthly stats
+
+<table>
+    <thead>
+    <tr>
+        <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+        <th># of rides</th>
+        <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/distance.svg" width="30" alt="distance" title="distance"/></th>
+        <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/elevation.svg" width="30" alt="elevation" title="elevation"/></th>
+        <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/time.svg" width="30" alt="time" title="time"/></th>
+        <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/challenge2.svg" width="30" alt="completed challenges" title="completed challenges"/></th>
+    </tr>
+    </thead>
+    <tbody>
+            <tr>
+            <td align="center">February 2024</td>
+            <td align="center">38</td>
+            <td align="center">1 497 <sup><sub>km</sub></sup></td>
+            <td align="center">6 231 <sup><sub>m</sub></sup></td>
+            <td align="center">1d 16h 22m</td>
+            <td align="center">4</td>
+        </tr>
+            <tr>
+            <td align="center">January 2024</td>
+            <td align="center">114</td>
+            <td align="center">3 841 <sup><sub>km</sub></sup></td>
+            <td align="center">18 123 <sup><sub>m</sub></sup></td>
+            <td align="center">4d 6h 46m</td>
+            <td align="center">6</td>
+        </tr>
+            <tr>
+            <td align="center">December 2023</td>
+            <td align="center">90</td>
+            <td align="center">3 823 <sup><sub>km</sub></sup></td>
+            <td align="center">14 309 <sup><sub>m</sub></sup></td>
+            <td align="center">4d 8h 54m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">November 2023</td>
+            <td align="center">94</td>
+            <td align="center">4 087 <sup><sub>km</sub></sup></td>
+            <td align="center">16 273 <sup><sub>m</sub></sup></td>
+            <td align="center">4d 16h 52m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">October 2023</td>
+            <td align="center">87</td>
+            <td align="center">3 728 <sup><sub>km</sub></sup></td>
+            <td align="center">16 280 <sup><sub>m</sub></sup></td>
+            <td align="center">4d 16h 30m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">September 2023</td>
+            <td align="center">49</td>
+            <td align="center">3 439 <sup><sub>km</sub></sup></td>
+            <td align="center">11 468 <sup><sub>m</sub></sup></td>
+            <td align="center">4d 9h 53m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">August 2023</td>
+            <td align="center">45</td>
+            <td align="center">3 389 <sup><sub>km</sub></sup></td>
+            <td align="center">14 787 <sup><sub>m</sub></sup></td>
+            <td align="center">4d 5h 39m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">July 2023</td>
+            <td align="center">39</td>
+            <td align="center">3 539 <sup><sub>km</sub></sup></td>
+            <td align="center">32 069 <sup><sub>m</sub></sup></td>
+            <td align="center">4d 20h 6m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">June 2023</td>
+            <td align="center">40</td>
+            <td align="center">3 157 <sup><sub>km</sub></sup></td>
+            <td align="center">11 611 <sup><sub>m</sub></sup></td>
+            <td align="center">4d 49m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">May 2023</td>
+            <td align="center">45</td>
+            <td align="center">3 650 <sup><sub>km</sub></sup></td>
+            <td align="center">26 833 <sup><sub>m</sub></sup></td>
+            <td align="center">4d 19h 37m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">April 2023</td>
+            <td align="center">55</td>
+            <td align="center">3 412 <sup><sub>km</sub></sup></td>
+            <td align="center">15 247 <sup><sub>m</sub></sup></td>
+            <td align="center">4d 9h 21m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">March 2023</td>
+            <td align="center">67</td>
+            <td align="center">3 378 <sup><sub>km</sub></sup></td>
+            <td align="center">16 918 <sup><sub>m</sub></sup></td>
+            <td align="center">3d 20h 52m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">February 2023</td>
+            <td align="center">46</td>
+            <td align="center">2 791 <sup><sub>km</sub></sup></td>
+            <td align="center">14 908 <sup><sub>m</sub></sup></td>
+            <td align="center">3d 5h 3m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">January 2023</td>
+            <td align="center">57</td>
+            <td align="center">2 777 <sup><sub>km</sub></sup></td>
+            <td align="center">17 265 <sup><sub>m</sub></sup></td>
+            <td align="center">3d 4h 13m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">December 2022</td>
+            <td align="center">53</td>
+            <td align="center">3 009 <sup><sub>km</sub></sup></td>
+            <td align="center">16 107 <sup><sub>m</sub></sup></td>
+            <td align="center">3d 6h 6m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">November 2022</td>
+            <td align="center">60</td>
+            <td align="center">2 690 <sup><sub>km</sub></sup></td>
+            <td align="center">15 451 <sup><sub>m</sub></sup></td>
+            <td align="center">3d 3h 21m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">October 2022</td>
+            <td align="center">51</td>
+            <td align="center">2 889 <sup><sub>km</sub></sup></td>
+            <td align="center">14 669 <sup><sub>m</sub></sup></td>
+            <td align="center">3d 13h 34m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">September 2022</td>
+            <td align="center">46</td>
+            <td align="center">2 478 <sup><sub>km</sub></sup></td>
+            <td align="center">13 362 <sup><sub>m</sub></sup></td>
+            <td align="center">2d 21h</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">August 2022</td>
+            <td align="center">41</td>
+            <td align="center">2 895 <sup><sub>km</sub></sup></td>
+            <td align="center">9 454 <sup><sub>m</sub></sup></td>
+            <td align="center">3d 18h 37m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">July 2022</td>
+            <td align="center">43</td>
+            <td align="center">2 750 <sup><sub>km</sub></sup></td>
+            <td align="center">12 477 <sup><sub>m</sub></sup></td>
+            <td align="center">3d 19h 30m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">June 2022</td>
+            <td align="center">48</td>
+            <td align="center">2 519 <sup><sub>km</sub></sup></td>
+            <td align="center">9 963 <sup><sub>m</sub></sup></td>
+            <td align="center">3d 3h 24m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">May 2022</td>
+            <td align="center">51</td>
+            <td align="center">3 000 <sup><sub>km</sub></sup></td>
+            <td align="center">13 182 <sup><sub>m</sub></sup></td>
+            <td align="center">4d 1h 31m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">April 2022</td>
+            <td align="center">49</td>
+            <td align="center">2 939 <sup><sub>km</sub></sup></td>
+            <td align="center">9 928 <sup><sub>m</sub></sup></td>
+            <td align="center">3d 20h 8m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">March 2022</td>
+            <td align="center">46</td>
+            <td align="center">2 007 <sup><sub>km</sub></sup></td>
+            <td align="center">7 906 <sup><sub>m</sub></sup></td>
+            <td align="center">2d 12h 58m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">February 2022</td>
+            <td align="center">46</td>
+            <td align="center">2 428 <sup><sub>km</sub></sup></td>
+            <td align="center">12 346 <sup><sub>m</sub></sup></td>
+            <td align="center">2d 19h 41m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">January 2022</td>
+            <td align="center">61</td>
+            <td align="center">2 974 <sup><sub>km</sub></sup></td>
+            <td align="center">19 999 <sup><sub>m</sub></sup></td>
+            <td align="center">3d 8h 47m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">December 2021</td>
+            <td align="center">58</td>
+            <td align="center">2 680 <sup><sub>km</sub></sup></td>
+            <td align="center">14 437 <sup><sub>m</sub></sup></td>
+            <td align="center">3d 2h 19m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">November 2021</td>
+            <td align="center">69</td>
+            <td align="center">2 667 <sup><sub>km</sub></sup></td>
+            <td align="center">15 565 <sup><sub>m</sub></sup></td>
+            <td align="center">3d 45m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">October 2021</td>
+            <td align="center">46</td>
+            <td align="center">2 513 <sup><sub>km</sub></sup></td>
+            <td align="center">11 094 <sup><sub>m</sub></sup></td>
+            <td align="center">2d 23h 14m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">September 2021</td>
+            <td align="center">42</td>
+            <td align="center">2 652 <sup><sub>km</sub></sup></td>
+            <td align="center">7 809 <sup><sub>m</sub></sup></td>
+            <td align="center">3d 6h 53m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">August 2021</td>
+            <td align="center">32</td>
+            <td align="center">2 947 <sup><sub>km</sub></sup></td>
+            <td align="center">11 392 <sup><sub>m</sub></sup></td>
+            <td align="center">3d 19h 53m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">July 2021</td>
+            <td align="center">39</td>
+            <td align="center">2 700 <sup><sub>km</sub></sup></td>
+            <td align="center">7 769 <sup><sub>m</sub></sup></td>
+            <td align="center">3d 10h 59m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">June 2021</td>
+            <td align="center">37</td>
+            <td align="center">2 858 <sup><sub>km</sub></sup></td>
+            <td align="center">8 389 <sup><sub>m</sub></sup></td>
+            <td align="center">3d 12h 32m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">May 2021</td>
+            <td align="center">48</td>
+            <td align="center">2 952 <sup><sub>km</sub></sup></td>
+            <td align="center">10 205 <sup><sub>m</sub></sup></td>
+            <td align="center">3d 9h 21m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">April 2021</td>
+            <td align="center">46</td>
+            <td align="center">2 611 <sup><sub>km</sub></sup></td>
+            <td align="center">8 266 <sup><sub>m</sub></sup></td>
+            <td align="center">3d 40m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">March 2021</td>
+            <td align="center">51</td>
+            <td align="center">2 544 <sup><sub>km</sub></sup></td>
+            <td align="center">8 544 <sup><sub>m</sub></sup></td>
+            <td align="center">2d 22h 14m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">February 2021</td>
+            <td align="center">54</td>
+            <td align="center">2 312 <sup><sub>km</sub></sup></td>
+            <td align="center">13 855 <sup><sub>m</sub></sup></td>
+            <td align="center">2d 12h 19m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">January 2021</td>
+            <td align="center">59</td>
+            <td align="center">2 830 <sup><sub>km</sub></sup></td>
+            <td align="center">12 827 <sup><sub>m</sub></sup></td>
+            <td align="center">2d 22h 56m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">December 2020</td>
+            <td align="center">60</td>
+            <td align="center">2 409 <sup><sub>km</sub></sup></td>
+            <td align="center">9 164 <sup><sub>m</sub></sup></td>
+            <td align="center">2d 11h 13m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">November 2020</td>
+            <td align="center">51</td>
+            <td align="center">2 342 <sup><sub>km</sub></sup></td>
+            <td align="center">11 147 <sup><sub>m</sub></sup></td>
+            <td align="center">2d 14h 38m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">October 2020</td>
+            <td align="center">44</td>
+            <td align="center">2 241 <sup><sub>km</sub></sup></td>
+            <td align="center">10 405 <sup><sub>m</sub></sup></td>
+            <td align="center">2d 9h 18m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">September 2020</td>
+            <td align="center">38</td>
+            <td align="center">1 924 <sup><sub>km</sub></sup></td>
+            <td align="center">8 980 <sup><sub>m</sub></sup></td>
+            <td align="center">2d 6h 39m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">August 2020</td>
+            <td align="center">51</td>
+            <td align="center">2 470 <sup><sub>km</sub></sup></td>
+            <td align="center">11 556 <sup><sub>m</sub></sup></td>
+            <td align="center">3d 8h 39m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">July 2020</td>
+            <td align="center">38</td>
+            <td align="center">2 070 <sup><sub>km</sub></sup></td>
+            <td align="center">14 947 <sup><sub>m</sub></sup></td>
+            <td align="center">2d 21h 53m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">June 2020</td>
+            <td align="center">41</td>
+            <td align="center">2 234 <sup><sub>km</sub></sup></td>
+            <td align="center">11 449 <sup><sub>m</sub></sup></td>
+            <td align="center">2d 23h 14m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">May 2020</td>
+            <td align="center">50</td>
+            <td align="center">2 748 <sup><sub>km</sub></sup></td>
+            <td align="center">12 215 <sup><sub>m</sub></sup></td>
+            <td align="center">3d 19h 4m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">April 2020</td>
+            <td align="center">40</td>
+            <td align="center">2 581 <sup><sub>km</sub></sup></td>
+            <td align="center">10 202 <sup><sub>m</sub></sup></td>
+            <td align="center">3d 14h 18m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">March 2020</td>
+            <td align="center">42</td>
+            <td align="center">2 170 <sup><sub>km</sub></sup></td>
+            <td align="center">10 608 <sup><sub>m</sub></sup></td>
+            <td align="center">2d 21h 51m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">February 2020</td>
+            <td align="center">30</td>
+            <td align="center">1 765 <sup><sub>km</sub></sup></td>
+            <td align="center">10 457 <sup><sub>m</sub></sup></td>
+            <td align="center">2d 4h 14m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">January 2020</td>
+            <td align="center">33</td>
+            <td align="center">1 617 <sup><sub>km</sub></sup></td>
+            <td align="center">9 485 <sup><sub>m</sub></sup></td>
+            <td align="center">2d 3h 36m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">December 2019</td>
+            <td align="center">29</td>
+            <td align="center">1 421 <sup><sub>km</sub></sup></td>
+            <td align="center">5 972 <sup><sub>m</sub></sup></td>
+            <td align="center">1d 21h 29m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">November 2019</td>
+            <td align="center">26</td>
+            <td align="center">1 345 <sup><sub>km</sub></sup></td>
+            <td align="center">7 087 <sup><sub>m</sub></sup></td>
+            <td align="center">2d 2h 19m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">October 2019</td>
+            <td align="center">27</td>
+            <td align="center">1 315 <sup><sub>km</sub></sup></td>
+            <td align="center">6 299 <sup><sub>m</sub></sup></td>
+            <td align="center">1d 20h 14m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">September 2019</td>
+            <td align="center">19</td>
+            <td align="center">637 <sup><sub>km</sub></sup></td>
+            <td align="center">6 449 <sup><sub>m</sub></sup></td>
+            <td align="center">22h 40m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">August 2019</td>
+            <td align="center">31</td>
+            <td align="center">1 835 <sup><sub>km</sub></sup></td>
+            <td align="center">9 322 <sup><sub>m</sub></sup></td>
+            <td align="center">2d 13h 58m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">July 2019</td>
+            <td align="center">25</td>
+            <td align="center">1 950 <sup><sub>km</sub></sup></td>
+            <td align="center">13 992 <sup><sub>m</sub></sup></td>
+            <td align="center">2d 20h 46m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">June 2019</td>
+            <td align="center">28</td>
+            <td align="center">1 333 <sup><sub>km</sub></sup></td>
+            <td align="center">9 513 <sup><sub>m</sub></sup></td>
+            <td align="center">1d 21h 47m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">May 2019</td>
+            <td align="center">27</td>
+            <td align="center">1 634 <sup><sub>km</sub></sup></td>
+            <td align="center">4 996 <sup><sub>m</sub></sup></td>
+            <td align="center">2d 8h 26m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">April 2019</td>
+            <td align="center">24</td>
+            <td align="center">1 468 <sup><sub>km</sub></sup></td>
+            <td align="center">9 511 <sup><sub>m</sub></sup></td>
+            <td align="center">2d 1h 53m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">March 2019</td>
+            <td align="center">27</td>
+            <td align="center">1 987 <sup><sub>km</sub></sup></td>
+            <td align="center">10 098 <sup><sub>m</sub></sup></td>
+            <td align="center">2d 16h 30m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">February 2019</td>
+            <td align="center">31</td>
+            <td align="center">1 537 <sup><sub>km</sub></sup></td>
+            <td align="center">7 768 <sup><sub>m</sub></sup></td>
+            <td align="center">2d 1h 35m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">January 2019</td>
+            <td align="center">25</td>
+            <td align="center">1 420 <sup><sub>km</sub></sup></td>
+            <td align="center">6 972 <sup><sub>m</sub></sup></td>
+            <td align="center">1d 22h 39m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">December 2018</td>
+            <td align="center">33</td>
+            <td align="center">1 469 <sup><sub>km</sub></sup></td>
+            <td align="center">6 626 <sup><sub>m</sub></sup></td>
+            <td align="center">2d 6h 41m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">November 2018</td>
+            <td align="center">30</td>
+            <td align="center">1 164 <sup><sub>km</sub></sup></td>
+            <td align="center">5 735 <sup><sub>m</sub></sup></td>
+            <td align="center">1d 19h 43m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">October 2018</td>
+            <td align="center">27</td>
+            <td align="center">1 153 <sup><sub>km</sub></sup></td>
+            <td align="center">4 780 <sup><sub>m</sub></sup></td>
+            <td align="center">1d 16h 57m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">September 2018</td>
+            <td align="center">33</td>
+            <td align="center">1 487 <sup><sub>km</sub></sup></td>
+            <td align="center">3 617 <sup><sub>m</sub></sup></td>
+            <td align="center">2d 3h 10m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">August 2018</td>
+            <td align="center">37</td>
+            <td align="center">1 451 <sup><sub>km</sub></sup></td>
+            <td align="center">4 662 <sup><sub>m</sub></sup></td>
+            <td align="center">1d 23h 32m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">July 2018</td>
+            <td align="center">32</td>
+            <td align="center">1 513 <sup><sub>km</sub></sup></td>
+            <td align="center">3 395 <sup><sub>m</sub></sup></td>
+            <td align="center">2d 9m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">June 2018</td>
+            <td align="center">33</td>
+            <td align="center">1 702 <sup><sub>km</sub></sup></td>
+            <td align="center">7 189 <sup><sub>m</sub></sup></td>
+            <td align="center">2d 7h 56m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">May 2018</td>
+            <td align="center">44</td>
+            <td align="center">1 809 <sup><sub>km</sub></sup></td>
+            <td align="center">5 865 <sup><sub>m</sub></sup></td>
+            <td align="center">2d 15h 11m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">April 2018</td>
+            <td align="center">44</td>
+            <td align="center">1 674 <sup><sub>km</sub></sup></td>
+            <td align="center">7 618 <sup><sub>m</sub></sup></td>
+            <td align="center">2d 6h 59m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">March 2018</td>
+            <td align="center">33</td>
+            <td align="center">1 193 <sup><sub>km</sub></sup></td>
+            <td align="center">8 585 <sup><sub>m</sub></sup></td>
+            <td align="center">1d 16h 30m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">February 2018</td>
+            <td align="center">28</td>
+            <td align="center">1 080 <sup><sub>km</sub></sup></td>
+            <td align="center">5 278 <sup><sub>m</sub></sup></td>
+            <td align="center">1d 12h 47m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">January 2018</td>
+            <td align="center">31</td>
+            <td align="center">1 054 <sup><sub>km</sub></sup></td>
+            <td align="center">5 974 <sup><sub>m</sub></sup></td>
+            <td align="center">1d 12h 5m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">December 2017</td>
+            <td align="center">28</td>
+            <td align="center">852 <sup><sub>km</sub></sup></td>
+            <td align="center">5 511 <sup><sub>m</sub></sup></td>
+            <td align="center">1d 8h 8m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">November 2017</td>
+            <td align="center">29</td>
+            <td align="center">861 <sup><sub>km</sub></sup></td>
+            <td align="center">1 984 <sup><sub>m</sub></sup></td>
+            <td align="center">1d 6h 42m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">October 2017</td>
+            <td align="center">22</td>
+            <td align="center">743 <sup><sub>km</sub></sup></td>
+            <td align="center">1 992 <sup><sub>m</sub></sup></td>
+            <td align="center">1d 2h 20m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">September 2017</td>
+            <td align="center">33</td>
+            <td align="center">1 169 <sup><sub>km</sub></sup></td>
+            <td align="center">2 102 <sup><sub>m</sub></sup></td>
+            <td align="center">1d 15h 58m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">August 2017</td>
+            <td align="center">26</td>
+            <td align="center">1 050 <sup><sub>km</sub></sup></td>
+            <td align="center">4 237 <sup><sub>m</sub></sup></td>
+            <td align="center">1d 12h 8m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">July 2017</td>
+            <td align="center">38</td>
+            <td align="center">1 319 <sup><sub>km</sub></sup></td>
+            <td align="center">4 105 <sup><sub>m</sub></sup></td>
+            <td align="center">1d 20h 46m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">June 2017</td>
+            <td align="center">30</td>
+            <td align="center">1 089 <sup><sub>km</sub></sup></td>
+            <td align="center">3 372 <sup><sub>m</sub></sup></td>
+            <td align="center">1d 11h 49m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">May 2017</td>
+            <td align="center">34</td>
+            <td align="center">1 393 <sup><sub>km</sub></sup></td>
+            <td align="center">4 179 <sup><sub>m</sub></sup></td>
+            <td align="center">2d 1h 36m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">April 2017</td>
+            <td align="center">39</td>
+            <td align="center">1 449 <sup><sub>km</sub></sup></td>
+            <td align="center">6 824 <sup><sub>m</sub></sup></td>
+            <td align="center">2d 2h 58m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">March 2017</td>
+            <td align="center">26</td>
+            <td align="center">902 <sup><sub>km</sub></sup></td>
+            <td align="center">2 142 <sup><sub>m</sub></sup></td>
+            <td align="center">1d 8h 57m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">February 2017</td>
+            <td align="center">20</td>
+            <td align="center">783 <sup><sub>km</sub></sup></td>
+            <td align="center">861 <sup><sub>m</sub></sup></td>
+            <td align="center">22h 57m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">January 2017</td>
+            <td align="center">22</td>
+            <td align="center">578 <sup><sub>km</sub></sup></td>
+            <td align="center">237 <sup><sub>m</sub></sup></td>
+            <td align="center">14h 44m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">December 2016</td>
+            <td align="center">20</td>
+            <td align="center">459 <sup><sub>km</sub></sup></td>
+            <td align="center">649 <sup><sub>m</sub></sup></td>
+            <td align="center">16h 17m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">November 2016</td>
+            <td align="center">17</td>
+            <td align="center">244 <sup><sub>km</sub></sup></td>
+            <td align="center">447 <sup><sub>m</sub></sup></td>
+            <td align="center">9h 59m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">October 2016</td>
+            <td align="center">9</td>
+            <td align="center">278 <sup><sub>km</sub></sup></td>
+            <td align="center">584 <sup><sub>m</sub></sup></td>
+            <td align="center">11h 32m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">September 2016</td>
+            <td align="center">6</td>
+            <td align="center">192 <sup><sub>km</sub></sup></td>
+            <td align="center">582 <sup><sub>m</sub></sup></td>
+            <td align="center">8h 25m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">August 2016</td>
+            <td align="center">11</td>
+            <td align="center">475 <sup><sub>km</sub></sup></td>
+            <td align="center">2 822 <sup><sub>m</sub></sup></td>
+            <td align="center">17h 13m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">July 2016</td>
+            <td align="center">19</td>
+            <td align="center">1 141 <sup><sub>km</sub></sup></td>
+            <td align="center">7 022 <sup><sub>m</sub></sup></td>
+            <td align="center">1d 18h 27m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">June 2016</td>
+            <td align="center">20</td>
+            <td align="center">1 030 <sup><sub>km</sub></sup></td>
+            <td align="center">3 726 <sup><sub>m</sub></sup></td>
+            <td align="center">1d 13h 23m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">May 2016</td>
+            <td align="center">26</td>
+            <td align="center">949 <sup><sub>km</sub></sup></td>
+            <td align="center">1 719 <sup><sub>m</sub></sup></td>
+            <td align="center">1d 7h 11m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">April 2016</td>
+            <td align="center">9</td>
+            <td align="center">472 <sup><sub>km</sub></sup></td>
+            <td align="center">1 181 <sup><sub>m</sub></sup></td>
+            <td align="center">16h 25m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">March 2016</td>
+            <td align="center">18</td>
+            <td align="center">597 <sup><sub>km</sub></sup></td>
+            <td align="center">1 671 <sup><sub>m</sub></sup></td>
+            <td align="center">20h 40m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">February 2016</td>
+            <td align="center">22</td>
+            <td align="center">330 <sup><sub>km</sub></sup></td>
+            <td align="center">172 <sup><sub>m</sub></sup></td>
+            <td align="center">11h 36m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">January 2016</td>
+            <td align="center">31</td>
+            <td align="center">620 <sup><sub>km</sub></sup></td>
+            <td align="center">81 <sup><sub>m</sub></sup></td>
+            <td align="center">18h 42m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">January 2015</td>
+            <td align="center">2</td>
+            <td align="center">52 <sup><sub>km</sub></sup></td>
+            <td align="center">56 <sup><sub>m</sub></sup></td>
+            <td align="center">1h 43m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">November 2014</td>
+            <td align="center">1</td>
+            <td align="center">73 <sup><sub>km</sub></sup></td>
+            <td align="center">184 <sup><sub>m</sub></sup></td>
+            <td align="center">2h 44m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">October 2014</td>
+            <td align="center">2</td>
+            <td align="center">130 <sup><sub>km</sub></sup></td>
+            <td align="center">283 <sup><sub>m</sub></sup></td>
+            <td align="center">4h 52m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">September 2014</td>
+            <td align="center">12</td>
+            <td align="center">522 <sup><sub>km</sub></sup></td>
+            <td align="center">800 <sup><sub>m</sub></sup></td>
+            <td align="center">19h 37m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">August 2014</td>
+            <td align="center">13</td>
+            <td align="center">513 <sup><sub>km</sub></sup></td>
+            <td align="center">824 <sup><sub>m</sub></sup></td>
+            <td align="center">19h 4m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">August 2013</td>
+            <td align="center">1</td>
+            <td align="center">55 <sup><sub>km</sub></sup></td>
+            <td align="center">383 <sup><sub>m</sub></sup></td>
+            <td align="center">2h</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">July 2013</td>
+            <td align="center">11</td>
+            <td align="center">523 <sup><sub>km</sub></sup></td>
+            <td align="center">1 638 <sup><sub>m</sub></sup></td>
+            <td align="center">19h 42m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">June 2013</td>
+            <td align="center">1</td>
+            <td align="center">52 <sup><sub>km</sub></sup></td>
+            <td align="center">92 <sup><sub>m</sub></sup></td>
+            <td align="center">2h</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">January 2013</td>
+            <td align="center">1</td>
+            <td align="center">40 <sup><sub>km</sub></sup></td>
+            <td align="center">175 <sup><sub>m</sub></sup></td>
+            <td align="center">1h 31m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">December 2012</td>
+            <td align="center">2</td>
+            <td align="center">91 <sup><sub>km</sub></sup></td>
+            <td align="center">222 <sup><sub>m</sub></sup></td>
+            <td align="center">4h 55m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">November 2012</td>
+            <td align="center">2</td>
+            <td align="center">104 <sup><sub>km</sub></sup></td>
+            <td align="center">455 <sup><sub>m</sub></sup></td>
+            <td align="center">4h 51m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">October 2012</td>
+            <td align="center">4</td>
+            <td align="center">164 <sup><sub>km</sub></sup></td>
+            <td align="center">288 <sup><sub>m</sub></sup></td>
+            <td align="center">7h 28m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">September 2012</td>
+            <td align="center">9</td>
+            <td align="center">549 <sup><sub>km</sub></sup></td>
+            <td align="center">1 688 <sup><sub>m</sub></sup></td>
+            <td align="center">22h 41m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">August 2012</td>
+            <td align="center">14</td>
+            <td align="center">761 <sup><sub>km</sub></sup></td>
+            <td align="center">1 903 <sup><sub>m</sub></sup></td>
+            <td align="center">1d 5h 51m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">July 2012</td>
+            <td align="center">10</td>
+            <td align="center">555 <sup><sub>km</sub></sup></td>
+            <td align="center">3 611 <sup><sub>m</sub></sup></td>
+            <td align="center">22h 25m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">June 2012</td>
+            <td align="center">13</td>
+            <td align="center">594 <sup><sub>km</sub></sup></td>
+            <td align="center">1 521 <sup><sub>m</sub></sup></td>
+            <td align="center">21h 49m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">May 2012</td>
+            <td align="center">11</td>
+            <td align="center">691 <sup><sub>km</sub></sup></td>
+            <td align="center">1 700 <sup><sub>m</sub></sup></td>
+            <td align="center">1d 2h 8m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">April 2012</td>
+            <td align="center">13</td>
+            <td align="center">654 <sup><sub>km</sub></sup></td>
+            <td align="center">1 636 <sup><sub>m</sub></sup></td>
+            <td align="center">1d 38m</td>
+            <td align="center">0</td>
+        </tr>
+            <tr>
+            <td align="center">March 2012</td>
+            <td align="center">16</td>
+            <td align="center">667 <sup><sub>km</sub></sup></td>
+            <td align="center">1 381 <sup><sub>m</sub></sup></td>
+            <td align="center">1d 55m</td>
+            <td align="center">0</td>
+        </tr>
+        <tr>
+        <td align="center"><b>Virtual/Indoor</b></td>
+        <td align="center"><b>1928</td>
+        <td align="center"><b>72 761 <sup><sub>km</sub></sup></b></td>
+        <td align="center"><b>413 384 <sup><sub>m</sub></sup></b></td>
+        <td align="center"><b>2mos 3w 2d 23h 41m</b></td>
+        <td align="center"></td>
+    </tr>
+    <tr>
+        <td align="center"><b>Outside</b></td>
+        <td align="center"><b>2049</td>
+        <td align="center"><b>125 562 <sup><sub>km</sub></sup></b></td>
+        <td align="center"><b>478 894 <sup><sub>m</sub></sup></b></td>
+        <td align="center"><b>6mos 1w 1d 3h 10m</b></td>
+        <td align="center"></td>
+    </tr>
+    <tr>
+        <td align="center"><b>Total</b></td>
+        <td align="center"><b>3977</td>
+        <td align="center"><b>198 322 <sup><sub>km</sub></sup></b></td>
+        <td align="center"><b>892 278 <sup><sub>m</sub></sup></b></td>
+        <td align="center"><b>9mos 4d 2h 51m</b></td>
+        <td align="center"></td>
+    </tr>
+    </tbody>
+</table>
+
+## Activity intensity
+
+<img src="build/charts/chart-activities-heatmap_1000_180.svg" alt="Heatmap"/>
+
+## Stats per weekday
+
+<img src="build/charts/chart-weekday-stats_1000_300.svg" alt="Weekday stats"/>
+
+<table>
+    <thead>
+    <tr>
+        <th></th>
+        <th># of rides</th>
+        <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/distance.svg" width="30" alt="distance" title="distance"/></th>
+        <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/elevation.svg" width="30" alt="elevation" title="elevation"/></th>
+        <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/time.svg" width="30" alt="time" title="time"/></th>
+        <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/average-speed.svg" width="30" alt="average speed" title="average speed"/></th>
+    </tr>
+    </thead>
+    <tbody>
+            <tr>
+            <td align="center">Monday</td>
+            <td align="center">386</td>
+            <td align="center">
+                                    44 <sup><sub>km avg</sub></sup> /
+                    16 960 <sup><sub>km total</sub></sup>
+                            </td>
+            <td align="center">79 594 <sup><sub>m</sub></sup></td>
+            <td align="center">3w 21h 8m</td>
+            <td align="center">32.3 <sup><sub>km/h</sub></sup></td>
+        </tr>
+            <tr>
+            <td align="center">Tuesday</td>
+            <td align="center">641</td>
+            <td align="center">
+                                    32 <sup><sub>km avg</sub></sup> /
+                    20 210 <sup><sub>km total</sub></sup>
+                            </td>
+            <td align="center">107 512 <sup><sub>m</sub></sup></td>
+            <td align="center">3w 3d 21h 25m</td>
+            <td align="center">33.8 <sup><sub>km/h</sub></sup></td>
+        </tr>
+            <tr>
+            <td align="center">Wednesday</td>
+            <td align="center">492</td>
+            <td align="center">
+                                    56 <sup><sub>km avg</sub></sup> /
+                    27 346 <sup><sub>km total</sub></sup>
+                            </td>
+            <td align="center">106 733 <sup><sub>m</sub></sup></td>
+            <td align="center">1mo 4d 9h 6m</td>
+            <td align="center">35.2 <sup><sub>km/h</sub></sup></td>
+        </tr>
+            <tr>
+            <td align="center">Thursday</td>
+            <td align="center">663</td>
+            <td align="center">
+                                    30 <sup><sub>km avg</sub></sup> /
+                    20 057 <sup><sub>km total</sub></sup>
+                            </td>
+            <td align="center">109 353 <sup><sub>m</sub></sup></td>
+            <td align="center">3w 3d 23h 29m</td>
+            <td align="center">33.5 <sup><sub>km/h</sub></sup></td>
+        </tr>
+            <tr>
+            <td align="center">Friday</td>
+            <td align="center">376</td>
+            <td align="center">
+                                    42 <sup><sub>km avg</sub></sup> /
+                    15 843 <sup><sub>km total</sub></sup>
+                            </td>
+            <td align="center">75 371 <sup><sub>m</sub></sup></td>
+            <td align="center">2w 6d 19h 28m</td>
+            <td align="center">31.7 <sup><sub>km/h</sub></sup></td>
+        </tr>
+            <tr>
+            <td align="center">Saturday</td>
+            <td align="center">715</td>
+            <td align="center">
+                                    76 <sup><sub>km avg</sub></sup> /
+                    54 074 <sup><sub>km total</sub></sup>
+                            </td>
+            <td align="center">236 661 <sup><sub>m</sub></sup></td>
+            <td align="center">2mos 2w 3d 23h 43m</td>
+            <td align="center">30.5 <sup><sub>km/h</sub></sup></td>
+        </tr>
+            <tr>
+            <td align="center">Sunday</td>
+            <td align="center">704</td>
+            <td align="center">
+                                    62 <sup><sub>km avg</sub></sup> /
+                    43 832 <sup><sub>km total</sub></sup>
+                            </td>
+            <td align="center">177 056 <sup><sub>m</sub></sup></td>
+            <td align="center">2mos 1d 4h 29m</td>
+            <td align="center">31.9 <sup><sub>km/h</sub></sup></td>
+        </tr>
+        </tbody>
+</table>
+
+
+## Daytime stats
+
+<img src="build/charts/chart-daytime-stats.svg" alt="Daytime stats"/>
+
+<table>
+    <thead>
+    <tr>
+        <th></th>
+        <th># of rides</th>
+        <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/distance.svg" width="30" alt="distance" title="distance"/></th>
+        <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/elevation.svg" width="30" alt="elevation" title="elevation"/></th>
+        <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/time.svg" width="30" alt="time" title="time"/></th>
+        <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/average-speed.svg" width="30" alt="average speed" title="average speed"/></th>
+    </tr>
+    </thead>
+    <tbody>
+            <tr>
+            <td align="center">Morning (6h - 12h)</td>
+            <td align="center">1258</td>
+            <td align="center">
+                                    84 <sup><sub>km avg</sub></sup> /
+                    105 049 <sup><sub>km total</sub></sup>
+                            </td>
+            <td align="center">474 921 <sup><sub>m</sub></sup></td>
+            <td align="center">5mos 1d 3h 19m</td>
+            <td align="center">31.0 <sup><sub>km/h</sub></sup></td>
+        </tr>
+            <tr>
+            <td align="center">Afternoon (12h - 17h)</td>
+            <td align="center">582</td>
+            <td align="center">
+                                    37 <sup><sub>km avg</sub></sup> /
+                    21 681 <sup><sub>km total</sub></sup>
+                            </td>
+            <td align="center">87 022 <sup><sub>m</sub></sup></td>
+            <td align="center">1mo 2d 23h 39m</td>
+            <td align="center">29.2 <sup><sub>km/h</sub></sup></td>
+        </tr>
+            <tr>
+            <td align="center">Evening (17h - 23h)</td>
+            <td align="center">2135</td>
+            <td align="center">
+                                    33 <sup><sub>km avg</sub></sup> /
+                    71 497 <sup><sub>km total</sub></sup>
+                            </td>
+            <td align="center">329 786 <sup><sub>m</sub></sup></td>
+            <td align="center">2mos 3w 6d 20h 19m</td>
+            <td align="center">35.5 <sup><sub>km/h</sub></sup></td>
+        </tr>
+            <tr>
+            <td align="center">Night (23h - 6h)</td>
+            <td align="center">2</td>
+            <td align="center">
+                                    48 <sup><sub>km avg</sub></sup> /
+                    96 <sup><sub>km total</sub></sup>
+                            </td>
+            <td align="center">549 <sup><sub>m</sub></sup></td>
+            <td align="center">3h 33m</td>
+            <td align="center">26.9 <sup><sub>km/h</sub></sup></td>
+        </tr>
+        </tbody>
+</table>
+
+## Stats per bike
+
+<table>
+    <thead>
+    <tr>
+        <th></th>
+        <th># of rides</th>
+        <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/distance.svg" width="30" alt="distance" title="distance"/></th>
+        <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/elevation.svg" width="30" alt="elevation" title="elevation"/></th>
+        <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/time.svg" width="30" alt="time" title="time"/></th>
+        <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/average-speed.svg" width="30" alt="average speed" title="average speed"/></th>
+    </tr>
+    </thead>
+    <tbody>
+            <tr>
+            <td align="center">Ridley</td>
+            <td align="center">2652</td>
+            <td align="center">
+                                    40 <sup><sub>km avg</sub></sup> /
+                    106 643 <sup><sub>km total</sub></sup>
+                            </td>
+            <td align="center">512 071 <sup><sub>m</sub></sup></td>
+            <td align="center">4mos 3w 1d 20h 14m</td>
+            <td align="center">33.0 <sup><sub>km/h</sub></sup></td>
+        </tr>
+            <tr>
+            <td align="center">Ridley Fenix SLX Disc</td>
+            <td align="center">748</td>
+            <td align="center">
+                                    89 <sup><sub>km avg</sub></sup> /
+                    66 887 <sup><sub>km total</sub></sup>
+                            </td>
+            <td align="center">278 022 <sup><sub>m</sub></sup></td>
+            <td align="center">3mos 4d 21h 36m</td>
+            <td align="center">31.3 <sup><sub>km/h</sub></sup></td>
+        </tr>
+            <tr>
+            <td align="center">Tacx Neo Bike Smart</td>
+            <td align="center">406</td>
+            <td align="center">
+                                    34 <sup><sub>km avg</sub></sup> /
+                    13 958 <sup><sub>km total</sub></sup>
+                            </td>
+            <td align="center">62 183 <sup><sub>m</sub></sup></td>
+            <td align="center">2w 1d 12h 47m</td>
+            <td align="center">37.4 <sup><sub>km/h</sub></sup></td>
+        </tr>
+            <tr>
+            <td align="center">Canyon Grizl CF SLX 8 Di2</td>
+            <td align="center">88</td>
+            <td align="center">
+                                    76 <sup><sub>km avg</sub></sup> /
+                    6 661 <sup><sub>km total</sub></sup>
+                            </td>
+            <td align="center">27 537 <sup><sub>m</sub></sup></td>
+            <td align="center">1w 3d 3h 25m</td>
+            <td align="center">27.4 <sup><sub>km/h</sub></sup></td>
+        </tr>
+            <tr>
+            <td align="center">Scatoo</td>
+            <td align="center">1</td>
+            <td align="center">
+                                    67 <sup><sub>km avg</sub></sup> /
+                    67 <sup><sub>km total</sub></sup>
+                            </td>
+            <td align="center">142 <sup><sub>m</sub></sup></td>
+            <td align="center">2h 57m</td>
+            <td align="center">22.6 <sup><sub>km/h</sub></sup></td>
+        </tr>
+            <tr>
+            <td align="center">Other</td>
+            <td align="center">82</td>
+            <td align="center">
+                                    50 <sup><sub>km avg</sub></sup> /
+                    4 118 <sup><sub>km total</sub></sup>
+                            </td>
+            <td align="center">12 322 <sup><sub>m</sub></sup></td>
+            <td align="center">6d 13h 49m</td>
+            <td align="center">26.1 <sup><sub>km/h</sub></sup></td>
+        </tr>
+        </tbody>
+</table>
+
+## Best power outputs over time
+
+<table>
+    <tr>
+        <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/time.svg" width="30" alt="time" title="time"/></th>
+        <th align="center" colspan="2"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/average-watt.svg" width="30" alt="average watts" title="average watts"/></th>
+        <th></th>
+    </tr>
+                                <tr>
+            <td align="center">5 s</td>
+            <td align="center">1394 <sup><sub>w</sub></sup></td>
+            <td align="center">18.34 <sup><sub>w/kg</sub></sup></td>
+            <td>
+                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="WTC Ruyslee B 😎" title="WTC Ruyslee B 😎"/>
+<a href="https://www.strava.com/activities/2579391340" title="Kcal: 1072 | Gear: None ">WTC Ruyslee B 😎</a>
+            </td>
+        </tr>
+                            <tr>
+            <td align="center">10 s</td>
+            <td align="center">1315 <sup><sub>w</sub></sup></td>
+            <td align="center">17.3 <sup><sub>w/kg</sub></sup></td>
+            <td>
+                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="WTC Kruiskerke - Zwalm ☀️😎" title="WTC Kruiskerke - Zwalm ☀️😎"/>
+<a href="https://www.strava.com/activities/2649616443" title="Kcal: 2352 | Gear: None ">WTC Kruiskerke - Zwalm ☀️😎</a>
+            </td>
+        </tr>
+                            <tr>
+            <td align="center">30 s</td>
+            <td align="center">990 <sup><sub>w</sub></sup></td>
+            <td align="center">13.03 <sup><sub>w/kg</sub></sup></td>
+            <td>
+                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="3R 100 Steady Ride [~2.5w/kg avg] (C)" title="3R 100 Steady Ride [~2.5w/kg avg] (C)"/>
+<a href="https://www.strava.com/activities/5260440072" title="Kcal: 2234 | Gear: None ">3R 100 Steady Ride [~2.5w/kg avg] (C)</a>
+            </td>
+        </tr>
+                            <tr>
+            <td align="center">1 m</td>
+            <td align="center">692 <sup><sub>w</sub></sup></td>
+            <td align="center">9.11 <sup><sub>w/kg</sub></sup></td>
+            <td>
+                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Pijlen verschieten op de Vlaamse Pijl 🎯🌤️" title="Pijlen verschieten op de Vlaamse Pijl 🎯🌤️"/>
+<a href="https://www.strava.com/activities/8696976180" title="Kcal: 6714 | Gear: None ">Pijlen verschieten op de Vlaamse Pijl 🎯🌤️</a>
+            </td>
+        </tr>
+                            <tr>
+            <td align="center">5 m</td>
+            <td align="center">440 <sup><sub>w</sub></sup></td>
+            <td align="center">5.79 <sup><sub>w/kg</sub></sup></td>
+            <td>
+                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="EVO CC Altibajos Group Ride with hilly after party [3-4.0 w/kg avg] (B)" title="EVO CC Altibajos Group Ride with hilly after party [3-4.0 w/kg avg] (B)"/>
+<a href="https://www.strava.com/activities/4958071401" title="Kcal: 1261 | Gear: None ">EVO CC Altibajos Group Ride with hilly after party [3-4.0 w/kg avg] (B)</a>
+            </td>
+        </tr>
+                            <tr>
+            <td align="center">8 m</td>
+            <td align="center">412 <sup><sub>w</sub></sup></td>
+            <td align="center">5.42 <sup><sub>w/kg</sub></sup></td>
+            <td>
+                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride.svg" width="12" alt="Wahoo RGT - Moonriders Heroica 3.1 - Cap Formentor" title="Wahoo RGT - Moonriders Heroica 3.1 - Cap Formentor"/>
+<a href="https://www.strava.com/activities/7797623119" title="Kcal: 812 | Gear: None ">Wahoo RGT - Moonriders Heroica 3.1 - Cap Formentor</a>
+            </td>
+        </tr>
+                            <tr>
+            <td align="center">20 m</td>
+            <td align="center">382 <sup><sub>w</sub></sup></td>
+            <td align="center">5.03 <sup><sub>w/kg</sub></sup></td>
+            <td>
+                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride.svg" width="12" alt="Wahoo RGT - Moonriders Heroica 3.9 - Stelvio" title="Wahoo RGT - Moonriders Heroica 3.9 - Stelvio"/>
+<a href="https://www.strava.com/activities/8083695928" title="Kcal: 1149 | Gear: None ">Wahoo RGT - Moonriders Heroica 3.9 - Stelvio</a>
+            </td>
+        </tr>
+                            <tr>
+            <td align="center">1 h</td>
+            <td align="center">331 <sup><sub>w</sub></sup></td>
+            <td align="center">4.36 <sup><sub>w/kg</sub></sup></td>
+            <td>
+                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Zwift Racing League | WTRL - Men&#039;s/Mixed EMEA E2 DIVISION 1 (A)" title="Zwift Racing League | WTRL - Men&#039;s/Mixed EMEA E2 DIVISION 1 (A)"/>
+<a href="https://www.strava.com/activities/4798103822" title="Kcal: 1188 | Gear: None ">Zwift Racing League | WTRL - Men&#039;s/Mixed EMEA E2 DIVISION 1 (A)</a>
+            </td>
+        </tr>
+    </table>
+
+## Eddington chart
+
+> The Eddington number in the context of cycling is defined as the maximum number E such that the cyclist has cycled at least E km on at least E days.
+>
+> For example, an Eddington number of 70 would imply that the cyclist has cycled at least 70 km in a day on at least 70 occasions.
+> Achieving a high Eddington number is difficult, since moving from, say, 70 to 75 will (probably) require more than five new long-distance rides, since any rides shorter than 75 km will no longer be included in the reckoning.
+
+<img src="build/charts/chart-activities-eddington_1000_300.svg" alt="Eddington"/>
+
+<table align="center">
+    <tr>
+        <th align="center">Eddington</th>
+            <th align="center">168 <sup><sub>km</sub></sup></th>
+            <th align="center">169 <sup><sub>km</sub></sup></th>
+            <th align="center">170 <sup><sub>km</sub></sup></th>
+            <th align="center">171 <sup><sub>km</sub></sup></th>
+            <th align="center">172 <sup><sub>km</sub></sup></th>
+            <th align="center">173 <sup><sub>km</sub></sup></th>
+            <th align="center">174 <sup><sub>km</sub></sup></th>
+            <th align="center">175 <sup><sub>km</sub></sup></th>
+            <th align="center">176 <sup><sub>km</sub></sup></th>
+            <th align="center">177 <sup><sub>km</sub></sup></th>
+            <th align="center">178 <sup><sub>km</sub></sup></th>
+        </tr>
+    <tr>
+        <td align="center">Days needed</td>
+            <td align="center">3</td>
+            <td align="center">4</td>
+            <td align="center">6</td>
+            <td align="center">7</td>
+            <td align="center">10</td>
+            <td align="center">14</td>
+            <td align="center">18</td>
+            <td align="center">19</td>
+            <td align="center">26</td>
+            <td align="center">28</td>
+            <td align="center">31</td>
+        </tr>
+</table>
+
+## Yearly distances
+
+<img src="build/charts/chart-yearly-distance-stats.svg" alt="Yearly distance stats"/>
+
+<table>
+    <thead>
+    <tr>
+        <th>Year</th>
+        <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/distance.svg" width="30" alt="distance" title="distance"/></th>
+        <th>Δ prev year</th>
+        <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/elevation.svg" width="30" alt="elevation" title="elevation"/></th>
+        <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/time.svg" width="30" alt="time" title="time"/></th>
+    </tr>
+    </thead>
+    <tbody>
+            <tr>
+            <td align="center">2024</td>
+            <td align="center">5 338 <sup><sub>km</sub></sup></td>
+            <td align="center">
+                                    -35 833 <sup><sub>km</sub></sup>
+                            </td>
+            <td align="center">24 354 <sup><sub>m</sub></sup></td>
+            <td align="center">5d 23h 8m</td>
+        </tr>
+            <tr>
+            <td align="center">2023</td>
+            <td align="center">41 171 <sup><sub>km</sub></sup></td>
+            <td align="center">
+                                    8 592 <sup><sub>km</sub></sup>
+                            </td>
+            <td align="center">207 968 <sup><sub>m</sub></sup></td>
+            <td align="center">1mo 3w 1d 17h 54m</td>
+        </tr>
+            <tr>
+            <td align="center">2022</td>
+            <td align="center">32 579 <sup><sub>km</sub></sup></td>
+            <td align="center">
+                                    313 <sup><sub>km</sub></sup>
+                            </td>
+            <td align="center">154 844 <sup><sub>m</sub></sup></td>
+            <td align="center">1mo 1w 5d 4h 42m</td>
+        </tr>
+            <tr>
+            <td align="center">2021</td>
+            <td align="center">32 266 <sup><sub>km</sub></sup></td>
+            <td align="center">
+                                    5 693 <sup><sub>km</sub></sup>
+                            </td>
+            <td align="center">130 152 <sup><sub>m</sub></sup></td>
+            <td align="center">1mo 1w 3d 10m</td>
+        </tr>
+            <tr>
+            <td align="center">2020</td>
+            <td align="center">26 573 <sup><sub>km</sub></sup></td>
+            <td align="center">
+                                    8 691 <sup><sub>km</sub></sup>
+                            </td>
+            <td align="center">130 614 <sup><sub>m</sub></sup></td>
+            <td align="center">1mo 5d 14h 41m</td>
+        </tr>
+            <tr>
+            <td align="center">2019</td>
+            <td align="center">17 882 <sup><sub>km</sub></sup></td>
+            <td align="center">
+                                    1 133 <sup><sub>km</sub></sup>
+                            </td>
+            <td align="center">97 978 <sup><sub>m</sub></sup></td>
+            <td align="center">3w 4d 6h 22m</td>
+        </tr>
+            <tr>
+            <td align="center">2018</td>
+            <td align="center">16 749 <sup><sub>km</sub></sup></td>
+            <td align="center">
+                                    4 561 <sup><sub>km</sub></sup>
+                            </td>
+            <td align="center">69 324 <sup><sub>m</sub></sup></td>
+            <td align="center">3w 2d 21h 44m</td>
+        </tr>
+            <tr>
+            <td align="center">2017</td>
+            <td align="center">12 188 <sup><sub>km</sub></sup></td>
+            <td align="center">
+                                    5 402 <sup><sub>km</sub></sup>
+                            </td>
+            <td align="center">37 546 <sup><sub>m</sub></sup></td>
+            <td align="center">2w 3d 9h 8m</td>
+        </tr>
+            <tr>
+            <td align="center">2016</td>
+            <td align="center">6 786 <sup><sub>km</sub></sup></td>
+            <td align="center">
+                                    6 735 <sup><sub>km</sub></sup>
+                            </td>
+            <td align="center">20 656 <sup><sub>m</sub></sup></td>
+            <td align="center">1w 3d 1h 56m</td>
+        </tr>
+            <tr>
+            <td align="center">2015</td>
+            <td align="center">52 <sup><sub>km</sub></sup></td>
+            <td align="center">
+                                    -1 186 <sup><sub>km</sub></sup>
+                            </td>
+            <td align="center">56 <sup><sub>m</sub></sup></td>
+            <td align="center">1h 43m</td>
+        </tr>
+            <tr>
+            <td align="center">2014</td>
+            <td align="center">1 238 <sup><sub>km</sub></sup></td>
+            <td align="center">
+                                    568 <sup><sub>km</sub></sup>
+                            </td>
+            <td align="center">2 091 <sup><sub>m</sub></sup></td>
+            <td align="center">1d 22h 17m</td>
+        </tr>
+            <tr>
+            <td align="center">2013</td>
+            <td align="center">670 <sup><sub>km</sub></sup></td>
+            <td align="center">
+                                    -4 159 <sup><sub>km</sub></sup>
+                            </td>
+            <td align="center">2 288 <sup><sub>m</sub></sup></td>
+            <td align="center">1d 1h 15m</td>
+        </tr>
+            <tr>
+            <td align="center">2012</td>
+            <td align="center">4 830 <sup><sub>km</sub></sup></td>
+            <td align="center">
+                            </td>
+            <td align="center">14 406 <sup><sub>m</sub></sup></td>
+            <td align="center">1w 21h 46m</td>
+        </tr>
+        </tbody>
+</table>
+
+## Distance breakdown
+
+<table>
+    <thead>
+    <tr>
+        <th></th>
+        <th># of rides</th>
+        <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/distance.svg" width="30" alt="distance" title="distance"/></th>
+        <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/elevation.svg" width="30" alt="elevation" title="elevation"/></th>
+        <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/time.svg" width="30" alt="time" title="time"/></th>
+        <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/average-speed.svg" width="30" alt="average speed" title="average speed"/></th>
+    </tr>
+    </thead>
+    <tbody>
+            <tr>
+            <td align="center">0 - 30 km</td>
+            <td align="center">1642</td>
+            <td align="center">
+                                     10 <sup><sub>km avg</sub></sup> /
+                     15 669 <sup><sub>km total</sub></sup>
+                            </td>
+            <td align="center">90 518 <sup><sub>m</sub></sup></td>
+            <td align="center">2w 6d 20h 18m</td>
+            <td align="center">31.3 <sup><sub>km/h</sub></sup></td>
+        </tr>
+            <tr>
+            <td align="center">30 - 60 km</td>
+            <td align="center">1134</td>
+            <td align="center">
+                                     44 <sup><sub>km avg</sub></sup> /
+                     50 386 <sup><sub>km total</sub></sup>
+                            </td>
+            <td align="center">237 518 <sup><sub>m</sub></sup></td>
+            <td align="center">2mos 1w 15h 9m</td>
+            <td align="center">33.0 <sup><sub>km/h</sub></sup></td>
+        </tr>
+            <tr>
+            <td align="center">60 - 90 km</td>
+            <td align="center">353</td>
+            <td align="center">
+                                     69 <sup><sub>km avg</sub></sup> /
+                     24 466 <sup><sub>km total</sub></sup>
+                            </td>
+            <td align="center">103 502 <sup><sub>m</sub></sup></td>
+            <td align="center">1mo 6d 20h 11m</td>
+            <td align="center">29.3 <sup><sub>km/h</sub></sup></td>
+        </tr>
+            <tr>
+            <td align="center">90 - 120 km</td>
+            <td align="center">485</td>
+            <td align="center">
+                                     106 <sup><sub>km avg</sub></sup> /
+                     51 253 <sup><sub>km total</sub></sup>
+                            </td>
+            <td align="center">191 779 <sup><sub>m</sub></sup></td>
+            <td align="center">2mos 1w 3h 47m</td>
+            <td align="center">33.8 <sup><sub>km/h</sub></sup></td>
+        </tr>
+            <tr>
+            <td align="center">120 - 150 km</td>
+            <td align="center">195</td>
+            <td align="center">
+                                     130 <sup><sub>km avg</sub></sup> /
+                     25 256 <sup><sub>km total</sub></sup>
+                            </td>
+            <td align="center">107 333 <sup><sub>m</sub></sup></td>
+            <td align="center">1mo 4d 14h 22m</td>
+            <td align="center">32.3 <sup><sub>km/h</sub></sup></td>
+        </tr>
+            <tr>
+            <td align="center">150 - 180 km</td>
+            <td align="center">75</td>
+            <td align="center">
+                                     162 <sup><sub>km avg</sub></sup> /
+                     12 139 <sup><sub>km total</sub></sup>
+                            </td>
+            <td align="center">68 254 <sup><sub>m</sub></sup></td>
+            <td align="center">2w 1d 19h 55m</td>
+            <td align="center">31.9 <sup><sub>km/h</sub></sup></td>
+        </tr>
+            <tr>
+            <td align="center">180 - 210 km</td>
+            <td align="center">52</td>
+            <td align="center">
+                                     203 <sup><sub>km avg</sub></sup> /
+                     10 542 <sup><sub>km total</sub></sup>
+                            </td>
+            <td align="center">59 450 <sup><sub>m</sub></sup></td>
+            <td align="center">2w 46m</td>
+            <td align="center">31.3 <sup><sub>km/h</sub></sup></td>
+        </tr>
+            <tr>
+            <td align="center">210 - 240 km</td>
+            <td align="center">30</td>
+            <td align="center">
+                                     219 <sup><sub>km avg</sub></sup> /
+                     6 585 <sup><sub>km total</sub></sup>
+                            </td>
+            <td align="center">24 389 <sup><sub>m</sub></sup></td>
+            <td align="center">1w 1d 12h 36m</td>
+            <td align="center">32.2 <sup><sub>km/h</sub></sup></td>
+        </tr>
+            <tr>
+            <td align="center">240 - 270 km</td>
+            <td align="center">7</td>
+            <td align="center">
+                                     249 <sup><sub>km avg</sub></sup> /
+                     1 744 <sup><sub>km total</sub></sup>
+                            </td>
+            <td align="center">6 523 <sup><sub>m</sub></sup></td>
+            <td align="center">2d 4h 48m</td>
+            <td align="center">33.0 <sup><sub>km/h</sub></sup></td>
+        </tr>
+            <tr>
+            <td align="center">270 - 300 km</td>
+            <td align="center">1</td>
+            <td align="center">
+                                     283 <sup><sub>km avg</sub></sup> /
+                     283 <sup><sub>km total</sub></sup>
+                            </td>
+            <td align="center">3 012 <sup><sub>m</sub></sup></td>
+            <td align="center">9h 51m</td>
+            <td align="center">28.7 <sup><sub>km/h</sub></sup></td>
+        </tr>
+        </tbody>
+</table>
+
+## Challenge consistency
+
+<table>
+    <thead>
+    <tr>
+        <th></th>
+                <th align="center">Feb 2024</th>
+                <th align="center">Jan 2024</th>
+                <th align="center">Dec 2023</th>
+                <th align="center">Nov 2023</th>
+                <th align="center">Oct 2023</th>
+                <th align="center">Sep 2023</th>
+                <th align="center">Aug 2023</th>
+                <th align="center">Jul 2023</th>
+                <th align="center">Jun 2023</th>
+                <th align="center">May 2023</th>
+                <th align="center">Apr 2023</th>
+                <th align="center">Mar 2023</th>
+                <th align="center">Feb 2023</th>
+                <th align="center">Jan 2023</th>
+                <th align="center">Dec 2022</th>
+                <th align="center">Nov 2022</th>
+                <th align="center">Oct 2022</th>
+                <th align="center">Sep 2022</th>
+                <th align="center">Aug 2022</th>
+                <th align="center">Jul 2022</th>
+                <th align="center">Jun 2022</th>
+                <th align="center">May 2022</th>
+                <th align="center">Apr 2022</th>
+                <th align="center">Mar 2022</th>
+                <th align="center">Feb 2022</th>
+                <th align="center">Jan 2022</th>
+                <th align="center">Dec 2021</th>
+                <th align="center">Nov 2021</th>
+                <th align="center">Oct 2021</th>
+                <th align="center">Sep 2021</th>
+                <th align="center">Aug 2021</th>
+                <th align="center">Jul 2021</th>
+                <th align="center">Jun 2021</th>
+                <th align="center">May 2021</th>
+                <th align="center">Apr 2021</th>
+                <th align="center">Mar 2021</th>
+                <th align="center">Feb 2021</th>
+                <th align="center">Jan 2021</th>
+                <th align="center">Dec 2020</th>
+                <th align="center">Nov 2020</th>
+                <th align="center">Oct 2020</th>
+                <th align="center">Sep 2020</th>
+                <th align="center">Aug 2020</th>
+                <th align="center">Jul 2020</th>
+                <th align="center">Jun 2020</th>
+                <th align="center">May 2020</th>
+                <th align="center">Apr 2020</th>
+                <th align="center">Mar 2020</th>
+                <th align="center">Feb 2020</th>
+                <th align="center">Jan 2020</th>
+                <th align="center">Dec 2019</th>
+                <th align="center">Nov 2019</th>
+                <th align="center">Oct 2019</th>
+                <th align="center">Sep 2019</th>
+                <th align="center">Aug 2019</th>
+                <th align="center">Jul 2019</th>
+                <th align="center">Jun 2019</th>
+                <th align="center">May 2019</th>
+                <th align="center">Apr 2019</th>
+                <th align="center">Mar 2019</th>
+                <th align="center">Feb 2019</th>
+                <th align="center">Jan 2019</th>
+                <th align="center">Dec 2018</th>
+                <th align="center">Nov 2018</th>
+                <th align="center">Oct 2018</th>
+                <th align="center">Sep 2018</th>
+                <th align="center">Aug 2018</th>
+                <th align="center">Jul 2018</th>
+                <th align="center">Jun 2018</th>
+                <th align="center">May 2018</th>
+                <th align="center">Apr 2018</th>
+                <th align="center">Mar 2018</th>
+                <th align="center">Feb 2018</th>
+                <th align="center">Jan 2018</th>
+                <th align="center">Dec 2017</th>
+                <th align="center">Nov 2017</th>
+                <th align="center">Oct 2017</th>
+                <th align="center">Sep 2017</th>
+                <th align="center">Aug 2017</th>
+                <th align="center">Jul 2017</th>
+                <th align="center">Jun 2017</th>
+                <th align="center">May 2017</th>
+                <th align="center">Apr 2017</th>
+                <th align="center">Mar 2017</th>
+                <th align="center">Feb 2017</th>
+                <th align="center">Jan 2017</th>
+                <th align="center">Dec 2016</th>
+                <th align="center">Nov 2016</th>
+                <th align="center">Oct 2016</th>
+                <th align="center">Sep 2016</th>
+                <th align="center">Aug 2016</th>
+                <th align="center">Jul 2016</th>
+                <th align="center">Jun 2016</th>
+                <th align="center">May 2016</th>
+                <th align="center">Apr 2016</th>
+                <th align="center">Mar 2016</th>
+                <th align="center">Feb 2016</th>
+                <th align="center">Jan 2016</th>
+                <th align="center">Dec 2015</th>
+                <th align="center">Nov 2015</th>
+                <th align="center">Oct 2015</th>
+                <th align="center">Sep 2015</th>
+                <th align="center">Aug 2015</th>
+                <th align="center">Jul 2015</th>
+                <th align="center">Jun 2015</th>
+                <th align="center">May 2015</th>
+                <th align="center">Apr 2015</th>
+                <th align="center">Mar 2015</th>
+                <th align="center">Feb 2015</th>
+                <th align="center">Jan 2015</th>
+                <th align="center">Dec 2014</th>
+                <th align="center">Nov 2014</th>
+                <th align="center">Oct 2014</th>
+                <th align="center">Sep 2014</th>
+                <th align="center">Aug 2014</th>
+                <th align="center">Jul 2014</th>
+                <th align="center">Jun 2014</th>
+                <th align="center">May 2014</th>
+                <th align="center">Apr 2014</th>
+                <th align="center">Mar 2014</th>
+                <th align="center">Feb 2014</th>
+                <th align="center">Jan 2014</th>
+                <th align="center">Dec 2013</th>
+                <th align="center">Nov 2013</th>
+                <th align="center">Oct 2013</th>
+                <th align="center">Sep 2013</th>
+                <th align="center">Aug 2013</th>
+                <th align="center">Jul 2013</th>
+                <th align="center">Jun 2013</th>
+                <th align="center">May 2013</th>
+                <th align="center">Apr 2013</th>
+                <th align="center">Mar 2013</th>
+                <th align="center">Feb 2013</th>
+                <th align="center">Jan 2013</th>
+                <th align="center">Dec 2012</th>
+                <th align="center">Nov 2012</th>
+                <th align="center">Oct 2012</th>
+                <th align="center">Sep 2012</th>
+                <th align="center">Aug 2012</th>
+                <th align="center">Jul 2012</th>
+                <th align="center">Jun 2012</th>
+                <th align="center">May 2012</th>
+                <th align="center">Apr 2012</th>
+                <th align="center">Mar 2012</th>
+            </tr>
+    </thead>
+    <tbody>
+            <tr>
+            <td align="center">Ride a total of 200km</td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                    </tr>
+            <tr>
+            <td align="center">Ride a total of 600km</td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                    </tr>
+            <tr>
+            <td align="center">Ride a total of 1250km</td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                    </tr>
+            <tr>
+            <td align="center">Climb a total of 7500m</td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                    </tr>
+            <tr>
+            <td align="center">Complete a 100km ride</td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                    </tr>
+            <tr>
+            <td align="center">2 days of activity for 4 weeks</td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                            </td>
+                        <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
+                            </td>
+                    </tr>
+        </tbody>
+</table>
+
+## Completed challenges
+
+<a href="https://www.strava.com/challenges/February-400-Minute-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/675a47d9-9d91-4032-80d2-919df84cab10.png" alt="February 400-Minute Challenge" title="February 400-Minute Challenge" width="75" /></a><a href="https://www.strava.com/challenges/February-Gran-Fondo-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/b000c1fe-bbe3-4d1a-b455-f1fcd84c47d6.png" alt="February Gran Fondo Challenge" title="February Gran Fondo Challenge" width="75" /></a><a href="https://www.strava.com/challenges/February-Ride-200K-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/dac79d8f-4ebc-4607-b1f4-f4467e62e70a.png" alt="February Ride 200K Challenge" title="February Ride 200K Challenge" width="75" /></a><a href="https://www.strava.com/challenges/February-Ride-600K-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/e1c30e28-58cb-4033-8736-390a9ac71ffa.png" alt="February Ride 600K Challenge" title="February Ride 600K Challenge" width="75" /></a><a href="https://www.strava.com/challenges/le-col-project-24-challenge"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/dbd6afe5-8dcc-407b-8cd3-3ef70dd23670.png" alt="Le Col Project 24 Challenge" title="Le Col Project 24 Challenge" width="75" /></a><a href="https://www.strava.com/challenges/January-Cycling-Elevation-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/9de898b7-bfa8-443f-bc8a-7452dee27a38.png" alt="January Cycling Elevation Challenge" title="January Cycling Elevation Challenge" width="75" /></a><a href="https://www.strava.com/challenges/January-Fresh-Start-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/48b3803b-d557-4be7-94cd-cf2800684599.png" alt="January Fresh Start Challenge" title="January Fresh Start Challenge" width="75" /></a><a href="https://www.strava.com/challenges/January-Ride-600K-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/611474ff-5633-42ce-8402-8832f25c2c64.png" alt="January Ride 600K Challenge" title="January Ride 600K Challenge" width="75" /></a><a href="https://www.strava.com/challenges/ROKA-Winter-Warrior-200"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/855e7606-f8a2-4a1c-97df-d0c0daf7c803.png" alt="ROKA Winter Warrior 200" title="ROKA Winter Warrior 200" width="75" /></a><a href="https://www.strava.com/challenges/January-Streak-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/5c257e9b-64ce-45da-ba7d-204d5b061b00.png" alt="January Streak Challenge" title="January Streak Challenge" width="75" /></a>
+## Want to have these statistics for yourself?
+
+Follow [this tutorial](https://github.com/robiningelbrecht/strava-activities-template)
