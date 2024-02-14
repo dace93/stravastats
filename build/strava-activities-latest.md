@@ -10,6 +10,19 @@
         <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/heart-rate.svg" width="30" alt="average heart rate" title="average heart rate"/></th>
     </tr>
             <tr>
+            <td>14-02-24</td>
+            <td>
+                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Group Ride: 3R Steady State Endurance Ride (B) on Beach Island Loop in Watopia" title="Group Ride: 3R Steady State Endurance Ride (B) on Beach Island Loop in Watopia"/>
+<a href="https://www.strava.com/activities/10762904036" title="Kcal: 2465 | Gear: None ">Group Ride: 3R Steady Stat...</a>
+            </td>
+            <td align="center">121 <sup><sub>km</sub></sup></td>
+            <td align="center">457 <sup><sub>m</sub></sup></td>
+            <td align="center">3:00:41</td>
+            <td align="center">237 <sup><sub>w</sub></sup></td>
+            <td align="center">40.3 <sup><sub>km/h</sub></sup></td>
+            <td align="center">121</td>
+        </tr>
+            <tr>
             <td>13-02-24</td>
             <td>
                                 <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Group Ride: 3R PedalPlay EVOLVE Interval Ride [~2.9-3.2 w/kg avg] (C) on Tempus Fugit in Watopia" title="Group Ride: 3R PedalPlay EVOLVE Interval Ride [~2.9-3.2 w/kg avg] (C) on Tempus Fugit in Watopia"/>
@@ -60,19 +73,6 @@
             <td align="center">168 <sup><sub>w</sub></sup></td>
             <td align="center">36 <sup><sub>km/h</sub></sup></td>
             <td align="center">106</td>
-        </tr>
-            <tr>
-            <td>11-02-24</td>
-            <td>
-                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Group Ride: EVO CC Endurance Base Ride [3.0-3.2w/kg avg] (B) on Beach Island Loop in Watopia" title="Group Ride: EVO CC Endurance Base Ride [3.0-3.2w/kg avg] (B) on Beach Island Loop in Watopia"/>
-<a href="https://www.strava.com/activities/10739461168" title="Kcal: 3041 | Gear: None ">Group Ride: EVO CC Enduran...</a>
-            </td>
-            <td align="center">162 <sup><sub>km</sub></sup></td>
-            <td align="center">612 <sup><sub>m</sub></sup></td>
-            <td align="center">4:04:39</td>
-            <td align="center">217 <sup><sub>w</sub></sup></td>
-            <td align="center">39.8 <sup><sub>km/h</sub></sup></td>
-            <td align="center">108</td>
         </tr>
                 <tr>
             <td colspan="8" align="right"><a href="https://github.com/robiningelbrecht/strava-activities#activities">View all activities</a></td>
