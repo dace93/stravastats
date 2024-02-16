@@ -10,6 +10,19 @@
         <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/heart-rate.svg" width="30" alt="average heart rate" title="average heart rate"/></th>
     </tr>
             <tr>
+            <td>16-02-24</td>
+            <td>
+                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Building Climbs in Watopia" title="Building Climbs in Watopia"/>
+<a href="https://www.strava.com/activities/10775147160" title="Kcal: 1199 | Gear: None ">Building Climbs in Watopia</a>
+            </td>
+            <td align="center">60 <sup><sub>km</sub></sup></td>
+            <td align="center">91 <sup><sub>m</sub></sup></td>
+            <td align="center">1:33:15</td>
+            <td align="center">224 <sup><sub>w</sub></sup></td>
+            <td align="center">38.9 <sup><sub>km/h</sub></sup></td>
+            <td align="center">116</td>
+        </tr>
+            <tr>
             <td>15-02-24</td>
             <td>
                                 <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Pacer Group Ride: Volcano Circuit in Watopia with Bernie" title="Pacer Group Ride: Volcano Circuit in Watopia with Bernie"/>
@@ -60,19 +73,6 @@
             <td align="center">237 <sup><sub>w</sub></sup></td>
             <td align="center">40.3 <sup><sub>km/h</sub></sup></td>
             <td align="center">121</td>
-        </tr>
-            <tr>
-            <td>13-02-24</td>
-            <td>
-                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Group Ride: 3R PedalPlay EVOLVE Interval Ride [~2.9-3.2 w/kg avg] (C) on Tempus Fugit in Watopia" title="Group Ride: 3R PedalPlay EVOLVE Interval Ride [~2.9-3.2 w/kg avg] (C) on Tempus Fugit in Watopia"/>
-<a href="https://www.strava.com/activities/10755604807" title="Kcal: 1242 | Gear: None ">Group Ride: 3R PedalPlay E...</a>
-            </td>
-            <td align="center">62 <sup><sub>km</sub></sup></td>
-            <td align="center">95 <sup><sub>m</sub></sup></td>
-            <td align="center">1:31:16</td>
-            <td align="center">237 <sup><sub>w</sub></sup></td>
-            <td align="center">41 <sup><sub>km/h</sub></sup></td>
-            <td align="center">113</td>
         </tr>
                 <tr>
             <td colspan="8" align="right"><a href="https://github.com/robiningelbrecht/strava-activities#activities">View all activities</a></td>
