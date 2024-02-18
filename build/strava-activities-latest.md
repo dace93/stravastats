@@ -10,6 +10,45 @@
         <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/heart-rate.svg" width="30" alt="average heart rate" title="average heart rate"/></th>
     </tr>
             <tr>
+            <td>18-02-24</td>
+            <td>
+                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Group Ride: 3R Endurance Steady Ride (C) on Wandering Flats in Makuri Islands" title="Group Ride: 3R Endurance Steady Ride (C) on Wandering Flats in Makuri Islands"/>
+<a href="https://www.strava.com/activities/10788005198" title="Kcal: 199 | Gear: None ">Group Ride: 3R Endurance S...</a>
+            </td>
+            <td align="center">15 <sup><sub>km</sub></sup></td>
+            <td align="center">46 <sup><sub>m</sub></sup></td>
+            <td align="center">24:51</td>
+            <td align="center">135 <sup><sub>w</sub></sup></td>
+            <td align="center">36.3 <sup><sub>km/h</sub></sup></td>
+            <td align="center">97</td>
+        </tr>
+            <tr>
+            <td>18-02-24</td>
+            <td>
+                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Watopia" title="Watopia"/>
+<a href="https://www.strava.com/activities/10787767770" title="Kcal: 469 | Gear: None ">Watopia</a>
+            </td>
+            <td align="center">31 <sup><sub>km</sub></sup></td>
+            <td align="center">112 <sup><sub>m</sub></sup></td>
+            <td align="center">53:33</td>
+            <td align="center">152 <sup><sub>w</sub></sup></td>
+            <td align="center">34.8 <sup><sub>km/h</sub></sup></td>
+            <td align="center">105</td>
+        </tr>
+            <tr>
+            <td>18-02-24</td>
+            <td>
+                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Group Ride: EVO CC Endurance Base Ride [3.0-3.2w/kg avg] (B) on Triple Flat Loops in Watopia" title="Group Ride: EVO CC Endurance Base Ride [3.0-3.2w/kg avg] (B) on Triple Flat Loops in Watopia"/>
+<a href="https://www.strava.com/activities/10785857643" title="Kcal: 3159 | Gear: None ">Group Ride: EVO CC Enduran...</a>
+            </td>
+            <td align="center">172 <sup><sub>km</sub></sup></td>
+            <td align="center">788 <sup><sub>m</sub></sup></td>
+            <td align="center">4:17:17</td>
+            <td align="center">214 <sup><sub>w</sub></sup></td>
+            <td align="center">40.1 <sup><sub>km/h</sub></sup></td>
+            <td align="center">112</td>
+        </tr>
+            <tr>
             <td>17-02-24</td>
             <td>
                                 <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Tempus Fugit in Watopia" title="Tempus Fugit in Watopia"/>
@@ -34,45 +73,6 @@
             <td align="center">185 <sup><sub>w</sub></sup></td>
             <td align="center">37.3 <sup><sub>km/h</sub></sup></td>
             <td align="center">110</td>
-        </tr>
-            <tr>
-            <td>17-02-24</td>
-            <td>
-                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Pacer Group Ride: Volcano Flat in Watopia with Coco" title="Pacer Group Ride: Volcano Flat in Watopia with Coco"/>
-<a href="https://www.strava.com/activities/10779684838" title="Kcal: 275 | Gear: None ">Pacer Group Ride: Volcano ...</a>
-            </td>
-            <td align="center">16 <sup><sub>km</sub></sup></td>
-            <td align="center">57 <sup><sub>m</sub></sup></td>
-            <td align="center">24:33</td>
-            <td align="center">195 <sup><sub>w</sub></sup></td>
-            <td align="center">39.2 <sup><sub>km/h</sub></sup></td>
-            <td align="center">117</td>
-        </tr>
-            <tr>
-            <td>17-02-24</td>
-            <td>
-                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Leuk duurritje met Pascal 🌤️" title="Leuk duurritje met Pascal 🌤️"/>
-<a href="https://www.strava.com/activities/10778795528" title="Kcal: 3492 | Gear: None ">Leuk duurritje met Pascal ...</a>
-            </td>
-            <td align="center">132 <sup><sub>km</sub></sup></td>
-            <td align="center">777 <sup><sub>m</sub></sup></td>
-            <td align="center">4:14:39</td>
-            <td align="center">204 <sup><sub>w</sub></sup></td>
-            <td align="center">31.1 <sup><sub>km/h</sub></sup></td>
-            <td align="center">125</td>
-        </tr>
-            <tr>
-            <td>16-02-24</td>
-            <td>
-                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Building Climbs in Watopia" title="Building Climbs in Watopia"/>
-<a href="https://www.strava.com/activities/10775147160" title="Kcal: 1199 | Gear: None ">Building Climbs in Watopia</a>
-            </td>
-            <td align="center">60 <sup><sub>km</sub></sup></td>
-            <td align="center">91 <sup><sub>m</sub></sup></td>
-            <td align="center">1:33:15</td>
-            <td align="center">224 <sup><sub>w</sub></sup></td>
-            <td align="center">38.9 <sup><sub>km/h</sub></sup></td>
-            <td align="center">116</td>
         </tr>
                 <tr>
             <td colspan="8" align="right"><a href="https://github.com/robiningelbrecht/strava-activities#activities">View all activities</a></td>
