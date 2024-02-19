@@ -10,6 +10,32 @@
         <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/heart-rate.svg" width="30" alt="average heart rate" title="average heart rate"/></th>
     </tr>
             <tr>
+            <td>19-02-24</td>
+            <td>
+                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Group Ride: SZR Evening Joyride (C) on Out And Back Again in Watopia" title="Group Ride: SZR Evening Joyride (C) on Out And Back Again in Watopia"/>
+<a href="https://www.strava.com/activities/10795542947" title="Kcal: 919 | Gear: None ">Group Ride: SZR Evening Jo...</a>
+            </td>
+            <td align="center">51 <sup><sub>km</sub></sup></td>
+            <td align="center">348 <sup><sub>m</sub></sup></td>
+            <td align="center">1:20:27</td>
+            <td align="center">198 <sup><sub>w</sub></sup></td>
+            <td align="center">38.2 <sup><sub>km/h</sub></sup></td>
+            <td align="center">103</td>
+        </tr>
+            <tr>
+            <td>19-02-24</td>
+            <td>
+                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Pacer Group Ride: Watopia&#039;s Waistband in Watopia with Coco" title="Pacer Group Ride: Watopia&#039;s Waistband in Watopia with Coco"/>
+<a href="https://www.strava.com/activities/10794892704" title="Kcal: 161 | Gear: None ">Pacer Group Ride: Watopia&#039;...</a>
+            </td>
+            <td align="center">9 <sup><sub>km</sub></sup></td>
+            <td align="center">49 <sup><sub>m</sub></sup></td>
+            <td align="center">15:00</td>
+            <td align="center">186 <sup><sub>w</sub></sup></td>
+            <td align="center">37.9 <sup><sub>km/h</sub></sup></td>
+            <td align="center">99</td>
+        </tr>
+            <tr>
             <td>18-02-24</td>
             <td>
                                 <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Group Ride: 3R Endurance Steady Ride (C) on Wandering Flats in Makuri Islands" title="Group Ride: 3R Endurance Steady Ride (C) on Wandering Flats in Makuri Islands"/>
@@ -47,32 +73,6 @@
             <td align="center">214 <sup><sub>w</sub></sup></td>
             <td align="center">40.1 <sup><sub>km/h</sub></sup></td>
             <td align="center">112</td>
-        </tr>
-            <tr>
-            <td>17-02-24</td>
-            <td>
-                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Tempus Fugit in Watopia" title="Tempus Fugit in Watopia"/>
-<a href="https://www.strava.com/activities/10780708085" title="Kcal: 24 | Gear: None ">Tempus Fugit in Watopia</a>
-            </td>
-            <td align="center">2 <sup><sub>km</sub></sup></td>
-            <td align="center">5 <sup><sub>m</sub></sup></td>
-            <td align="center">6:21</td>
-            <td align="center">67 <sup><sub>w</sub></sup></td>
-            <td align="center">22.4 <sup><sub>km/h</sub></sup></td>
-            <td align="center">80</td>
-        </tr>
-            <tr>
-            <td>17-02-24</td>
-            <td>
-                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Group Ride: BMTR Flat 100 (Miles) (C) on Big Flat 8 in Watopia" title="Group Ride: BMTR Flat 100 (Miles) (C) on Big Flat 8 in Watopia"/>
-<a href="https://www.strava.com/activities/10780635853" title="Kcal: 1285 | Gear: None ">Group Ride: BMTR Flat 100 ...</a>
-            </td>
-            <td align="center">75 <sup><sub>km</sub></sup></td>
-            <td align="center">252 <sup><sub>m</sub></sup></td>
-            <td align="center">2:00:36</td>
-            <td align="center">185 <sup><sub>w</sub></sup></td>
-            <td align="center">37.3 <sup><sub>km/h</sub></sup></td>
-            <td align="center">110</td>
         </tr>
                 <tr>
             <td colspan="8" align="right"><a href="https://github.com/robiningelbrecht/strava-activities#activities">View all activities</a></td>
