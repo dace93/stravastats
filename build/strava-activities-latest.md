@@ -10,6 +10,45 @@
         <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/heart-rate.svg" width="30" alt="average heart rate" title="average heart rate"/></th>
     </tr>
             <tr>
+            <td>20-02-24</td>
+            <td>
+                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Pacer Group Ride: Volcano Flat in Watopia with Maria" title="Pacer Group Ride: Volcano Flat in Watopia with Maria"/>
+<a href="https://www.strava.com/activities/10802954837" title="Kcal: 243 | Gear: None ">Pacer Group Ride: Volcano ...</a>
+            </td>
+            <td align="center">17 <sup><sub>km</sub></sup></td>
+            <td align="center">58 <sup><sub>m</sub></sup></td>
+            <td align="center">30:21</td>
+            <td align="center">139 <sup><sub>w</sub></sup></td>
+            <td align="center">34.1 <sup><sub>km/h</sub></sup></td>
+            <td align="center">102</td>
+        </tr>
+            <tr>
+            <td>20-02-24</td>
+            <td>
+                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Race: Zwift Racing League - Open EMEAE Western 1 (South) A1 on Chasing the Sun in Makuri Islands" title="Race: Zwift Racing League - Open EMEAE Western 1 (South) A1 on Chasing the Sun in Makuri Islands"/>
+<a href="https://www.strava.com/activities/10802705946" title="Kcal: 846 | Gear: None ">Race: Zwift Racing League ...</a>
+            </td>
+            <td align="center">35 <sup><sub>km</sub></sup></td>
+            <td align="center">317 <sup><sub>m</sub></sup></td>
+            <td align="center">50:01</td>
+            <td align="center">291 <sup><sub>w</sub></sup></td>
+            <td align="center">42.1 <sup><sub>km/h</sub></sup></td>
+            <td align="center">147</td>
+        </tr>
+            <tr>
+            <td>20-02-24</td>
+            <td>
+                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Just The Basics in Watopia" title="Just The Basics in Watopia"/>
+<a href="https://www.strava.com/activities/10802278159" title="Kcal: 351 | Gear: None ">Just The Basics in Watopia</a>
+            </td>
+            <td align="center">18 <sup><sub>km</sub></sup></td>
+            <td align="center">28 <sup><sub>m</sub></sup></td>
+            <td align="center">26:24</td>
+            <td align="center">232 <sup><sub>w</sub></sup></td>
+            <td align="center">41.1 <sup><sub>km/h</sub></sup></td>
+            <td align="center">121</td>
+        </tr>
+            <tr>
             <td>19-02-24</td>
             <td>
                                 <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Group Ride: SZR Evening Joyride (C) on Out And Back Again in Watopia" title="Group Ride: SZR Evening Joyride (C) on Out And Back Again in Watopia"/>
@@ -34,45 +73,6 @@
             <td align="center">186 <sup><sub>w</sub></sup></td>
             <td align="center">37.9 <sup><sub>km/h</sub></sup></td>
             <td align="center">99</td>
-        </tr>
-            <tr>
-            <td>18-02-24</td>
-            <td>
-                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Group Ride: 3R Endurance Steady Ride (C) on Wandering Flats in Makuri Islands" title="Group Ride: 3R Endurance Steady Ride (C) on Wandering Flats in Makuri Islands"/>
-<a href="https://www.strava.com/activities/10788005198" title="Kcal: 199 | Gear: None ">Group Ride: 3R Endurance S...</a>
-            </td>
-            <td align="center">15 <sup><sub>km</sub></sup></td>
-            <td align="center">46 <sup><sub>m</sub></sup></td>
-            <td align="center">24:51</td>
-            <td align="center">135 <sup><sub>w</sub></sup></td>
-            <td align="center">36.3 <sup><sub>km/h</sub></sup></td>
-            <td align="center">97</td>
-        </tr>
-            <tr>
-            <td>18-02-24</td>
-            <td>
-                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Watopia" title="Watopia"/>
-<a href="https://www.strava.com/activities/10787767770" title="Kcal: 469 | Gear: None ">Watopia</a>
-            </td>
-            <td align="center">31 <sup><sub>km</sub></sup></td>
-            <td align="center">112 <sup><sub>m</sub></sup></td>
-            <td align="center">53:33</td>
-            <td align="center">152 <sup><sub>w</sub></sup></td>
-            <td align="center">34.8 <sup><sub>km/h</sub></sup></td>
-            <td align="center">105</td>
-        </tr>
-            <tr>
-            <td>18-02-24</td>
-            <td>
-                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Group Ride: EVO CC Endurance Base Ride [3.0-3.2w/kg avg] (B) on Triple Flat Loops in Watopia" title="Group Ride: EVO CC Endurance Base Ride [3.0-3.2w/kg avg] (B) on Triple Flat Loops in Watopia"/>
-<a href="https://www.strava.com/activities/10785857643" title="Kcal: 3159 | Gear: None ">Group Ride: EVO CC Enduran...</a>
-            </td>
-            <td align="center">172 <sup><sub>km</sub></sup></td>
-            <td align="center">788 <sup><sub>m</sub></sup></td>
-            <td align="center">4:17:17</td>
-            <td align="center">214 <sup><sub>w</sub></sup></td>
-            <td align="center">40.1 <sup><sub>km/h</sub></sup></td>
-            <td align="center">112</td>
         </tr>
                 <tr>
             <td colspan="8" align="right"><a href="https://github.com/robiningelbrecht/strava-activities#activities">View all activities</a></td>
