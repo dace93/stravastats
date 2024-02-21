@@ -10,6 +10,45 @@
         <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/heart-rate.svg" width="30" alt="average heart rate" title="average heart rate"/></th>
     </tr>
             <tr>
+            <td>21-02-24</td>
+            <td>
+                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Pacer Group Ride: Volcano Circuit in Watopia with Taylor" title="Pacer Group Ride: Volcano Circuit in Watopia with Taylor"/>
+<a href="https://www.strava.com/activities/10810072292" title="Kcal: 53 | Gear: None ">Pacer Group Ride: Volcano ...</a>
+            </td>
+            <td align="center">5 <sup><sub>km</sub></sup></td>
+            <td align="center">19 <sup><sub>m</sub></sup></td>
+            <td align="center">13:05</td>
+            <td align="center">70 <sup><sub>w</sub></sup></td>
+            <td align="center">25.2 <sup><sub>km/h</sub></sup></td>
+            <td align="center">88</td>
+        </tr>
+            <tr>
+            <td>21-02-24</td>
+            <td>
+                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Group Ride: 3R Steady State Endurance Ride (B) on Watopia&#039;s Waistband in Watopia" title="Group Ride: 3R Steady State Endurance Ride (B) on Watopia&#039;s Waistband in Watopia"/>
+<a href="https://www.strava.com/activities/10809994133" title="Kcal: 2300 | Gear: None ">Group Ride: 3R Steady Stat...</a>
+            </td>
+            <td align="center">110 <sup><sub>km</sub></sup></td>
+            <td align="center">395 <sup><sub>m</sub></sup></td>
+            <td align="center">2:40:29</td>
+            <td align="center">249 <sup><sub>w</sub></sup></td>
+            <td align="center">41.2 <sup><sub>km/h</sub></sup></td>
+            <td align="center">127</td>
+        </tr>
+            <tr>
+            <td>21-02-24</td>
+            <td>
+                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Just The Basics in Watopia" title="Just The Basics in Watopia"/>
+<a href="https://www.strava.com/activities/10808836094" title="Kcal: 277 | Gear: None ">Just The Basics in Watopia</a>
+            </td>
+            <td align="center">14 <sup><sub>km</sub></sup></td>
+            <td align="center">21 <sup><sub>m</sub></sup></td>
+            <td align="center">20:19</td>
+            <td align="center">238 <sup><sub>w</sub></sup></td>
+            <td align="center">41.5 <sup><sub>km/h</sub></sup></td>
+            <td align="center">119</td>
+        </tr>
+            <tr>
             <td>20-02-24</td>
             <td>
                                 <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Pacer Group Ride: Volcano Flat in Watopia with Maria" title="Pacer Group Ride: Volcano Flat in Watopia with Maria"/>
@@ -34,45 +73,6 @@
             <td align="center">291 <sup><sub>w</sub></sup></td>
             <td align="center">42.1 <sup><sub>km/h</sub></sup></td>
             <td align="center">147</td>
-        </tr>
-            <tr>
-            <td>20-02-24</td>
-            <td>
-                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Just The Basics in Watopia" title="Just The Basics in Watopia"/>
-<a href="https://www.strava.com/activities/10802278159" title="Kcal: 351 | Gear: None ">Just The Basics in Watopia</a>
-            </td>
-            <td align="center">18 <sup><sub>km</sub></sup></td>
-            <td align="center">28 <sup><sub>m</sub></sup></td>
-            <td align="center">26:24</td>
-            <td align="center">232 <sup><sub>w</sub></sup></td>
-            <td align="center">41.1 <sup><sub>km/h</sub></sup></td>
-            <td align="center">121</td>
-        </tr>
-            <tr>
-            <td>19-02-24</td>
-            <td>
-                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Group Ride: SZR Evening Joyride (C) on Out And Back Again in Watopia" title="Group Ride: SZR Evening Joyride (C) on Out And Back Again in Watopia"/>
-<a href="https://www.strava.com/activities/10795542947" title="Kcal: 919 | Gear: None ">Group Ride: SZR Evening Jo...</a>
-            </td>
-            <td align="center">51 <sup><sub>km</sub></sup></td>
-            <td align="center">348 <sup><sub>m</sub></sup></td>
-            <td align="center">1:20:27</td>
-            <td align="center">198 <sup><sub>w</sub></sup></td>
-            <td align="center">38.2 <sup><sub>km/h</sub></sup></td>
-            <td align="center">103</td>
-        </tr>
-            <tr>
-            <td>19-02-24</td>
-            <td>
-                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Pacer Group Ride: Watopia&#039;s Waistband in Watopia with Coco" title="Pacer Group Ride: Watopia&#039;s Waistband in Watopia with Coco"/>
-<a href="https://www.strava.com/activities/10794892704" title="Kcal: 161 | Gear: None ">Pacer Group Ride: Watopia&#039;...</a>
-            </td>
-            <td align="center">9 <sup><sub>km</sub></sup></td>
-            <td align="center">49 <sup><sub>m</sub></sup></td>
-            <td align="center">15:00</td>
-            <td align="center">186 <sup><sub>w</sub></sup></td>
-            <td align="center">37.9 <sup><sub>km/h</sub></sup></td>
-            <td align="center">99</td>
         </tr>
                 <tr>
             <td colspan="8" align="right"><a href="https://github.com/robiningelbrecht/strava-activities#activities">View all activities</a></td>
