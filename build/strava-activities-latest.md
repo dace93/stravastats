@@ -10,6 +10,19 @@
         <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/heart-rate.svg" width="30" alt="average heart rate" title="average heart rate"/></th>
     </tr>
             <tr>
+            <td>23-02-24</td>
+            <td>
+                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="90 min easy intervals in Watopia" title="90 min easy intervals in Watopia"/>
+<a href="https://www.strava.com/activities/10822254919" title="Kcal: 1234 | Gear: None ">90 min easy intervals in W...</a>
+            </td>
+            <td align="center">61 <sup><sub>km</sub></sup></td>
+            <td align="center">94 <sup><sub>m</sub></sup></td>
+            <td align="center">1:31:14</td>
+            <td align="center">236 <sup><sub>w</sub></sup></td>
+            <td align="center">40.2 <sup><sub>km/h</sub></sup></td>
+            <td align="center">115</td>
+        </tr>
+            <tr>
             <td>22-02-24</td>
             <td>
                                 <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Pacer Group Ride: Volcano Flat in Watopia with Maria" title="Pacer Group Ride: Volcano Flat in Watopia with Maria"/>
@@ -60,19 +73,6 @@
             <td align="center">70 <sup><sub>w</sub></sup></td>
             <td align="center">25.2 <sup><sub>km/h</sub></sup></td>
             <td align="center">88</td>
-        </tr>
-            <tr>
-            <td>21-02-24</td>
-            <td>
-                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Group Ride: 3R Steady State Endurance Ride (B) on Watopia&#039;s Waistband in Watopia" title="Group Ride: 3R Steady State Endurance Ride (B) on Watopia&#039;s Waistband in Watopia"/>
-<a href="https://www.strava.com/activities/10809994133" title="Kcal: 2300 | Gear: None ">Group Ride: 3R Steady Stat...</a>
-            </td>
-            <td align="center">110 <sup><sub>km</sub></sup></td>
-            <td align="center">395 <sup><sub>m</sub></sup></td>
-            <td align="center">2:40:29</td>
-            <td align="center">249 <sup><sub>w</sub></sup></td>
-            <td align="center">41.2 <sup><sub>km/h</sub></sup></td>
-            <td align="center">127</td>
         </tr>
                 <tr>
             <td colspan="8" align="right"><a href="https://github.com/robiningelbrecht/strava-activities#activities">View all activities</a></td>
