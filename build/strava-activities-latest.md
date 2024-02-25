@@ -10,6 +10,45 @@
         <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/heart-rate.svg" width="30" alt="average heart rate" title="average heart rate"/></th>
     </tr>
             <tr>
+            <td>25-02-24</td>
+            <td>
+                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Pacer Group Ride: Flat Route in Watopia with Bernie" title="Pacer Group Ride: Flat Route in Watopia with Bernie"/>
+<a href="https://www.strava.com/activities/10836131890" title="Kcal: 248 | Gear: None ">Pacer Group Ride: Flat Rou...</a>
+            </td>
+            <td align="center">21 <sup><sub>km</sub></sup></td>
+            <td align="center">120 <sup><sub>m</sub></sup></td>
+            <td align="center">44:09</td>
+            <td align="center">98 <sup><sub>w</sub></sup></td>
+            <td align="center">28.7 <sup><sub>km/h</sub></sup></td>
+            <td align="center">79</td>
+        </tr>
+            <tr>
+            <td>25-02-24</td>
+            <td>
+                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Los ⛅ -&gt; ☁️" title="Los ⛅ -&gt; ☁️"/>
+<a href="https://www.strava.com/activities/10835598248" title="Kcal: 1293 | Gear: None ">Los ⛅ -&gt; ☁️</a>
+            </td>
+            <td align="center">51 <sup><sub>km</sub></sup></td>
+            <td align="center">225 <sup><sub>m</sub></sup></td>
+            <td align="center">1:53:09</td>
+            <td align="center">165 <sup><sub>w</sub></sup></td>
+            <td align="center">27.2 <sup><sub>km/h</sub></sup></td>
+            <td align="center">106</td>
+        </tr>
+            <tr>
+            <td>25-02-24</td>
+            <td>
+                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Rustig ritje naar KBK 🚴‍♂️" title="Rustig ritje naar KBK 🚴‍♂️"/>
+<a href="https://www.strava.com/activities/10832879472" title="Kcal: 3107 | Gear: None ">Rustig ritje naar KBK 🚴‍♂️...</a>
+            </td>
+            <td align="center">128 <sup><sub>km</sub></sup></td>
+            <td align="center">313 <sup><sub>m</sub></sup></td>
+            <td align="center">4:08:36</td>
+            <td align="center">182 <sup><sub>w</sub></sup></td>
+            <td align="center">30.9 <sup><sub>km/h</sub></sup></td>
+            <td align="center">111</td>
+        </tr>
+            <tr>
             <td>24-02-24</td>
             <td>
                                 <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Pacer Group Ride: Makuri 40 in Makuri Islands with Taylor" title="Pacer Group Ride: Makuri 40 in Makuri Islands with Taylor"/>
@@ -34,45 +73,6 @@
             <td align="center">202 <sup><sub>w</sub></sup></td>
             <td align="center">39 <sup><sub>km/h</sub></sup></td>
             <td align="center">110</td>
-        </tr>
-            <tr>
-            <td>24-02-24</td>
-            <td>
-                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Group Ride: DIRT Badge Hunts (C) on Sugar Cookie in Watopia" title="Group Ride: DIRT Badge Hunts (C) on Sugar Cookie in Watopia"/>
-<a href="https://www.strava.com/activities/10825655668" title="Kcal: 65 | Gear: None ">Group Ride: DIRT Badge Hun...</a>
-            </td>
-            <td align="center">5 <sup><sub>km</sub></sup></td>
-            <td align="center">6 <sup><sub>m</sub></sup></td>
-            <td align="center">7:59</td>
-            <td align="center">137 <sup><sub>w</sub></sup></td>
-            <td align="center">38.1 <sup><sub>km/h</sub></sup></td>
-            <td align="center">98</td>
-        </tr>
-            <tr>
-            <td>24-02-24</td>
-            <td>
-                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Pacer Group Ride: Volcano Circuit in Watopia with Taylor" title="Pacer Group Ride: Volcano Circuit in Watopia with Taylor"/>
-<a href="https://www.strava.com/activities/10825565430" title="Kcal: 37 | Gear: None ">Pacer Group Ride: Volcano ...</a>
-            </td>
-            <td align="center">3 <sup><sub>km</sub></sup></td>
-            <td align="center">13 <sup><sub>m</sub></sup></td>
-            <td align="center">6:42</td>
-            <td align="center">97 <sup><sub>w</sub></sup></td>
-            <td align="center">28.8 <sup><sub>km/h</sub></sup></td>
-            <td align="center">91</td>
-        </tr>
-            <tr>
-            <td>24-02-24</td>
-            <td>
-                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Group Ride: DIRT 505 Saturday Endurance Ride (B) on The Big Ring in Watopia" title="Group Ride: DIRT 505 Saturday Endurance Ride (B) on The Big Ring in Watopia"/>
-<a href="https://www.strava.com/activities/10825504421" title="Kcal: 523 | Gear: None ">Group Ride: DIRT 505 Satur...</a>
-            </td>
-            <td align="center">30 <sup><sub>km</sub></sup></td>
-            <td align="center">110 <sup><sub>m</sub></sup></td>
-            <td align="center">46:37</td>
-            <td align="center">196 <sup><sub>w</sub></sup></td>
-            <td align="center">38.7 <sup><sub>km/h</sub></sup></td>
-            <td align="center">112</td>
         </tr>
                 <tr>
             <td colspan="8" align="right"><a href="https://github.com/robiningelbrecht/strava-activities#activities">View all activities</a></td>
