@@ -10,6 +10,19 @@
         <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/heart-rate.svg" width="30" alt="average heart rate" title="average heart rate"/></th>
     </tr>
             <tr>
+            <td>26-02-24</td>
+            <td>
+                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Tempus Fugit in Watopia" title="Tempus Fugit in Watopia"/>
+<a href="https://www.strava.com/activities/10843016186" title="Kcal: 1113 | Gear: None ">Tempus Fugit in Watopia</a>
+            </td>
+            <td align="center">64 <sup><sub>km</sub></sup></td>
+            <td align="center">98 <sup><sub>m</sub></sup></td>
+            <td align="center">1:32:29</td>
+            <td align="center">210 <sup><sub>w</sub></sup></td>
+            <td align="center">41.5 <sup><sub>km/h</sub></sup></td>
+            <td align="center">100</td>
+        </tr>
+            <tr>
             <td>25-02-24</td>
             <td>
                                 <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Pacer Group Ride: Flat Route in Watopia with Bernie" title="Pacer Group Ride: Flat Route in Watopia with Bernie"/>
@@ -60,19 +73,6 @@
             <td align="center">69 <sup><sub>w</sub></sup></td>
             <td align="center">26.9 <sup><sub>km/h</sub></sup></td>
             <td align="center">80</td>
-        </tr>
-            <tr>
-            <td>24-02-24</td>
-            <td>
-                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Group Ride: BMTR Flat 100 (Miles) (C) on Tempus Fugit in Watopia" title="Group Ride: BMTR Flat 100 (Miles) (C) on Tempus Fugit in Watopia"/>
-<a href="https://www.strava.com/activities/10828082267" title="Kcal: 2155 | Gear: None ">Group Ride: BMTR Flat 100 ...</a>
-            </td>
-            <td align="center">121 <sup><sub>km</sub></sup></td>
-            <td align="center">184 <sup><sub>m</sub></sup></td>
-            <td align="center">3:05:22</td>
-            <td align="center">202 <sup><sub>w</sub></sup></td>
-            <td align="center">39 <sup><sub>km/h</sub></sup></td>
-            <td align="center">110</td>
         </tr>
                 <tr>
             <td colspan="8" align="right"><a href="https://github.com/robiningelbrecht/strava-activities#activities">View all activities</a></td>
