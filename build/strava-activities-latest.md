@@ -10,6 +10,58 @@
         <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/heart-rate.svg" width="30" alt="average heart rate" title="average heart rate"/></th>
     </tr>
             <tr>
+            <td>29-02-24</td>
+            <td>
+                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Pacer Group Ride: Flat Route in Watopia with Taylor" title="Pacer Group Ride: Flat Route in Watopia with Taylor"/>
+<a href="https://www.strava.com/activities/10863583509" title="Kcal: 46 | Gear: None ">Pacer Group Ride: Flat Rou...</a>
+            </td>
+            <td align="center">5 <sup><sub>km</sub></sup></td>
+            <td align="center">27 <sup><sub>m</sub></sup></td>
+            <td align="center">11:55</td>
+            <td align="center">68 <sup><sub>w</sub></sup></td>
+            <td align="center">25.4 <sup><sub>km/h</sub></sup></td>
+            <td align="center">76</td>
+        </tr>
+            <tr>
+            <td>29-02-24</td>
+            <td>
+                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="TTT: WTRL Team Time Trial - Zone 20 (FRAPPE) on Two Bridges Loop in Watopia" title="TTT: WTRL Team Time Trial - Zone 20 (FRAPPE) on Two Bridges Loop in Watopia"/>
+<a href="https://www.strava.com/activities/10863504387" title="Kcal: 562 | Gear: None ">TTT: WTRL Team Time Trial ...</a>
+            </td>
+            <td align="center">29 <sup><sub>km</sub></sup></td>
+            <td align="center">322 <sup><sub>m</sub></sup></td>
+            <td align="center">43:18</td>
+            <td align="center">225 <sup><sub>w</sub></sup></td>
+            <td align="center">39.9 <sup><sub>km/h</sub></sup></td>
+            <td align="center">118</td>
+        </tr>
+            <tr>
+            <td>29-02-24</td>
+            <td>
+                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Renewal - CED in Watopia" title="Renewal - CED in Watopia"/>
+<a href="https://www.strava.com/activities/10863214233" title="Kcal: 261 | Gear: None ">Renewal - CED in Watopia</a>
+            </td>
+            <td align="center">16 <sup><sub>km</sub></sup></td>
+            <td align="center">26 <sup><sub>m</sub></sup></td>
+            <td align="center">26:05</td>
+            <td align="center">175 <sup><sub>w</sub></sup></td>
+            <td align="center">36.8 <sup><sub>km/h</sub></sup></td>
+            <td align="center">109</td>
+        </tr>
+            <tr>
+            <td>29-02-24</td>
+            <td>
+                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Race: Probike Zwift Race on Innsbruckring in Innsbruck" title="Race: Probike Zwift Race on Innsbruckring in Innsbruck"/>
+<a href="https://www.strava.com/activities/10863012564" title="Kcal: 616 | Gear: None ">Race: Probike Zwift Race o...</a>
+            </td>
+            <td align="center">27 <sup><sub>km</sub></sup></td>
+            <td align="center">233 <sup><sub>m</sub></sup></td>
+            <td align="center">35:42</td>
+            <td align="center">296 <sup><sub>w</sub></sup></td>
+            <td align="center">45.4 <sup><sub>km/h</sub></sup></td>
+            <td align="center">141</td>
+        </tr>
+            <tr>
             <td>28-02-24</td>
             <td>
                                 <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Pacer Group Ride: Flat Route in Watopia with Taylor" title="Pacer Group Ride: Flat Route in Watopia with Taylor"/>
@@ -21,58 +73,6 @@
             <td align="center">66 <sup><sub>w</sub></sup></td>
             <td align="center">29.5 <sup><sub>km/h</sub></sup></td>
             <td align="center">85</td>
-        </tr>
-            <tr>
-            <td>28-02-24</td>
-            <td>
-                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Group Ride: 3R Steady State Endurance Ride (B) on Douce France in France" title="Group Ride: 3R Steady State Endurance Ride (B) on Douce France in France"/>
-<a href="https://www.strava.com/activities/10857103092" title="Kcal: 2215 | Gear: None ">Group Ride: 3R Steady Stat...</a>
-            </td>
-            <td align="center">103 <sup><sub>km</sub></sup></td>
-            <td align="center">612 <sup><sub>m</sub></sup></td>
-            <td align="center">2:30:56</td>
-            <td align="center">255 <sup><sub>w</sub></sup></td>
-            <td align="center">41.1 <sup><sub>km/h</sub></sup></td>
-            <td align="center">124</td>
-        </tr>
-            <tr>
-            <td>28-02-24</td>
-            <td>
-                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Just The Basics in Watopia" title="Just The Basics in Watopia"/>
-<a href="https://www.strava.com/activities/10856025170" title="Kcal: 437 | Gear: None ">Just The Basics in Watopia</a>
-            </td>
-            <td align="center">22 <sup><sub>km</sub></sup></td>
-            <td align="center">33 <sup><sub>m</sub></sup></td>
-            <td align="center">32:04</td>
-            <td align="center">238 <sup><sub>w</sub></sup></td>
-            <td align="center">41.7 <sup><sub>km/h</sub></sup></td>
-            <td align="center">115</td>
-        </tr>
-            <tr>
-            <td>27-02-24</td>
-            <td>
-                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Pacer Group Ride: Flat Route in Watopia with Taylor" title="Pacer Group Ride: Flat Route in Watopia with Taylor"/>
-<a href="https://www.strava.com/activities/10850057895" title="Kcal: 103 | Gear: None ">Pacer Group Ride: Flat Rou...</a>
-            </td>
-            <td align="center">10 <sup><sub>km</sub></sup></td>
-            <td align="center">34 <sup><sub>m</sub></sup></td>
-            <td align="center">23:20</td>
-            <td align="center">77 <sup><sub>w</sub></sup></td>
-            <td align="center">26.9 <sup><sub>km/h</sub></sup></td>
-            <td align="center">89</td>
-        </tr>
-            <tr>
-            <td>27-02-24</td>
-            <td>
-                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="TTT: Zwift Racing League - Open EMEAE Western 1 (South) A1 on Out And Back Again in Watopia" title="TTT: Zwift Racing League - Open EMEAE Western 1 (South) A1 on Out And Back Again in Watopia"/>
-<a href="https://www.strava.com/activities/10849873186" title="Kcal: 1076 | Gear: None ">TTT: Zwift Racing League -...</a>
-            </td>
-            <td align="center">43 <sup><sub>km</sub></sup></td>
-            <td align="center">334 <sup><sub>m</sub></sup></td>
-            <td align="center">1:00:54</td>
-            <td align="center">306 <sup><sub>w</sub></sup></td>
-            <td align="center">42.6 <sup><sub>km/h</sub></sup></td>
-            <td align="center">148</td>
         </tr>
                 <tr>
             <td colspan="8" align="right"><a href="https://github.com/robiningelbrecht/strava-activities#activities">View all activities</a></td>
