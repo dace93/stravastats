@@ -10,6 +10,19 @@
         <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/heart-rate.svg" width="30" alt="average heart rate" title="average heart rate"/></th>
     </tr>
             <tr>
+            <td>05-03-24</td>
+            <td>
+                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Group Ride: 3R PedalPlay EVOLVE Interval Ride [~2.9-3.2 w/kg avg] (C) on Castle Crit in Makuri Islands" title="Group Ride: 3R PedalPlay EVOLVE Interval Ride [~2.9-3.2 w/kg avg] (C) on Castle Crit in Makuri Islands"/>
+<a href="https://www.strava.com/activities/10897679704" title="Kcal: 1456 | Gear: None ">Group Ride: 3R PedalPlay E...</a>
+            </td>
+            <td align="center">65 <sup><sub>km</sub></sup></td>
+            <td align="center">671 <sup><sub>m</sub></sup></td>
+            <td align="center">1:42:47</td>
+            <td align="center">246 <sup><sub>w</sub></sup></td>
+            <td align="center">38.1 <sup><sub>km/h</sub></sup></td>
+            <td align="center">124</td>
+        </tr>
+            <tr>
             <td>04-03-24</td>
             <td>
                                 <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Recovery in Watopia" title="Recovery in Watopia"/>
@@ -60,19 +73,6 @@
             <td align="center">201 <sup><sub>w</sub></sup></td>
             <td align="center">30.2 <sup><sub>km/h</sub></sup></td>
             <td align="center">117</td>
-        </tr>
-            <tr>
-            <td>02-03-24</td>
-            <td>
-                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Group Ride: 3R Endurance Steady Ride (C) on Watopia&#039;s Waistband in Watopia" title="Group Ride: 3R Endurance Steady Ride (C) on Watopia&#039;s Waistband in Watopia"/>
-<a href="https://www.strava.com/activities/10875189887" title="Kcal: 647 | Gear: None ">Group Ride: 3R Endurance S...</a>
-            </td>
-            <td align="center">41 <sup><sub>km</sub></sup></td>
-            <td align="center">139 <sup><sub>m</sub></sup></td>
-            <td align="center">1:08:17</td>
-            <td align="center">164 <sup><sub>w</sub></sup></td>
-            <td align="center">36.1 <sup><sub>km/h</sub></sup></td>
-            <td align="center">103</td>
         </tr>
                 <tr>
             <td colspan="8" align="right"><a href="https://github.com/robiningelbrecht/strava-activities#activities">View all activities</a></td>
