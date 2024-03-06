@@ -10,6 +10,45 @@
         <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/heart-rate.svg" width="30" alt="average heart rate" title="average heart rate"/></th>
     </tr>
             <tr>
+            <td>06-03-24</td>
+            <td>
+                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Pacer Group Ride: Volcano Flat in Watopia with Bernie" title="Pacer Group Ride: Volcano Flat in Watopia with Bernie"/>
+<a href="https://www.strava.com/activities/10905471619" title="Kcal: 77 | Gear: None ">Pacer Group Ride: Volcano ...</a>
+            </td>
+            <td align="center">7 <sup><sub>km</sub></sup></td>
+            <td align="center">21 <sup><sub>m</sub></sup></td>
+            <td align="center">15:13</td>
+            <td align="center">88 <sup><sub>w</sub></sup></td>
+            <td align="center">28.9 <sup><sub>km/h</sub></sup></td>
+            <td align="center">88</td>
+        </tr>
+            <tr>
+            <td>06-03-24</td>
+            <td>
+                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Group Ride: 3R Steady State Endurance Ride (B) on Tempus Fugit in Watopia" title="Group Ride: 3R Steady State Endurance Ride (B) on Tempus Fugit in Watopia"/>
+<a href="https://www.strava.com/activities/10905377507" title="Kcal: 2259 | Gear: None ">Group Ride: 3R Steady Stat...</a>
+            </td>
+            <td align="center">110 <sup><sub>km</sub></sup></td>
+            <td align="center">169 <sup><sub>m</sub></sup></td>
+            <td align="center">2:32:16</td>
+            <td align="center">258 <sup><sub>w</sub></sup></td>
+            <td align="center">43.5 <sup><sub>km/h</sub></sup></td>
+            <td align="center">130</td>
+        </tr>
+            <tr>
+            <td>06-03-24</td>
+            <td>
+                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Fit &amp; Fun in Watopia" title="Fit &amp; Fun in Watopia"/>
+<a href="https://www.strava.com/activities/10904199282" title="Kcal: 348 | Gear: None ">Fit &amp; Fun in Watopia</a>
+            </td>
+            <td align="center">16 <sup><sub>km</sub></sup></td>
+            <td align="center">26 <sup><sub>m</sub></sup></td>
+            <td align="center">22:30</td>
+            <td align="center">270 <sup><sub>w</sub></sup></td>
+            <td align="center">43.1 <sup><sub>km/h</sub></sup></td>
+            <td align="center">137</td>
+        </tr>
+            <tr>
             <td>05-03-24</td>
             <td>
                                 <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Group Ride: 3R PedalPlay EVOLVE Interval Ride [~2.9-3.2 w/kg avg] (C) on Castle Crit in Makuri Islands" title="Group Ride: 3R PedalPlay EVOLVE Interval Ride [~2.9-3.2 w/kg avg] (C) on Castle Crit in Makuri Islands"/>
@@ -34,45 +73,6 @@
             <td align="center">202 <sup><sub>w</sub></sup></td>
             <td align="center">38.5 <sup><sub>km/h</sub></sup></td>
             <td align="center">103</td>
-        </tr>
-            <tr>
-            <td>03-03-24</td>
-            <td>
-                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Group Ride: 3R Endurance Steady Ride (C) on Wandering Flats in Makuri Islands" title="Group Ride: 3R Endurance Steady Ride (C) on Wandering Flats in Makuri Islands"/>
-<a href="https://www.strava.com/activities/10882876121" title="Kcal: 1066 | Gear: None ">Group Ride: 3R Endurance S...</a>
-            </td>
-            <td align="center">67 <sup><sub>km</sub></sup></td>
-            <td align="center">344 <sup><sub>m</sub></sup></td>
-            <td align="center">1:49:42</td>
-            <td align="center">169 <sup><sub>w</sub></sup></td>
-            <td align="center">36.4 <sup><sub>km/h</sub></sup></td>
-            <td align="center">99</td>
-        </tr>
-            <tr>
-            <td>03-03-24</td>
-            <td>
-                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Group Ride:  BMTR Short Adventure (D) on Watopia&#039;s Waistband in Watopia" title="Group Ride:  BMTR Short Adventure (D) on Watopia&#039;s Waistband in Watopia"/>
-<a href="https://www.strava.com/activities/10881781520" title="Kcal: 201 | Gear: None ">Group Ride:  BMTR Short Ad...</a>
-            </td>
-            <td align="center">13 <sup><sub>km</sub></sup></td>
-            <td align="center">58 <sup><sub>m</sub></sup></td>
-            <td align="center">24:41</td>
-            <td align="center">141 <sup><sub>w</sub></sup></td>
-            <td align="center">31.8 <sup><sub>km/h</sub></sup></td>
-            <td align="center">96</td>
-        </tr>
-            <tr>
-            <td>03-03-24</td>
-            <td>
-                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="WTC Kruiskerke A+B - Natte voetentocht 🌧️" title="WTC Kruiskerke A+B - Natte voetentocht 🌧️"/>
-<a href="https://www.strava.com/activities/10880019719" title="Kcal: 3285 | Gear: None ">WTC Kruiskerke A+B - Natte...</a>
-            </td>
-            <td align="center">122 <sup><sub>km</sub></sup></td>
-            <td align="center">184 <sup><sub>m</sub></sup></td>
-            <td align="center">4:01:46</td>
-            <td align="center">201 <sup><sub>w</sub></sup></td>
-            <td align="center">30.2 <sup><sub>km/h</sub></sup></td>
-            <td align="center">117</td>
         </tr>
                 <tr>
             <td colspan="8" align="right"><a href="https://github.com/robiningelbrecht/strava-activities#activities">View all activities</a></td>
