@@ -31,12 +31,12 @@
                     "",
                     "",
                     "",
-                    "",
                     "Feb 2024",
                     "",
                     "",
                     "",
-                    "Mar 2024"
+                    "Mar 2024",
+                    ""
                 ],
                 "splitLine": {
                     "show": true,
@@ -55,7 +55,7 @@
                 "axisLabel": {
                     "formatter": "{value} km"
                 },
-                "max": 1250
+                "max": 1050
             },
             []
         ],
@@ -82,7 +82,6 @@
                 },
                 "name": "Average distance \/ week",
                 "data": [
-                    1203,
                     1015,
                     811,
                     869,
@@ -92,7 +91,8 @@
                     813,
                     862,
                     814,
-                    827
+                    827,
+                    145
                 ],
                 "yAxisIndex": 0
             }

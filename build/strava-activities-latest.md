@@ -10,6 +10,32 @@
         <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/heart-rate.svg" width="30" alt="average heart rate" title="average heart rate"/></th>
     </tr>
             <tr>
+            <td>12-03-24</td>
+            <td>
+                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Pacer Group Ride: Volcano Flat in Watopia with Taylor" title="Pacer Group Ride: Volcano Flat in Watopia with Taylor"/>
+<a href="https://www.strava.com/activities/10945632517" title="Kcal: 109 | Gear: None ">Pacer Group Ride: Volcano ...</a>
+            </td>
+            <td align="center">11 <sup><sub>km</sub></sup></td>
+            <td align="center">44 <sup><sub>m</sub></sup></td>
+            <td align="center">25:56</td>
+            <td align="center">73 <sup><sub>w</sub></sup></td>
+            <td align="center">26.1 <sup><sub>km/h</sub></sup></td>
+            <td align="center">77</td>
+        </tr>
+            <tr>
+            <td>12-03-24</td>
+            <td>
+                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Group Ride: 3R PedalPlay EVOLVE Interval Ride [~2.9-3.2 w/kg avg] (C) on Seaside Sprint in Watopia" title="Group Ride: 3R PedalPlay EVOLVE Interval Ride [~2.9-3.2 w/kg avg] (C) on Seaside Sprint in Watopia"/>
+<a href="https://www.strava.com/activities/10945413233" title="Kcal: 1416 | Gear: None ">Group Ride: 3R PedalPlay E...</a>
+            </td>
+            <td align="center">68 <sup><sub>km</sub></sup></td>
+            <td align="center">434 <sup><sub>m</sub></sup></td>
+            <td align="center">1:40:32</td>
+            <td align="center">245 <sup><sub>w</sub></sup></td>
+            <td align="center">40.4 <sup><sub>km/h</sub></sup></td>
+            <td align="center">121</td>
+        </tr>
+            <tr>
             <td>11-03-24</td>
             <td>
                                 <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Group Ride: AHDR Bacon Rolls p/b JetBlack (C) on Sleepless City in Makuri Islands" title="Group Ride: AHDR Bacon Rolls p/b JetBlack (C) on Sleepless City in Makuri Islands"/>
@@ -47,32 +73,6 @@
             <td align="center">222 <sup><sub>w</sub></sup></td>
             <td align="center">34.1 <sup><sub>km/h</sub></sup></td>
             <td align="center">120</td>
-        </tr>
-            <tr>
-            <td>09-03-24</td>
-            <td>
-                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Pacer Group Ride: Volcano Flat in Watopia with Bernie" title="Pacer Group Ride: Volcano Flat in Watopia with Bernie"/>
-<a href="https://www.strava.com/activities/10924044473" title="Kcal: 204 | Gear: None ">Pacer Group Ride: Volcano ...</a>
-            </td>
-            <td align="center">16 <sup><sub>km</sub></sup></td>
-            <td align="center">83 <sup><sub>m</sub></sup></td>
-            <td align="center">35:41</td>
-            <td align="center">99 <sup><sub>w</sub></sup></td>
-            <td align="center">27.7 <sup><sub>km/h</sub></sup></td>
-            <td align="center">87</td>
-        </tr>
-            <tr>
-            <td>09-03-24</td>
-            <td>
-                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Rondje los" title="Rondje los"/>
-<a href="https://www.strava.com/activities/10923213687" title="Kcal: 140 | Gear: None ">Rondje los</a>
-            </td>
-            <td align="center">7 <sup><sub>km</sub></sup></td>
-            <td align="center">14 <sup><sub>m</sub></sup></td>
-            <td align="center">16:37</td>
-            <td align="center">115 <sup><sub>w</sub></sup></td>
-            <td align="center">25.6 <sup><sub>km/h</sub></sup></td>
-            <td align="center">93</td>
         </tr>
                 <tr>
             <td colspan="8" align="right"><a href="https://github.com/robiningelbrecht/strava-activities#activities">View all activities</a></td>
