@@ -10,6 +10,45 @@
         <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/heart-rate.svg" width="30" alt="average heart rate" title="average heart rate"/></th>
     </tr>
             <tr>
+            <td>13-03-24</td>
+            <td>
+                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Pacer Group Ride: Volcano Flat in Watopia with Taylor" title="Pacer Group Ride: Volcano Flat in Watopia with Taylor"/>
+<a href="https://www.strava.com/activities/10953525802" title="Kcal: 65 | Gear: None ">Pacer Group Ride: Volcano ...</a>
+            </td>
+            <td align="center">7 <sup><sub>km</sub></sup></td>
+            <td align="center">19 <sup><sub>m</sub></sup></td>
+            <td align="center">18:14</td>
+            <td align="center">62 <sup><sub>w</sub></sup></td>
+            <td align="center">23.2 <sup><sub>km/h</sub></sup></td>
+            <td align="center">79</td>
+        </tr>
+            <tr>
+            <td>13-03-24</td>
+            <td>
+                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Group Ride: 3R Steady State Endurance Ride (B) on The Big Ring in Watopia" title="Group Ride: 3R Steady State Endurance Ride (B) on The Big Ring in Watopia"/>
+<a href="https://www.strava.com/activities/10953400479" title="Kcal: 2155 | Gear: None ">Group Ride: 3R Steady Stat...</a>
+            </td>
+            <td align="center">101 <sup><sub>km</sub></sup></td>
+            <td align="center">544 <sup><sub>m</sub></sup></td>
+            <td align="center">2:38:09</td>
+            <td align="center">237 <sup><sub>w</sub></sup></td>
+            <td align="center">38.2 <sup><sub>km/h</sub></sup></td>
+            <td align="center">120</td>
+        </tr>
+            <tr>
+            <td>13-03-24</td>
+            <td>
+                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Fit &amp; Fun in Watopia" title="Fit &amp; Fun in Watopia"/>
+<a href="https://www.strava.com/activities/10952123620" title="Kcal: 380 | Gear: None ">Fit &amp; Fun in Watopia</a>
+            </td>
+            <td align="center">17 <sup><sub>km</sub></sup></td>
+            <td align="center">26 <sup><sub>m</sub></sup></td>
+            <td align="center">24:14</td>
+            <td align="center">274 <sup><sub>w</sub></sup></td>
+            <td align="center">42.1 <sup><sub>km/h</sub></sup></td>
+            <td align="center">139</td>
+        </tr>
+            <tr>
             <td>12-03-24</td>
             <td>
                                 <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Pacer Group Ride: Volcano Flat in Watopia with Taylor" title="Pacer Group Ride: Volcano Flat in Watopia with Taylor"/>
@@ -34,45 +73,6 @@
             <td align="center">245 <sup><sub>w</sub></sup></td>
             <td align="center">40.4 <sup><sub>km/h</sub></sup></td>
             <td align="center">121</td>
-        </tr>
-            <tr>
-            <td>11-03-24</td>
-            <td>
-                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Group Ride: AHDR Bacon Rolls p/b JetBlack (C) on Sleepless City in Makuri Islands" title="Group Ride: AHDR Bacon Rolls p/b JetBlack (C) on Sleepless City in Makuri Islands"/>
-<a href="https://www.strava.com/activities/10938924917" title="Kcal: 1210 | Gear: None ">Group Ride: AHDR Bacon Rol...</a>
-            </td>
-            <td align="center">66 <sup><sub>km</sub></sup></td>
-            <td align="center">292 <sup><sub>m</sub></sup></td>
-            <td align="center">1:46:12</td>
-            <td align="center">199 <sup><sub>w</sub></sup></td>
-            <td align="center">37.3 <sup><sub>km/h</sub></sup></td>
-            <td align="center">104</td>
-        </tr>
-            <tr>
-            <td>10-03-24</td>
-            <td>
-                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Uurkenalf losrijden" title="Uurkenalf losrijden"/>
-<a href="https://www.strava.com/activities/10931194396" title="Kcal: 1052 | Gear: None ">Uurkenalf losrijden</a>
-            </td>
-            <td align="center">44 <sup><sub>km</sub></sup></td>
-            <td align="center">117 <sup><sub>m</sub></sup></td>
-            <td align="center">1:38:16</td>
-            <td align="center">153 <sup><sub>w</sub></sup></td>
-            <td align="center">26.7 <sup><sub>km/h</sub></sup></td>
-            <td align="center">102</td>
-        </tr>
-            <tr>
-            <td>10-03-24</td>
-            <td>
-                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="WTC Kruiskerke - Holland 🇳🇱" title="WTC Kruiskerke - Holland 🇳🇱"/>
-<a href="https://www.strava.com/activities/10929108900" title="Kcal: 4257 | Gear: None ">WTC Kruiskerke - Holland 🇳...</a>
-            </td>
-            <td align="center">163 <sup><sub>km</sub></sup></td>
-            <td align="center">316 <sup><sub>m</sub></sup></td>
-            <td align="center">4:46:54</td>
-            <td align="center">222 <sup><sub>w</sub></sup></td>
-            <td align="center">34.1 <sup><sub>km/h</sub></sup></td>
-            <td align="center">120</td>
         </tr>
                 <tr>
             <td colspan="8" align="right"><a href="https://github.com/robiningelbrecht/strava-activities#activities">View all activities</a></td>
