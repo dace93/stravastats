@@ -10,6 +10,19 @@
         <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/heart-rate.svg" width="30" alt="average heart rate" title="average heart rate"/></th>
     </tr>
             <tr>
+            <td>14-03-24</td>
+            <td>
+                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Cruise control &amp; taxi spelen langs de vaart 🚕" title="Cruise control &amp; taxi spelen langs de vaart 🚕"/>
+<a href="https://www.strava.com/activities/10959809772" title="Kcal: 2138 | Gear: None ">Cruise control &amp; taxi spel...</a>
+            </td>
+            <td align="center">75 <sup><sub>km</sub></sup></td>
+            <td align="center">171 <sup><sub>m</sub></sup></td>
+            <td align="center">2:11:54</td>
+            <td align="center">245 <sup><sub>w</sub></sup></td>
+            <td align="center">34.1 <sup><sub>km/h</sub></sup></td>
+            <td align="center">121</td>
+        </tr>
+            <tr>
             <td>13-03-24</td>
             <td>
                                 <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Pacer Group Ride: Volcano Flat in Watopia with Taylor" title="Pacer Group Ride: Volcano Flat in Watopia with Taylor"/>
@@ -60,19 +73,6 @@
             <td align="center">73 <sup><sub>w</sub></sup></td>
             <td align="center">26.1 <sup><sub>km/h</sub></sup></td>
             <td align="center">77</td>
-        </tr>
-            <tr>
-            <td>12-03-24</td>
-            <td>
-                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Group Ride: 3R PedalPlay EVOLVE Interval Ride [~2.9-3.2 w/kg avg] (C) on Seaside Sprint in Watopia" title="Group Ride: 3R PedalPlay EVOLVE Interval Ride [~2.9-3.2 w/kg avg] (C) on Seaside Sprint in Watopia"/>
-<a href="https://www.strava.com/activities/10945413233" title="Kcal: 1416 | Gear: None ">Group Ride: 3R PedalPlay E...</a>
-            </td>
-            <td align="center">68 <sup><sub>km</sub></sup></td>
-            <td align="center">434 <sup><sub>m</sub></sup></td>
-            <td align="center">1:40:32</td>
-            <td align="center">245 <sup><sub>w</sub></sup></td>
-            <td align="center">40.4 <sup><sub>km/h</sub></sup></td>
-            <td align="center">121</td>
         </tr>
                 <tr>
             <td colspan="8" align="right"><a href="https://github.com/robiningelbrecht/strava-activities#activities">View all activities</a></td>
