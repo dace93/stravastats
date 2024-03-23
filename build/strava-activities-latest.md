@@ -10,6 +10,45 @@
         <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/heart-rate.svg" width="30" alt="average heart rate" title="average heart rate"/></th>
     </tr>
             <tr>
+            <td>23-03-24</td>
+            <td>
+                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Pacer Group Ride: Tempus Fugit in Watopia with Miguel" title="Pacer Group Ride: Tempus Fugit in Watopia with Miguel"/>
+<a href="https://www.strava.com/activities/11021711123" title="Kcal: 273 | Gear: None ">Pacer Group Ride: Tempus F...</a>
+            </td>
+            <td align="center">20 <sup><sub>km</sub></sup></td>
+            <td align="center">30 <sup><sub>m</sub></sup></td>
+            <td align="center">36:13</td>
+            <td align="center">131 <sup><sub>w</sub></sup></td>
+            <td align="center">33.4 <sup><sub>km/h</sub></sup></td>
+            <td align="center">94</td>
+        </tr>
+            <tr>
+            <td>23-03-24</td>
+            <td>
+                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="VP + beetje extra 💨💨🌦️" title="VP + beetje extra 💨💨🌦️"/>
+<a href="https://www.strava.com/activities/11021258866" title="Kcal: 4755 | Gear: None ">VP + beetje extra 💨💨🌦️...</a>
+            </td>
+            <td align="center">181 <sup><sub>km</sub></sup></td>
+            <td align="center">495 <sup><sub>m</sub></sup></td>
+            <td align="center">5:43:13</td>
+            <td align="center">203 <sup><sub>w</sub></sup></td>
+            <td align="center">31.7 <sup><sub>km/h</sub></sup></td>
+            <td align="center">117</td>
+        </tr>
+            <tr>
+            <td>22-03-24</td>
+            <td>
+                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Naar E3 Saxo Classic met een ommetje 👀🚴‍♂️" title="Naar E3 Saxo Classic met een ommetje 👀🚴‍♂️"/>
+<a href="https://www.strava.com/activities/11013929730" title="Kcal: 3673 | Gear: None ">Naar E3 Saxo Classic met e...</a>
+            </td>
+            <td align="center">136 <sup><sub>km</sub></sup></td>
+            <td align="center">469 <sup><sub>m</sub></sup></td>
+            <td align="center">4:12:04</td>
+            <td align="center">218 <sup><sub>w</sub></sup></td>
+            <td align="center">32.4 <sup><sub>km/h</sub></sup></td>
+            <td align="center">123</td>
+        </tr>
+            <tr>
             <td>21-03-24</td>
             <td>
                                 <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Group Ride: PACK Social + KOM After Party (D) on Keith Hill After Party in London" title="Group Ride: PACK Social + KOM After Party (D) on Keith Hill After Party in London"/>
@@ -34,45 +73,6 @@
             <td align="center">287 <sup><sub>w</sub></sup></td>
             <td align="center">40.7 <sup><sub>km/h</sub></sup></td>
             <td align="center">144</td>
-        </tr>
-            <tr>
-            <td>21-03-24</td>
-            <td>
-                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Terrain Toner in Watopia" title="Terrain Toner in Watopia"/>
-<a href="https://www.strava.com/activities/11009393716" title="Kcal: 397 | Gear: None ">Terrain Toner in Watopia</a>
-            </td>
-            <td align="center">20 <sup><sub>km</sub></sup></td>
-            <td align="center">32 <sup><sub>m</sub></sup></td>
-            <td align="center">29:09</td>
-            <td align="center">238 <sup><sub>w</sub></sup></td>
-            <td align="center">41.3 <sup><sub>km/h</sub></sup></td>
-            <td align="center">118</td>
-        </tr>
-            <tr>
-            <td>20-03-24</td>
-            <td>
-                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Easy after work Amstel training 🌄😎" title="Easy after work Amstel training 🌄😎"/>
-<a href="https://www.strava.com/activities/11002504827" title="Kcal: 1931 | Gear: None ">Easy after work Amstel tra...</a>
-            </td>
-            <td align="center">67 <sup><sub>km</sub></sup></td>
-            <td align="center">727 <sup><sub>m</sub></sup></td>
-            <td align="center">2:18:09</td>
-            <td align="center">208 <sup><sub>w</sub></sup></td>
-            <td align="center">29.2 <sup><sub>km/h</sub></sup></td>
-            <td align="center">115</td>
-        </tr>
-            <tr>
-            <td>20-03-24</td>
-            <td>
-                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="🏡 -&gt; 🏢" title="🏡 -&gt; 🏢"/>
-<a href="https://www.strava.com/activities/10998285509" title="Kcal: 986 | Gear: None ">🏡 -&gt; 🏢</a>
-            </td>
-            <td align="center">36 <sup><sub>km</sub></sup></td>
-            <td align="center">119 <sup><sub>m</sub></sup></td>
-            <td align="center">1:06:21</td>
-            <td align="center">223 <sup><sub>w</sub></sup></td>
-            <td align="center">32.3 <sup><sub>km/h</sub></sup></td>
-            <td align="center">129</td>
         </tr>
                 <tr>
             <td colspan="8" align="right"><a href="https://github.com/robiningelbrecht/strava-activities#activities">View all activities</a></td>
