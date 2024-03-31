@@ -10,6 +10,32 @@
         <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/heart-rate.svg" width="30" alt="average heart rate" title="average heart rate"/></th>
     </tr>
             <tr>
+            <td>31-03-24</td>
+            <td>
+                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="90 min Pacer Group Ride: Volcano Circuit in Watopia with Coco + los" title="90 min Pacer Group Ride: Volcano Circuit in Watopia with Coco + los"/>
+<a href="https://www.strava.com/activities/11077845471" title="Kcal: 1116 | Gear: None ">90 min Pacer Group Ride: V...</a>
+            </td>
+            <td align="center">67 <sup><sub>km</sub></sup></td>
+            <td align="center">318 <sup><sub>m</sub></sup></td>
+            <td align="center">1:45:47</td>
+            <td align="center">184 <sup><sub>w</sub></sup></td>
+            <td align="center">38 <sup><sub>km/h</sub></sup></td>
+            <td align="center">106</td>
+        </tr>
+            <tr>
+            <td>31-03-24</td>
+            <td>
+                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="WTC Kruiskerke A - Ronde van Vlaanderen sfeer opsnuiven 🌤️" title="WTC Kruiskerke A - Ronde van Vlaanderen sfeer opsnuiven 🌤️"/>
+<a href="https://www.strava.com/activities/11075006514" title="Kcal: 3664 | Gear: None ">WTC Kruiskerke A - Ronde v...</a>
+            </td>
+            <td align="center">137 <sup><sub>km</sub></sup></td>
+            <td align="center">689 <sup><sub>m</sub></sup></td>
+            <td align="center">4:18:34</td>
+            <td align="center">211 <sup><sub>w</sub></sup></td>
+            <td align="center">31.8 <sup><sub>km/h</sub></sup></td>
+            <td align="center">120</td>
+        </tr>
+            <tr>
             <td>30-03-24</td>
             <td>
                 <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Daguitstap - Rustig op verkenning 🚴‍♂️" title="Daguitstap - Rustig op verkenning 🚴‍♂️"/>
@@ -47,32 +73,6 @@
             <td align="center">226 <sup><sub>w</sub></sup></td>
             <td align="center">32.6 <sup><sub>km/h</sub></sup></td>
             <td align="center">118</td>
-        </tr>
-            <tr>
-            <td>27-03-24</td>
-            <td>
-                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Sunset, no regret 🤟🌛" title="Sunset, no regret 🤟🌛"/>
-<a href="https://www.strava.com/activities/11050885124" title="Kcal: 2906 | Gear: None ">Sunset, no regret 🤟🌛</a>
-            </td>
-            <td align="center">104 <sup><sub>km</sub></sup></td>
-            <td align="center">275 <sup><sub>m</sub></sup></td>
-            <td align="center">3:02:47</td>
-            <td align="center">240 <sup><sub>w</sub></sup></td>
-            <td align="center">34.2 <sup><sub>km/h</sub></sup></td>
-            <td align="center">116</td>
-        </tr>
-            <tr>
-            <td>26-03-24</td>
-            <td>
-                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Blokjes 🕺" title="Blokjes 🕺"/>
-<a href="https://www.strava.com/activities/11043566967" title="Kcal: 1990 | Gear: None ">Blokjes 🕺</a>
-            </td>
-            <td align="center">71 <sup><sub>km</sub></sup></td>
-            <td align="center">143 <sup><sub>m</sub></sup></td>
-            <td align="center">2:04:13</td>
-            <td align="center">242 <sup><sub>w</sub></sup></td>
-            <td align="center">34.1 <sup><sub>km/h</sub></sup></td>
-            <td align="center">127</td>
         </tr>
                 <tr>
             <td colspan="8" align="right"><a href="https://github.com/robiningelbrecht/strava-activities#activities">View all activities</a></td>
