@@ -10,6 +10,45 @@
         <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/heart-rate.svg" width="30" alt="average heart rate" title="average heart rate"/></th>
     </tr>
             <tr>
+            <td>09-04-24</td>
+            <td>
+                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Pacer Group Ride: Volcano Circuit in Watopia with Miguel" title="Pacer Group Ride: Volcano Circuit in Watopia with Miguel"/>
+<a href="https://www.strava.com/activities/11144050300" title="Kcal: 73 | Gear: None ">Pacer Group Ride: Volcano ...</a>
+            </td>
+            <td align="center">7 <sup><sub>km</sub></sup></td>
+            <td align="center">22 <sup><sub>m</sub></sup></td>
+            <td align="center">15:11</td>
+            <td align="center">84 <sup><sub>w</sub></sup></td>
+            <td align="center">28.3 <sup><sub>km/h</sub></sup></td>
+            <td align="center">84</td>
+        </tr>
+            <tr>
+            <td>09-04-24</td>
+            <td>
+                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Race: ZRL Finals 2023/24 - Open EMEAE Division A1 Plate Semi-Final - Pool 2  on Rolling Highlands in Scotland" title="Race: ZRL Finals 2023/24 - Open EMEAE Division A1 Plate Semi-Final - Pool 2  on Rolling Highlands in Scotland"/>
+<a href="https://www.strava.com/activities/11143896330" title="Kcal: 705 | Gear: None ">Race: ZRL Finals 2023/24 -...</a>
+            </td>
+            <td align="center">33 <sup><sub>km</sub></sup></td>
+            <td align="center">262 <sup><sub>m</sub></sup></td>
+            <td align="center">46:23</td>
+            <td align="center">262 <sup><sub>w</sub></sup></td>
+            <td align="center">43.1 <sup><sub>km/h</sub></sup></td>
+            <td align="center">135</td>
+        </tr>
+            <tr>
+            <td>09-04-24</td>
+            <td>
+                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Elevate and Escalate in Watopia" title="Elevate and Escalate in Watopia"/>
+<a href="https://www.strava.com/activities/11143423039" title="Kcal: 536 | Gear: None ">Elevate and Escalate in Wa...</a>
+            </td>
+            <td align="center">25 <sup><sub>km</sub></sup></td>
+            <td align="center">39 <sup><sub>m</sub></sup></td>
+            <td align="center">36:07</td>
+            <td align="center">259 <sup><sub>w</sub></sup></td>
+            <td align="center">41.8 <sup><sub>km/h</sub></sup></td>
+            <td align="center">121</td>
+        </tr>
+            <tr>
             <td>08-04-24</td>
             <td>
                 <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Actief herstel 🌤️👌" title="Actief herstel 🌤️👌"/>
@@ -33,45 +72,6 @@
             <td align="center">2:30:53</td>
             <td align="center">142 <sup><sub>w</sub></sup></td>
             <td align="center">33.2 <sup><sub>km/h</sub></sup></td>
-            <td align="center">95</td>
-        </tr>
-            <tr>
-            <td>07-04-24</td>
-            <td>
-                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="WTC Kruiskerke A+B - Ieper ☀️💨" title="WTC Kruiskerke A+B - Ieper ☀️💨"/>
-<a href="https://www.strava.com/activities/11125529816" title="Kcal: 3824 | Gear: None ">WTC Kruiskerke A+B - Ieper...</a>
-            </td>
-            <td align="center">144 <sup><sub>km</sub></sup></td>
-            <td align="center">528 <sup><sub>m</sub></sup></td>
-            <td align="center">4:30:48</td>
-            <td align="center">210 <sup><sub>w</sub></sup></td>
-            <td align="center">31.9 <sup><sub>km/h</sub></sup></td>
-            <td align="center">112</td>
-        </tr>
-            <tr>
-            <td>06-04-24</td>
-            <td>
-                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Klassieker v/h goede doel + H/T 🌤️" title="Klassieker v/h goede doel + H/T 🌤️"/>
-<a href="https://www.strava.com/activities/11119446416" title="Kcal: 6541 | Gear: None ">Klassieker v/h goede doel ...</a>
-            </td>
-            <td align="center">236 <sup><sub>km</sub></sup></td>
-            <td align="center">1 788 <sup><sub>m</sub></sup></td>
-            <td align="center">7:33:53</td>
-            <td align="center">216 <sup><sub>w</sub></sup></td>
-            <td align="center">31.2 <sup><sub>km/h</sub></sup></td>
-            <td align="center">125</td>
-        </tr>
-            <tr>
-            <td>05-04-24</td>
-            <td>
-                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="De insecten voelen de lente ook 🪰" title="De insecten voelen de lente ook 🪰"/>
-<a href="https://www.strava.com/activities/11113242292" title="Kcal: 1553 | Gear: None ">De insecten voelen de lent...</a>
-            </td>
-            <td align="center">63 <sup><sub>km</sub></sup></td>
-            <td align="center">172 <sup><sub>m</sub></sup></td>
-            <td align="center">2:02:54</td>
-            <td align="center">185 <sup><sub>w</sub></sup></td>
-            <td align="center">30.7 <sup><sub>km/h</sub></sup></td>
             <td align="center">95</td>
         </tr>
                 <tr>
