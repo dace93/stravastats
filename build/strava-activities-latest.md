@@ -10,6 +10,32 @@
         <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/heart-rate.svg" width="30" alt="average heart rate" title="average heart rate"/></th>
     </tr>
             <tr>
+            <td>11-04-24</td>
+            <td>
+                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Regeneration in Watopia" title="Regeneration in Watopia"/>
+<a href="https://www.strava.com/activities/11158715886" title="Kcal: 402 | Gear: None ">Regeneration in Watopia</a>
+            </td>
+            <td align="center">22 <sup><sub>km</sub></sup></td>
+            <td align="center">33 <sup><sub>m</sub></sup></td>
+            <td align="center">35:09</td>
+            <td align="center">200 <sup><sub>w</sub></sup></td>
+            <td align="center">38 <sup><sub>km/h</sub></sup></td>
+            <td align="center">105</td>
+        </tr>
+            <tr>
+            <td>11-04-24</td>
+            <td>
+                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Zone 2 #1 in Watopia" title="Zone 2 #1 in Watopia"/>
+<a href="https://www.strava.com/activities/11158312194" title="Kcal: 796 | Gear: None ">Zone 2 #1 in Watopia</a>
+            </td>
+            <td align="center">40 <sup><sub>km</sub></sup></td>
+            <td align="center">63 <sup><sub>m</sub></sup></td>
+            <td align="center">1:01:11</td>
+            <td align="center">227 <sup><sub>w</sub></sup></td>
+            <td align="center">39.4 <sup><sub>km/h</sub></sup></td>
+            <td align="center">110</td>
+        </tr>
+            <tr>
             <td>10-04-24</td>
             <td>
                 <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Voorritje + WTC Ruyslee" title="Voorritje + WTC Ruyslee"/>
@@ -47,32 +73,6 @@
             <td align="center">262 <sup><sub>w</sub></sup></td>
             <td align="center">43.1 <sup><sub>km/h</sub></sup></td>
             <td align="center">135</td>
-        </tr>
-            <tr>
-            <td>09-04-24</td>
-            <td>
-                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Elevate and Escalate in Watopia" title="Elevate and Escalate in Watopia"/>
-<a href="https://www.strava.com/activities/11143423039" title="Kcal: 536 | Gear: None ">Elevate and Escalate in Wa...</a>
-            </td>
-            <td align="center">25 <sup><sub>km</sub></sup></td>
-            <td align="center">39 <sup><sub>m</sub></sup></td>
-            <td align="center">36:07</td>
-            <td align="center">259 <sup><sub>w</sub></sup></td>
-            <td align="center">41.8 <sup><sub>km/h</sub></sup></td>
-            <td align="center">121</td>
-        </tr>
-            <tr>
-            <td>08-04-24</td>
-            <td>
-                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Actief herstel 🌤️👌" title="Actief herstel 🌤️👌"/>
-<a href="https://www.strava.com/activities/11136103754" title="Kcal: 1616 | Gear: None ">Actief herstel 🌤️👌</a>
-            </td>
-            <td align="center">62 <sup><sub>km</sub></sup></td>
-            <td align="center">233 <sup><sub>m</sub></sup></td>
-            <td align="center">2:02:41</td>
-            <td align="center">194 <sup><sub>w</sub></sup></td>
-            <td align="center">30.5 <sup><sub>km/h</sub></sup></td>
-            <td align="center">98</td>
         </tr>
                 <tr>
             <td colspan="8" align="right"><a href="https://github.com/robiningelbrecht/strava-activities#activities">View all activities</a></td>
