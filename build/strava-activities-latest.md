@@ -10,6 +10,19 @@
         <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/heart-rate.svg" width="30" alt="average heart rate" title="average heart rate"/></th>
     </tr>
             <tr>
+            <td>12-04-24</td>
+            <td>
+                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="De vlakke wegen opzoeken 🤓" title="De vlakke wegen opzoeken 🤓"/>
+<a href="https://www.strava.com/activities/11165065233" title="Kcal: 3128 | Gear: None ">De vlakke wegen opzoeken 🤓</a>
+            </td>
+            <td align="center">122 <sup><sub>km</sub></sup></td>
+            <td align="center">605 <sup><sub>m</sub></sup></td>
+            <td align="center">4:16:45</td>
+            <td align="center">178 <sup><sub>w</sub></sup></td>
+            <td align="center">28.5 <sup><sub>km/h</sub></sup></td>
+            <td align="center">101</td>
+        </tr>
+            <tr>
             <td>11-04-24</td>
             <td>
                                 <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Regeneration in Watopia" title="Regeneration in Watopia"/>
@@ -60,19 +73,6 @@
             <td align="center">84 <sup><sub>w</sub></sup></td>
             <td align="center">28.3 <sup><sub>km/h</sub></sup></td>
             <td align="center">84</td>
-        </tr>
-            <tr>
-            <td>09-04-24</td>
-            <td>
-                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Race: ZRL Finals 2023/24 - Open EMEAE Division A1 Plate Semi-Final - Pool 2  on Rolling Highlands in Scotland" title="Race: ZRL Finals 2023/24 - Open EMEAE Division A1 Plate Semi-Final - Pool 2  on Rolling Highlands in Scotland"/>
-<a href="https://www.strava.com/activities/11143896330" title="Kcal: 705 | Gear: None ">Race: ZRL Finals 2023/24 -...</a>
-            </td>
-            <td align="center">33 <sup><sub>km</sub></sup></td>
-            <td align="center">262 <sup><sub>m</sub></sup></td>
-            <td align="center">46:23</td>
-            <td align="center">262 <sup><sub>w</sub></sup></td>
-            <td align="center">43.1 <sup><sub>km/h</sub></sup></td>
-            <td align="center">135</td>
         </tr>
                 <tr>
             <td colspan="8" align="right"><a href="https://github.com/robiningelbrecht/strava-activities#activities">View all activities</a></td>
