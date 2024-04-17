@@ -10,6 +10,58 @@
         <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/heart-rate.svg" width="30" alt="average heart rate" title="average heart rate"/></th>
     </tr>
             <tr>
+            <td>17-04-24</td>
+            <td>
+                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Pacer Group Ride: Sugar Cookie in Watopia with Maria" title="Pacer Group Ride: Sugar Cookie in Watopia with Maria"/>
+<a href="https://www.strava.com/activities/11205099576" title="Kcal: 79 | Gear: None ">Pacer Group Ride: Sugar Co...</a>
+            </td>
+            <td align="center">7 <sup><sub>km</sub></sup></td>
+            <td align="center">23 <sup><sub>m</sub></sup></td>
+            <td align="center">13:46</td>
+            <td align="center">101 <sup><sub>w</sub></sup></td>
+            <td align="center">28.7 <sup><sub>km/h</sub></sup></td>
+            <td align="center">93</td>
+        </tr>
+            <tr>
+            <td>17-04-24</td>
+            <td>
+                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Pacer Group Ride: Volcano Flat in Watopia with Coco" title="Pacer Group Ride: Volcano Flat in Watopia with Coco"/>
+<a href="https://www.strava.com/activities/11205006999" title="Kcal: 130 | Gear: None ">Pacer Group Ride: Volcano ...</a>
+            </td>
+            <td align="center">8 <sup><sub>km</sub></sup></td>
+            <td align="center">23 <sup><sub>m</sub></sup></td>
+            <td align="center">12:14</td>
+            <td align="center">184 <sup><sub>w</sub></sup></td>
+            <td align="center">39.9 <sup><sub>km/h</sub></sup></td>
+            <td align="center">114</td>
+        </tr>
+            <tr>
+            <td>17-04-24</td>
+            <td>
+                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Group Ride: 3R Steady State Endurance Ride (B) on Big Flat 8 in Watopia" title="Group Ride: 3R Steady State Endurance Ride (B) on Big Flat 8 in Watopia"/>
+<a href="https://www.strava.com/activities/11204917930" title="Kcal: 2019 | Gear: None ">Group Ride: 3R Steady Stat...</a>
+            </td>
+            <td align="center">100 <sup><sub>km</sub></sup></td>
+            <td align="center">343 <sup><sub>m</sub></sup></td>
+            <td align="center">2:18:26</td>
+            <td align="center">254 <sup><sub>w</sub></sup></td>
+            <td align="center">43.5 <sup><sub>km/h</sub></sup></td>
+            <td align="center">131</td>
+        </tr>
+            <tr>
+            <td>17-04-24</td>
+            <td>
+                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Brisk Burn in Watopia" title="Brisk Burn in Watopia"/>
+<a href="https://www.strava.com/activities/11203724862" title="Kcal: 286 | Gear: None ">Brisk Burn in Watopia</a>
+            </td>
+            <td align="center">13 <sup><sub>km</sub></sup></td>
+            <td align="center">21 <sup><sub>m</sub></sup></td>
+            <td align="center">18:10</td>
+            <td align="center">275 <sup><sub>w</sub></sup></td>
+            <td align="center">43.2 <sup><sub>km/h</sub></sup></td>
+            <td align="center">138</td>
+        </tr>
+            <tr>
             <td>16-04-24</td>
             <td>
                                 <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="20x 2 min intensieve duurintervallen in Watopia" title="20x 2 min intensieve duurintervallen in Watopia"/>
@@ -21,58 +73,6 @@
             <td align="center">237 <sup><sub>w</sub></sup></td>
             <td align="center">40.7 <sup><sub>km/h</sub></sup></td>
             <td align="center">114</td>
-        </tr>
-            <tr>
-            <td>15-04-24</td>
-            <td>
-                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Ambiorix gaan groeten 🚴‍♂️" title="Ambiorix gaan groeten 🚴‍♂️"/>
-<a href="https://www.strava.com/activities/11186197964" title="Kcal: 1890 | Gear: None ">Ambiorix gaan groeten 🚴‍♂️...</a>
-            </td>
-            <td align="center">74 <sup><sub>km</sub></sup></td>
-            <td align="center">476 <sup><sub>m</sub></sup></td>
-            <td align="center">2:40:15</td>
-            <td align="center">172 <sup><sub>w</sub></sup></td>
-            <td align="center">27.6 <sup><sub>km/h</sub></sup></td>
-            <td align="center">103</td>
-        </tr>
-            <tr>
-            <td>14-04-24</td>
-            <td>
-                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Koers gaan kijken &amp; beetje losrijden 🌤️" title="Koers gaan kijken &amp; beetje losrijden 🌤️"/>
-<a href="https://www.strava.com/activities/11180801160" title="Kcal: 3203 | Gear: None ">Koers gaan kijken &amp; beetje...</a>
-            </td>
-            <td align="center">122 <sup><sub>km</sub></sup></td>
-            <td align="center">1 049 <sup><sub>m</sub></sup></td>
-            <td align="center">4:34:43</td>
-            <td align="center">171 <sup><sub>w</sub></sup></td>
-            <td align="center">26.6 <sup><sub>km/h</sub></sup></td>
-            <td align="center">100</td>
-        </tr>
-            <tr>
-            <td>13-04-24</td>
-            <td>
-                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Amstel Gold Race 🌞" title="Amstel Gold Race 🌞"/>
-<a href="https://www.strava.com/activities/11174046451" title="Kcal: 7864 | Gear: None ">Amstel Gold Race 🌞</a>
-            </td>
-            <td align="center">304 <sup><sub>km</sub></sup></td>
-            <td align="center">3 134 <sup><sub>m</sub></sup></td>
-            <td align="center">10:02:57</td>
-            <td align="center">192 <sup><sub>w</sub></sup></td>
-            <td align="center">30.2 <sup><sub>km/h</sub></sup></td>
-            <td align="center">122</td>
-        </tr>
-            <tr>
-            <td>12-04-24</td>
-            <td>
-                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="De vlakke wegen opzoeken 🤓" title="De vlakke wegen opzoeken 🤓"/>
-<a href="https://www.strava.com/activities/11165065233" title="Kcal: 3128 | Gear: None ">De vlakke wegen opzoeken 🤓</a>
-            </td>
-            <td align="center">122 <sup><sub>km</sub></sup></td>
-            <td align="center">605 <sup><sub>m</sub></sup></td>
-            <td align="center">4:16:45</td>
-            <td align="center">178 <sup><sub>w</sub></sup></td>
-            <td align="center">28.5 <sup><sub>km/h</sub></sup></td>
-            <td align="center">101</td>
         </tr>
                 <tr>
             <td colspan="8" align="right"><a href="https://github.com/robiningelbrecht/strava-activities#activities">View all activities</a></td>
