@@ -10,6 +10,32 @@
         <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/heart-rate.svg" width="30" alt="average heart rate" title="average heart rate"/></th>
     </tr>
             <tr>
+            <td>18-04-24</td>
+            <td>
+                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Day 5 - Optional in Watopia" title="Day 5 - Optional in Watopia"/>
+<a href="https://www.strava.com/activities/11212366113" title="Kcal: 569 | Gear: None ">Day 5 - Optional in Watopia</a>
+            </td>
+            <td align="center">30 <sup><sub>km</sub></sup></td>
+            <td align="center">46 <sup><sub>m</sub></sup></td>
+            <td align="center">47:18</td>
+            <td align="center">210 <sup><sub>w</sub></sup></td>
+            <td align="center">38.2 <sup><sub>km/h</sub></sup></td>
+            <td align="center">112</td>
+        </tr>
+            <tr>
+            <td>18-04-24</td>
+            <td>
+                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Strength Endurance + Sweet Spot in Watopia" title="Strength Endurance + Sweet Spot in Watopia"/>
+<a href="https://www.strava.com/activities/11212025436" title="Kcal: 689 | Gear: None ">Strength Endurance + Sweet...</a>
+            </td>
+            <td align="center">32 <sup><sub>km</sub></sup></td>
+            <td align="center">48 <sup><sub>m</sub></sup></td>
+            <td align="center">45:22</td>
+            <td align="center">265 <sup><sub>w</sub></sup></td>
+            <td align="center">41.7 <sup><sub>km/h</sub></sup></td>
+            <td align="center">125</td>
+        </tr>
+            <tr>
             <td>17-04-24</td>
             <td>
                                 <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Pacer Group Ride: Sugar Cookie in Watopia with Maria" title="Pacer Group Ride: Sugar Cookie in Watopia with Maria"/>
@@ -47,32 +73,6 @@
             <td align="center">254 <sup><sub>w</sub></sup></td>
             <td align="center">43.5 <sup><sub>km/h</sub></sup></td>
             <td align="center">131</td>
-        </tr>
-            <tr>
-            <td>17-04-24</td>
-            <td>
-                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Brisk Burn in Watopia" title="Brisk Burn in Watopia"/>
-<a href="https://www.strava.com/activities/11203724862" title="Kcal: 286 | Gear: None ">Brisk Burn in Watopia</a>
-            </td>
-            <td align="center">13 <sup><sub>km</sub></sup></td>
-            <td align="center">21 <sup><sub>m</sub></sup></td>
-            <td align="center">18:10</td>
-            <td align="center">275 <sup><sub>w</sub></sup></td>
-            <td align="center">43.2 <sup><sub>km/h</sub></sup></td>
-            <td align="center">138</td>
-        </tr>
-            <tr>
-            <td>16-04-24</td>
-            <td>
-                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="20x 2 min intensieve duurintervallen in Watopia" title="20x 2 min intensieve duurintervallen in Watopia"/>
-<a href="https://www.strava.com/activities/11197528016" title="Kcal: 1229 | Gear: None ">20x 2 min intensieve duuri...</a>
-            </td>
-            <td align="center">61 <sup><sub>km</sub></sup></td>
-            <td align="center">94 <sup><sub>m</sub></sup></td>
-            <td align="center">1:30:31</td>
-            <td align="center">237 <sup><sub>w</sub></sup></td>
-            <td align="center">40.7 <sup><sub>km/h</sub></sup></td>
-            <td align="center">114</td>
         </tr>
                 <tr>
             <td colspan="8" align="right"><a href="https://github.com/robiningelbrecht/strava-activities#activities">View all activities</a></td>
