@@ -10,69 +10,69 @@
         <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/heart-rate.svg" width="30" alt="average heart rate" title="average heart rate"/></th>
     </tr>
             <tr>
-            <td>19-04-24</td>
+            <td>20-04-24</td>
             <td>
-                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Actief herstel in Watopia" title="Actief herstel in Watopia"/>
-<a href="https://www.strava.com/activities/11218803166" title="Kcal: 405 | Gear: None ">Actief herstel in Watopia</a>
+                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Pacer Group Ride: Volcano Circuit in Watopia with Bernie" title="Pacer Group Ride: Volcano Circuit in Watopia with Bernie"/>
+<a href="https://www.strava.com/activities/11225024016" title="Kcal: 155 | Gear: None ">Pacer Group Ride: Volcano ...</a>
             </td>
-            <td align="center">20 <sup><sub>km</sub></sup></td>
-            <td align="center">32 <sup><sub>m</sub></sup></td>
-            <td align="center">32:37</td>
-            <td align="center">217 <sup><sub>w</sub></sup></td>
-            <td align="center">37.1 <sup><sub>km/h</sub></sup></td>
-            <td align="center">115</td>
+            <td align="center">11 <sup><sub>km</sub></sup></td>
+            <td align="center">42 <sup><sub>m</sub></sup></td>
+            <td align="center">20:24</td>
+            <td align="center">132 <sup><sub>w</sub></sup></td>
+            <td align="center">32.5 <sup><sub>km/h</sub></sup></td>
+            <td align="center">94</td>
         </tr>
             <tr>
-            <td>19-04-24</td>
+            <td>20-04-24</td>
             <td>
-                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Sneaky in Watopia" title="Sneaky in Watopia"/>
-<a href="https://www.strava.com/activities/11218614026" title="Kcal: 890 | Gear: None ">Sneaky in Watopia</a>
+                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Los #1" title="Los #1"/>
+<a href="https://www.strava.com/activities/11224832368" title="Kcal: 170 | Gear: None ">Los #1</a>
             </td>
-            <td align="center">40 <sup><sub>km</sub></sup></td>
-            <td align="center">63 <sup><sub>m</sub></sup></td>
-            <td align="center">1:00:22</td>
-            <td align="center">257 <sup><sub>w</sub></sup></td>
-            <td align="center">39.9 <sup><sub>km/h</sub></sup></td>
-            <td align="center">123</td>
+            <td align="center">11 <sup><sub>km</sub></sup></td>
+            <td align="center">18 <sup><sub>m</sub></sup></td>
+            <td align="center">18:39</td>
+            <td align="center">160 <sup><sub>w</sub></sup></td>
+            <td align="center">35.7 <sup><sub>km/h</sub></sup></td>
+            <td align="center">98</td>
         </tr>
             <tr>
-            <td>18-04-24</td>
+            <td>20-04-24</td>
             <td>
-                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Day 5 - Optional in Watopia" title="Day 5 - Optional in Watopia"/>
-<a href="https://www.strava.com/activities/11212366113" title="Kcal: 569 | Gear: None ">Day 5 - Optional in Watopia</a>
+                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Pacer Group Ride: Volcano Flat in Watopia with Coco" title="Pacer Group Ride: Volcano Flat in Watopia with Coco"/>
+<a href="https://www.strava.com/activities/11224495315" title="Kcal: 95 | Gear: None ">Pacer Group Ride: Volcano ...</a>
             </td>
-            <td align="center">30 <sup><sub>km</sub></sup></td>
-            <td align="center">46 <sup><sub>m</sub></sup></td>
-            <td align="center">47:18</td>
-            <td align="center">210 <sup><sub>w</sub></sup></td>
-            <td align="center">38.2 <sup><sub>km/h</sub></sup></td>
-            <td align="center">112</td>
+            <td align="center">6 <sup><sub>km</sub></sup></td>
+            <td align="center">14 <sup><sub>m</sub></sup></td>
+            <td align="center">8:59</td>
+            <td align="center">184 <sup><sub>w</sub></sup></td>
+            <td align="center">40.8 <sup><sub>km/h</sub></sup></td>
+            <td align="center">102</td>
         </tr>
             <tr>
-            <td>18-04-24</td>
+            <td>20-04-24</td>
             <td>
-                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Strength Endurance + Sweet Spot in Watopia" title="Strength Endurance + Sweet Spot in Watopia"/>
-<a href="https://www.strava.com/activities/11212025436" title="Kcal: 689 | Gear: None ">Strength Endurance + Sweet...</a>
+                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Group Ride: 3R Endurance Steady Ride (C) on London Loop in London" title="Group Ride: 3R Endurance Steady Ride (C) on London Loop in London"/>
+<a href="https://www.strava.com/activities/11224395966" title="Kcal: 384 | Gear: None ">Group Ride: 3R Endurance S...</a>
             </td>
-            <td align="center">32 <sup><sub>km</sub></sup></td>
-            <td align="center">48 <sup><sub>m</sub></sup></td>
-            <td align="center">45:22</td>
-            <td align="center">265 <sup><sub>w</sub></sup></td>
-            <td align="center">41.7 <sup><sub>km/h</sub></sup></td>
-            <td align="center">125</td>
+            <td align="center">17 <sup><sub>km</sub></sup></td>
+            <td align="center">249 <sup><sub>m</sub></sup></td>
+            <td align="center">30:31</td>
+            <td align="center">218 <sup><sub>w</sub></sup></td>
+            <td align="center">33.8 <sup><sub>km/h</sub></sup></td>
+            <td align="center">114</td>
         </tr>
             <tr>
-            <td>17-04-24</td>
+            <td>20-04-24</td>
             <td>
-                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Pacer Group Ride: Sugar Cookie in Watopia with Maria" title="Pacer Group Ride: Sugar Cookie in Watopia with Maria"/>
-<a href="https://www.strava.com/activities/11205099576" title="Kcal: 79 | Gear: None ">Pacer Group Ride: Sugar Co...</a>
+                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Motivatie zoeken aan zee 🏖️" title="Motivatie zoeken aan zee 🏖️"/>
+<a href="https://www.strava.com/activities/11223070671" title="Kcal: 4023 | Gear: None ">Motivatie zoeken aan zee 🏖...</a>
             </td>
-            <td align="center">7 <sup><sub>km</sub></sup></td>
-            <td align="center">23 <sup><sub>m</sub></sup></td>
-            <td align="center">13:46</td>
-            <td align="center">101 <sup><sub>w</sub></sup></td>
-            <td align="center">28.7 <sup><sub>km/h</sub></sup></td>
-            <td align="center">93</td>
+            <td align="center">145 <sup><sub>km</sub></sup></td>
+            <td align="center">395 <sup><sub>m</sub></sup></td>
+            <td align="center">4:47:06</td>
+            <td align="center">208 <sup><sub>w</sub></sup></td>
+            <td align="center">30.3 <sup><sub>km/h</sub></sup></td>
+            <td align="center">116</td>
         </tr>
                 <tr>
             <td colspan="8" align="right"><a href="https://github.com/robiningelbrecht/strava-activities#activities">View all activities</a></td>
