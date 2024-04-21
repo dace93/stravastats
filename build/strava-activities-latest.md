@@ -10,6 +10,32 @@
         <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/heart-rate.svg" width="30" alt="average heart rate" title="average heart rate"/></th>
     </tr>
             <tr>
+            <td>21-04-24</td>
+            <td>
+                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Tempus Fugit in Watopia" title="Tempus Fugit in Watopia"/>
+<a href="https://www.strava.com/activities/11233490743" title="Kcal: 550 | Gear: None ">Tempus Fugit in Watopia</a>
+            </td>
+            <td align="center">35 <sup><sub>km</sub></sup></td>
+            <td align="center">54 <sup><sub>m</sub></sup></td>
+            <td align="center">1:00:16</td>
+            <td align="center">159 <sup><sub>w</sub></sup></td>
+            <td align="center">35 <sup><sub>km/h</sub></sup></td>
+            <td align="center">97</td>
+        </tr>
+            <tr>
+            <td>21-04-24</td>
+            <td>
+                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="WTC Kruiskerke - Biervliet 🍻" title="WTC Kruiskerke - Biervliet 🍻"/>
+<a href="https://www.strava.com/activities/11230040364" title="Kcal: 3750 | Gear: None ">WTC Kruiskerke - Biervliet...</a>
+            </td>
+            <td align="center">130 <sup><sub>km</sub></sup></td>
+            <td align="center">468 <sup><sub>m</sub></sup></td>
+            <td align="center">4:02:59</td>
+            <td align="center">233 <sup><sub>w</sub></sup></td>
+            <td align="center">32.1 <sup><sub>km/h</sub></sup></td>
+            <td align="center">122</td>
+        </tr>
+            <tr>
             <td>20-04-24</td>
             <td>
                                 <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Pacer Group Ride: Volcano Circuit in Watopia with Bernie" title="Pacer Group Ride: Volcano Circuit in Watopia with Bernie"/>
@@ -47,32 +73,6 @@
             <td align="center">184 <sup><sub>w</sub></sup></td>
             <td align="center">40.8 <sup><sub>km/h</sub></sup></td>
             <td align="center">102</td>
-        </tr>
-            <tr>
-            <td>20-04-24</td>
-            <td>
-                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Group Ride: 3R Endurance Steady Ride (C) on London Loop in London" title="Group Ride: 3R Endurance Steady Ride (C) on London Loop in London"/>
-<a href="https://www.strava.com/activities/11224395966" title="Kcal: 384 | Gear: None ">Group Ride: 3R Endurance S...</a>
-            </td>
-            <td align="center">17 <sup><sub>km</sub></sup></td>
-            <td align="center">249 <sup><sub>m</sub></sup></td>
-            <td align="center">30:31</td>
-            <td align="center">218 <sup><sub>w</sub></sup></td>
-            <td align="center">33.8 <sup><sub>km/h</sub></sup></td>
-            <td align="center">114</td>
-        </tr>
-            <tr>
-            <td>20-04-24</td>
-            <td>
-                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Motivatie zoeken aan zee 🏖️" title="Motivatie zoeken aan zee 🏖️"/>
-<a href="https://www.strava.com/activities/11223070671" title="Kcal: 4023 | Gear: None ">Motivatie zoeken aan zee 🏖...</a>
-            </td>
-            <td align="center">145 <sup><sub>km</sub></sup></td>
-            <td align="center">395 <sup><sub>m</sub></sup></td>
-            <td align="center">4:47:06</td>
-            <td align="center">208 <sup><sub>w</sub></sup></td>
-            <td align="center">30.3 <sup><sub>km/h</sub></sup></td>
-            <td align="center">116</td>
         </tr>
                 <tr>
             <td colspan="8" align="right"><a href="https://github.com/robiningelbrecht/strava-activities#activities">View all activities</a></td>
