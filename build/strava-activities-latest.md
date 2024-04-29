@@ -10,6 +10,19 @@
         <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/heart-rate.svg" width="30" alt="average heart rate" title="average heart rate"/></th>
     </tr>
             <tr>
+            <td>29-04-24</td>
+            <td>
+                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Pacer Group Ride: Country to Coastal in Makuri Islands with Miguel" title="Pacer Group Ride: Country to Coastal in Makuri Islands with Miguel"/>
+<a href="https://www.strava.com/activities/11292882841" title="Kcal: 28 | Gear: None ">Pacer Group Ride: Country ...</a>
+            </td>
+            <td align="center">3 <sup><sub>km</sub></sup></td>
+            <td align="center">10 <sup><sub>m</sub></sup></td>
+            <td align="center">5:09</td>
+            <td align="center">95 <sup><sub>w</sub></sup></td>
+            <td align="center">38.5 <sup><sub>km/h</sub></sup></td>
+            <td align="center">n/a</td>
+        </tr>
+            <tr>
             <td>23-04-24</td>
             <td>
                 <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Gegokt en verloren: nat 😔☔" title="Gegokt en verloren: nat 😔☔"/>
@@ -60,19 +73,6 @@
             <td align="center">233 <sup><sub>w</sub></sup></td>
             <td align="center">32.1 <sup><sub>km/h</sub></sup></td>
             <td align="center">122</td>
-        </tr>
-            <tr>
-            <td>20-04-24</td>
-            <td>
-                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Pacer Group Ride: Volcano Circuit in Watopia with Bernie" title="Pacer Group Ride: Volcano Circuit in Watopia with Bernie"/>
-<a href="https://www.strava.com/activities/11225024016" title="Kcal: 155 | Gear: None ">Pacer Group Ride: Volcano ...</a>
-            </td>
-            <td align="center">11 <sup><sub>km</sub></sup></td>
-            <td align="center">42 <sup><sub>m</sub></sup></td>
-            <td align="center">20:24</td>
-            <td align="center">132 <sup><sub>w</sub></sup></td>
-            <td align="center">32.5 <sup><sub>km/h</sub></sup></td>
-            <td align="center">94</td>
         </tr>
                 <tr>
             <td colspan="8" align="right"><a href="https://github.com/robiningelbrecht/strava-activities#activities">View all activities</a></td>
