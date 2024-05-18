@@ -10,6 +10,45 @@
         <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/heart-rate.svg" width="30" alt="average heart rate" title="average heart rate"/></th>
     </tr>
             <tr>
+            <td>18-05-24</td>
+            <td>
+                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Afternoon Ride" title="Afternoon Ride"/>
+<a href="https://www.strava.com/activities/11439430231" title="Kcal: 1032 | Gear: None ">Afternoon Ride</a>
+            </td>
+            <td align="center">34 <sup><sub>km</sub></sup></td>
+            <td align="center">126 <sup><sub>m</sub></sup></td>
+            <td align="center">1:06:17</td>
+            <td align="center">233 <sup><sub>w</sub></sup></td>
+            <td align="center">30.6 <sup><sub>km/h</sub></sup></td>
+            <td align="center">147</td>
+        </tr>
+            <tr>
+            <td>18-05-24</td>
+            <td>
+                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Pacer Group Ride: Tempus Fugit in Watopia with Maria" title="Pacer Group Ride: Tempus Fugit in Watopia with Maria"/>
+<a href="https://www.strava.com/activities/11437096472" title="Kcal: 55 | Gear: None ">Pacer Group Ride: Tempus F...</a>
+            </td>
+            <td align="center">5 <sup><sub>km</sub></sup></td>
+            <td align="center">9 <sup><sub>m</sub></sup></td>
+            <td align="center">11:21</td>
+            <td align="center">85 <sup><sub>w</sub></sup></td>
+            <td align="center">26.6 <sup><sub>km/h</sub></sup></td>
+            <td align="center">101</td>
+        </tr>
+            <tr>
+            <td>18-05-24</td>
+            <td>
+                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride.svg" width="12" alt="Morning Ride" title="Morning Ride"/>
+<a href="https://www.strava.com/activities/11437080980" title="Kcal: 393 | Gear: None ">Morning Ride</a>
+            </td>
+            <td align="center">17 <sup><sub>km</sub></sup></td>
+            <td align="center">56 <sup><sub>m</sub></sup></td>
+            <td align="center">32:35</td>
+            <td align="center">202 <sup><sub>w</sub></sup></td>
+            <td align="center">31.3 <sup><sub>km/h</sub></sup></td>
+            <td align="center">130</td>
+        </tr>
+            <tr>
             <td>17-05-24</td>
             <td>
                 <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Lunch Ride" title="Lunch Ride"/>
@@ -34,45 +73,6 @@
             <td align="center">228 <sup><sub>w</sub></sup></td>
             <td align="center">35 <sup><sub>km/h</sub></sup></td>
             <td align="center">145</td>
-        </tr>
-            <tr>
-            <td>12-05-24</td>
-            <td>
-                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Lunch Ride" title="Lunch Ride"/>
-<a href="https://www.strava.com/activities/11391821421" title="Kcal: 209 | Gear: None ">Lunch Ride</a>
-            </td>
-            <td align="center">5 <sup><sub>km</sub></sup></td>
-            <td align="center">8 <sup><sub>m</sub></sup></td>
-            <td align="center">16:46</td>
-            <td align="center">47 <sup><sub>w</sub></sup></td>
-            <td align="center">18.5 <sup><sub>km/h</sub></sup></td>
-            <td align="center">119</td>
-        </tr>
-            <tr>
-            <td>12-05-24</td>
-            <td>
-                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Lunch Ride" title="Lunch Ride"/>
-<a href="https://www.strava.com/activities/11391434665" title="Kcal: 149 | Gear: None ">Lunch Ride</a>
-            </td>
-            <td align="center">3 <sup><sub>km</sub></sup></td>
-            <td align="center">2 <sup><sub>m</sub></sup></td>
-            <td align="center">10:43</td>
-            <td align="center">37 <sup><sub>w</sub></sup></td>
-            <td align="center">16.8 <sup><sub>km/h</sub></sup></td>
-            <td align="center">124</td>
-        </tr>
-            <tr>
-            <td>09-05-24</td>
-            <td>
-                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Lunch Ride" title="Lunch Ride"/>
-<a href="https://www.strava.com/activities/11367721961" title="Kcal: 238 | Gear: None ">Lunch Ride</a>
-            </td>
-            <td align="center">5 <sup><sub>km</sub></sup></td>
-            <td align="center">6 <sup><sub>m</sub></sup></td>
-            <td align="center">16:40</td>
-            <td align="center">46 <sup><sub>w</sub></sup></td>
-            <td align="center">18.1 <sup><sub>km/h</sub></sup></td>
-            <td align="center">127</td>
         </tr>
                 <tr>
             <td colspan="8" align="right"><a href="https://github.com/robiningelbrecht/strava-activities#activities">View all activities</a></td>
