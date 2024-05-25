@@ -10,6 +10,32 @@
         <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/heart-rate.svg" width="30" alt="average heart rate" title="average heart rate"/></th>
     </tr>
             <tr>
+            <td>25-05-24</td>
+            <td>
+                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="&quot;Cédric heeft voor de eerste keer in langere tijd een rit geüpload&quot;" title="&quot;Cédric heeft voor de eerste keer in langere tijd een rit geüpload&quot;"/>
+<a href="https://www.strava.com/activities/11495713008" title="Kcal: 881 | Gear: None ">&quot;Cédric heeft voor de eers...</a>
+            </td>
+            <td align="center">34 <sup><sub>km</sub></sup></td>
+            <td align="center">89 <sup><sub>m</sub></sup></td>
+            <td align="center">1:05:08</td>
+            <td align="center">201 <sup><sub>w</sub></sup></td>
+            <td align="center">31.2 <sup><sub>km/h</sub></sup></td>
+            <td align="center">123</td>
+        </tr>
+            <tr>
+            <td>25-05-24</td>
+            <td>
+                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Group Ride: 3R Endurance Steady Ride (C) on Casse-Pattes in France" title="Group Ride: 3R Endurance Steady Ride (C) on Casse-Pattes in France"/>
+<a href="https://www.strava.com/activities/11490871010" title="Kcal: 684 | Gear: None ">Group Ride: 3R Endurance S...</a>
+            </td>
+            <td align="center">40 <sup><sub>km</sub></sup></td>
+            <td align="center">201 <sup><sub>m</sub></sup></td>
+            <td align="center">1:08:20</td>
+            <td align="center">174 <sup><sub>w</sub></sup></td>
+            <td align="center">35.2 <sup><sub>km/h</sub></sup></td>
+            <td align="center">114</td>
+        </tr>
+            <tr>
             <td>24-05-24</td>
             <td>
                 <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Morning Ride" title="Morning Ride"/>
@@ -47,32 +73,6 @@
             <td align="center">191 <sup><sub>w</sub></sup></td>
             <td align="center">32.7 <sup><sub>km/h</sub></sup></td>
             <td align="center">127</td>
-        </tr>
-            <tr>
-            <td>21-05-24</td>
-            <td>
-                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Pacer Group Ride: Tempus Fugit in Watopia with Miguel" title="Pacer Group Ride: Tempus Fugit in Watopia with Miguel"/>
-<a href="https://www.strava.com/activities/11465059099" title="Kcal: 349 | Gear: None ">Pacer Group Ride: Tempus F...</a>
-            </td>
-            <td align="center">21 <sup><sub>km</sub></sup></td>
-            <td align="center">30 <sup><sub>m</sub></sup></td>
-            <td align="center">35:28</td>
-            <td align="center">172 <sup><sub>w</sub></sup></td>
-            <td align="center">35.9 <sup><sub>km/h</sub></sup></td>
-            <td align="center">106</td>
-        </tr>
-            <tr>
-            <td>20-05-24</td>
-            <td>
-                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Morning Ride" title="Morning Ride"/>
-<a href="https://www.strava.com/activities/11453676362" title="Kcal: 2539 | Gear: None ">Morning Ride</a>
-            </td>
-            <td align="center">126 <sup><sub>km</sub></sup></td>
-            <td align="center">290 <sup><sub>m</sub></sup></td>
-            <td align="center">4:04:07</td>
-            <td align="center">148 <sup><sub>w</sub></sup></td>
-            <td align="center">31.1 <sup><sub>km/h</sub></sup></td>
-            <td align="center">117</td>
         </tr>
                 <tr>
             <td colspan="8" align="right"><a href="https://github.com/robiningelbrecht/strava-activities#activities">View all activities</a></td>
