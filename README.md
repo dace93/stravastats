@@ -4,19 +4,19 @@
 </p>
 
 Since I began cycling `13 years and 3 months` ago on `06-03-2012`,
-I had `2485 cycling days`.<br />
-I recorded a total distance of `207 453 km`
+I had `2486 cycling days`.<br />
+I recorded a total distance of `207 504 km`
 (`5.18` trips around the world 🌍 and
 `0.540` trips to the moon 🌕),
-an elevation of `929 641 m`
+an elevation of `930 009 m`
 (`105.1` times Mount Everest 🏔)
-and a total time of `9mos 2w 1d 12h 20m` 🎉
+and a total time of `9mos 2w 1d 13h 37m` 🎉
 
 That's a daily average of `46 km`,
 a weekly average of `325 km` and a
-monthly average of `1 411 km` 🐣
+monthly average of `1 412 km` 🐣
 
-I burned `4573364 calories` doing so, that's about `16 938` pizza slices 🍕
+I burned `4574327 calories` doing so, that's about `16 942` pizza slices 🍕
 
 ---
 
@@ -52,6 +52,58 @@ I burned `4573364 calories` doing so, that's about `16 938` pizza slices 🍕
         <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/heart-rate.svg" width="30" alt="average heart rate" title="average heart rate"/></th>
     </tr>
             <tr>
+            <td>28-05-24</td>
+            <td>
+                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Pacer Group Ride: Tempus Fugit in Watopia with Bernie" title="Pacer Group Ride: Tempus Fugit in Watopia with Bernie"/>
+<a href="https://www.strava.com/activities/11518528449" title="Kcal: 32 | Gear: Tacx Neo Bike Smart ">Pacer Group Ride: Tempus F...</a>
+            </td>
+            <td align="center">3 <sup><sub>km</sub></sup></td>
+            <td align="center">1 <sup><sub>m</sub></sup></td>
+            <td align="center">6:08</td>
+            <td align="center">89 <sup><sub>w</sub></sup></td>
+            <td align="center">29.9 <sup><sub>km/h</sub></sup></td>
+            <td align="center">107</td>
+        </tr>
+            <tr>
+            <td>28-05-24</td>
+            <td>
+                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Group Ride: 3R PedalPlay EVOLVE Interval Ride [~2.9-3.2 w/kg avg] (C) on Downtown Dolphin in Crit City" title="Group Ride: 3R PedalPlay EVOLVE Interval Ride [~2.9-3.2 w/kg avg] (C) on Downtown Dolphin in Crit City"/>
+<a href="https://www.strava.com/activities/11518458639" title="Kcal: 866 | Gear: Tacx Neo Bike Smart ">Group Ride: 3R PedalPlay E...</a>
+            </td>
+            <td align="center">43 <sup><sub>km</sub></sup></td>
+            <td align="center">362 <sup><sub>m</sub></sup></td>
+            <td align="center">1:03:09</td>
+            <td align="center">238 <sup><sub>w</sub></sup></td>
+            <td align="center">41.1 <sup><sub>km/h</sub></sup></td>
+            <td align="center">144</td>
+        </tr>
+            <tr>
+            <td>28-05-24</td>
+            <td>
+                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Pacer Group Ride: Tempus Fugit in Watopia with Bernie" title="Pacer Group Ride: Tempus Fugit in Watopia with Bernie"/>
+<a href="https://www.strava.com/activities/11517875935" title="Kcal: 30 | Gear: Tacx Neo Bike Smart ">Pacer Group Ride: Tempus F...</a>
+            </td>
+            <td align="center">2 <sup><sub>km</sub></sup></td>
+            <td align="center">4 <sup><sub>m</sub></sup></td>
+            <td align="center">3:44</td>
+            <td align="center">136 <sup><sub>w</sub></sup></td>
+            <td align="center">33.3 <sup><sub>km/h</sub></sup></td>
+            <td align="center">98</td>
+        </tr>
+            <tr>
+            <td>28-05-24</td>
+            <td>
+                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Pacer Group Ride: Tempus Fugit in Watopia with Bernie" title="Pacer Group Ride: Tempus Fugit in Watopia with Bernie"/>
+<a href="https://www.strava.com/activities/11517834769" title="Kcal: 35 | Gear: Tacx Neo Bike Smart ">Pacer Group Ride: Tempus F...</a>
+            </td>
+            <td align="center">2 <sup><sub>km</sub></sup></td>
+            <td align="center">1 <sup><sub>m</sub></sup></td>
+            <td align="center">4:28</td>
+            <td align="center">133 <sup><sub>w</sub></sup></td>
+            <td align="center">32.4 <sup><sub>km/h</sub></sup></td>
+            <td align="center">98</td>
+        </tr>
+            <tr>
             <td>25-05-24</td>
             <td>
                 <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="&quot;Cédric heeft voor de eerste keer in langere tijd een rit geüpload&quot;" title="&quot;Cédric heeft voor de eerste keer in langere tijd een rit geüpload&quot;"/>
@@ -63,58 +115,6 @@ I burned `4573364 calories` doing so, that's about `16 938` pizza slices 🍕
             <td align="center">201 <sup><sub>w</sub></sup></td>
             <td align="center">31.2 <sup><sub>km/h</sub></sup></td>
             <td align="center">123</td>
-        </tr>
-            <tr>
-            <td>25-05-24</td>
-            <td>
-                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Group Ride: 3R Endurance Steady Ride (C) on Casse-Pattes in France" title="Group Ride: 3R Endurance Steady Ride (C) on Casse-Pattes in France"/>
-<a href="https://www.strava.com/activities/11490871010" title="Kcal: 684 | Gear: Tacx Neo Bike Smart ">Group Ride: 3R Endurance S...</a>
-            </td>
-            <td align="center">40 <sup><sub>km</sub></sup></td>
-            <td align="center">201 <sup><sub>m</sub></sup></td>
-            <td align="center">1:08:20</td>
-            <td align="center">174 <sup><sub>w</sub></sup></td>
-            <td align="center">35.2 <sup><sub>km/h</sub></sup></td>
-            <td align="center">114</td>
-        </tr>
-            <tr>
-            <td>24-05-24</td>
-            <td>
-                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Morning Ride" title="Morning Ride"/>
-<a href="https://www.strava.com/activities/11484343657" title="Kcal: 1315 | Gear: Ridley Fenix SLX Disc ">Morning Ride</a>
-            </td>
-            <td align="center">45 <sup><sub>km</sub></sup></td>
-            <td align="center">161 <sup><sub>m</sub></sup></td>
-            <td align="center">1:17:20</td>
-            <td align="center">258 <sup><sub>w</sub></sup></td>
-            <td align="center">35.1 <sup><sub>km/h</sub></sup></td>
-            <td align="center">157</td>
-        </tr>
-            <tr>
-            <td>23-05-24</td>
-            <td>
-                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Afternoon Ride" title="Afternoon Ride"/>
-<a href="https://www.strava.com/activities/11480613715" title="Kcal: 1436 | Gear: Canyon Grizl CF SLX 8 Di2 ">Afternoon Ride</a>
-            </td>
-            <td align="center">51 <sup><sub>km</sub></sup></td>
-            <td align="center">167 <sup><sub>m</sub></sup></td>
-            <td align="center">1:51:26</td>
-            <td align="center">189 <sup><sub>w</sub></sup></td>
-            <td align="center">27.3 <sup><sub>km/h</sub></sup></td>
-            <td align="center">126</td>
-        </tr>
-            <tr>
-            <td>22-05-24</td>
-            <td>
-                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Afternoon Ride" title="Afternoon Ride"/>
-<a href="https://www.strava.com/activities/11473676147" title="Kcal: 2482 | Gear: Canyon ">Afternoon Ride</a>
-            </td>
-            <td align="center">104 <sup><sub>km</sub></sup></td>
-            <td align="center">296 <sup><sub>m</sub></sup></td>
-            <td align="center">3:11:02</td>
-            <td align="center">191 <sup><sub>w</sub></sup></td>
-            <td align="center">32.7 <sup><sub>km/h</sub></sup></td>
-            <td align="center">127</td>
         </tr>
         </table>
 <details>
@@ -130,6 +130,58 @@ I burned `4573364 calories` doing so, that's about `16 938` pizza slices 🍕
             <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/average-speed.svg" width="30" alt="average speed" title="average speed"/></th>
             <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/heart-rate.svg" width="30" alt="average heart rate" title="average heart rate"/></th>
         </tr>
+                    <tr>
+                <td>25-05-24</td>
+                <td>
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Group Ride: 3R Endurance Steady Ride (C) on Casse-Pattes in France" title="Group Ride: 3R Endurance Steady Ride (C) on Casse-Pattes in France"/>
+<a href="https://www.strava.com/activities/11490871010" title="Kcal: 684 | Gear: Tacx Neo Bike Smart ">Group Ride: 3R Endurance S...</a>
+                </td>
+                <td align="center">40 <sup><sub>km</sub></sup></td>
+                <td align="center">201 <sup><sub>m</sub></sup></td>
+                <td align="center">1:08:20</td>
+                <td align="center">174 <sup><sub>w</sub></sup></td>
+                <td align="center">35.2 <sup><sub>km/h</sub></sup></td>
+                <td align="center">114</td>
+            </tr>
+                    <tr>
+                <td>24-05-24</td>
+                <td>
+                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Morning Ride" title="Morning Ride"/>
+<a href="https://www.strava.com/activities/11484343657" title="Kcal: 1315 | Gear: Ridley Fenix SLX Disc ">Morning Ride</a>
+                </td>
+                <td align="center">45 <sup><sub>km</sub></sup></td>
+                <td align="center">161 <sup><sub>m</sub></sup></td>
+                <td align="center">1:17:20</td>
+                <td align="center">258 <sup><sub>w</sub></sup></td>
+                <td align="center">35.1 <sup><sub>km/h</sub></sup></td>
+                <td align="center">157</td>
+            </tr>
+                    <tr>
+                <td>23-05-24</td>
+                <td>
+                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Afternoon Ride" title="Afternoon Ride"/>
+<a href="https://www.strava.com/activities/11480613715" title="Kcal: 1436 | Gear: Canyon Grizl CF SLX 8 Di2 ">Afternoon Ride</a>
+                </td>
+                <td align="center">51 <sup><sub>km</sub></sup></td>
+                <td align="center">167 <sup><sub>m</sub></sup></td>
+                <td align="center">1:51:26</td>
+                <td align="center">189 <sup><sub>w</sub></sup></td>
+                <td align="center">27.3 <sup><sub>km/h</sub></sup></td>
+                <td align="center">126</td>
+            </tr>
+                    <tr>
+                <td>22-05-24</td>
+                <td>
+                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Afternoon Ride" title="Afternoon Ride"/>
+<a href="https://www.strava.com/activities/11473676147" title="Kcal: 2482 | Gear: Canyon ">Afternoon Ride</a>
+                </td>
+                <td align="center">104 <sup><sub>km</sub></sup></td>
+                <td align="center">296 <sup><sub>m</sub></sup></td>
+                <td align="center">3:11:02</td>
+                <td align="center">191 <sup><sub>w</sub></sup></td>
+                <td align="center">32.7 <sup><sub>km/h</sub></sup></td>
+                <td align="center">127</td>
+            </tr>
                     <tr>
                 <td>21-05-24</td>
                 <td>
@@ -728,58 +780,6 @@ I burned `4573364 calories` doing so, that's about `16 938` pizza slices 🍕
                 <td align="center">43.1 <sup><sub>km/h</sub></sup></td>
                 <td align="center">135</td>
             </tr>
-                    <tr>
-                <td>09-04-24</td>
-                <td>
-                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Elevate and Escalate in Watopia" title="Elevate and Escalate in Watopia"/>
-<a href="https://www.strava.com/activities/11143423039" title="Kcal: 536 | Gear: Tacx Neo Bike Smart ">Elevate and Escalate in Wa...</a>
-                </td>
-                <td align="center">25 <sup><sub>km</sub></sup></td>
-                <td align="center">39 <sup><sub>m</sub></sup></td>
-                <td align="center">36:07</td>
-                <td align="center">259 <sup><sub>w</sub></sup></td>
-                <td align="center">41.8 <sup><sub>km/h</sub></sup></td>
-                <td align="center">121</td>
-            </tr>
-                    <tr>
-                <td>08-04-24</td>
-                <td>
-                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Actief herstel 🌤️👌" title="Actief herstel 🌤️👌"/>
-<a href="https://www.strava.com/activities/11136103754" title="Kcal: 1616 | Gear: Canyon ">Actief herstel 🌤️👌</a>
-                </td>
-                <td align="center">62 <sup><sub>km</sub></sup></td>
-                <td align="center">233 <sup><sub>m</sub></sup></td>
-                <td align="center">2:02:41</td>
-                <td align="center">194 <sup><sub>w</sub></sup></td>
-                <td align="center">30.5 <sup><sub>km/h</sub></sup></td>
-                <td align="center">98</td>
-            </tr>
-                    <tr>
-                <td>07-04-24</td>
-                <td>
-                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Tempus Fugit in Watopia" title="Tempus Fugit in Watopia"/>
-<a href="https://www.strava.com/activities/11128335510" title="Kcal: 1224 | Gear: Tacx Neo Bike Smart ">Tempus Fugit in Watopia</a>
-                </td>
-                <td align="center">84 <sup><sub>km</sub></sup></td>
-                <td align="center">146 <sup><sub>m</sub></sup></td>
-                <td align="center">2:30:53</td>
-                <td align="center">142 <sup><sub>w</sub></sup></td>
-                <td align="center">33.2 <sup><sub>km/h</sub></sup></td>
-                <td align="center">95</td>
-            </tr>
-                    <tr>
-                <td>07-04-24</td>
-                <td>
-                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="WTC Kruiskerke A+B - Ieper ☀️💨" title="WTC Kruiskerke A+B - Ieper ☀️💨"/>
-<a href="https://www.strava.com/activities/11125529816" title="Kcal: 3824 | Gear: Canyon ">WTC Kruiskerke A+B - Ieper...</a>
-                </td>
-                <td align="center">144 <sup><sub>km</sub></sup></td>
-                <td align="center">528 <sup><sub>m</sub></sup></td>
-                <td align="center">4:30:48</td>
-                <td align="center">210 <sup><sub>w</sub></sup></td>
-                <td align="center">31.9 <sup><sub>km/h</sub></sup></td>
-                <td align="center">112</td>
-            </tr>
             </table>
 </details>
 
@@ -800,10 +800,10 @@ I burned `4573364 calories` doing so, that's about `16 938` pizza slices 🍕
     <tbody>
             <tr>
             <td align="center">May 2024</td>
-            <td align="center">21</td>
-            <td align="center">701 <sup><sub>km</sub></sup></td>
-            <td align="center">1 965 <sup><sub>m</sub></sup></td>
-            <td align="center">22h 38m</td>
+            <td align="center">25</td>
+            <td align="center">752 <sup><sub>km</sub></sup></td>
+            <td align="center">2 333 <sup><sub>m</sub></sup></td>
+            <td align="center">23h 55m</td>
             <td align="center">0</td>
         </tr>
             <tr>
@@ -1760,10 +1760,10 @@ I burned `4573364 calories` doing so, that's about `16 938` pizza slices 🍕
         </tr>
         <tr>
         <td align="center"><b>Virtual/Indoor</b></td>
-        <td align="center"><b>2026</td>
-        <td align="center"><b>76 026 <sup><sub>km</sub></sup></b></td>
-        <td align="center"><b>426 595 <sup><sub>m</sub></sup></b></td>
-        <td align="center"><b>2mos 3w 6d 12h 56m</b></td>
+        <td align="center"><b>2030</td>
+        <td align="center"><b>76 077 <sup><sub>km</sub></sup></b></td>
+        <td align="center"><b>426 963 <sup><sub>m</sub></sup></b></td>
+        <td align="center"><b>2mos 3w 6d 14h 13m</b></td>
         <td align="center"></td>
     </tr>
     <tr>
@@ -1776,10 +1776,10 @@ I burned `4573364 calories` doing so, that's about `16 938` pizza slices 🍕
     </tr>
     <tr>
         <td align="center"><b>Total</b></td>
-        <td align="center"><b>4138</td>
-        <td align="center"><b>207 453 <sup><sub>km</sub></sup></b></td>
-        <td align="center"><b>929 641 <sup><sub>m</sub></sup></b></td>
-        <td align="center"><b>9mos 2w 1d 12h 20m</b></td>
+        <td align="center"><b>4142</td>
+        <td align="center"><b>207 504 <sup><sub>km</sub></sup></b></td>
+        <td align="center"><b>930 009 <sup><sub>m</sub></sup></b></td>
+        <td align="center"><b>9mos 2w 1d 13h 37m</b></td>
         <td align="center"></td>
     </tr>
     </tbody>
@@ -1818,13 +1818,13 @@ I burned `4573364 calories` doing so, that's about `16 938` pizza slices 🍕
         </tr>
             <tr>
             <td align="center">Tuesday</td>
-            <td align="center">660</td>
+            <td align="center">664</td>
             <td align="center">
                                     32 <sup><sub>km avg</sub></sup> /
-                    20 930 <sup><sub>km total</sub></sup>
+                    20 981 <sup><sub>km total</sub></sup>
                             </td>
-            <td align="center">110 601 <sup><sub>m</sub></sup></td>
-            <td align="center">3w 4d 17h 33m</td>
+            <td align="center">110 969 <sup><sub>m</sub></sup></td>
+            <td align="center">3w 4d 18h 50m</td>
             <td align="center">33.9 <sup><sub>km/h</sub></sup></td>
         </tr>
             <tr>
@@ -1926,13 +1926,13 @@ I burned `4573364 calories` doing so, that's about `16 938` pizza slices 🍕
         </tr>
             <tr>
             <td align="center">Evening (17h - 23h)</td>
-            <td align="center">2225</td>
+            <td align="center">2229</td>
             <td align="center">
                                     34 <sup><sub>km avg</sub></sup> /
-                    75 322 <sup><sub>km total</sub></sup>
+                    75 373 <sup><sub>km total</sub></sup>
                             </td>
-            <td align="center">343 229 <sup><sub>m</sub></sup></td>
-            <td align="center">3mos 4d 7h 47m</td>
+            <td align="center">343 597 <sup><sub>m</sub></sup></td>
+            <td align="center">3mos 4d 9h 4m</td>
             <td align="center">35.5 <sup><sub>km/h</sub></sup></td>
         </tr>
             <tr>
@@ -1987,13 +1987,13 @@ I burned `4573364 calories` doing so, that's about `16 938` pizza slices 🍕
         </tr>
             <tr>
             <td align="center">Tacx Neo Bike Smart</td>
-            <td align="center">504</td>
+            <td align="center">508</td>
             <td align="center">
                                     34 <sup><sub>km avg</sub></sup> /
-                    17 224 <sup><sub>km total</sub></sup>
+                    17 275 <sup><sub>km total</sub></sup>
                             </td>
-            <td align="center">75 394 <sup><sub>m</sub></sup></td>
-            <td align="center">2w 5d 2h 2m</td>
+            <td align="center">75 762 <sup><sub>m</sub></sup></td>
+            <td align="center">2w 5d 3h 19m</td>
             <td align="center">37.6 <sup><sub>km/h</sub></sup></td>
         </tr>
             <tr>
@@ -2193,12 +2193,12 @@ I burned `4573364 calories` doing so, that's about `16 938` pizza slices 🍕
     <tbody>
             <tr>
             <td align="center">2024</td>
-            <td align="center">14 469 <sup><sub>km</sub></sup></td>
+            <td align="center">14 520 <sup><sub>km</sub></sup></td>
             <td align="center">
-                                    -26 702 <sup><sub>km</sub></sup>
+                                    -26 651 <sup><sub>km</sub></sup>
                             </td>
-            <td align="center">61 717 <sup><sub>m</sub></sup></td>
-            <td align="center">2w 3d 8h 37m</td>
+            <td align="center">62 085 <sup><sub>m</sub></sup></td>
+            <td align="center">2w 3d 9h 55m</td>
         </tr>
             <tr>
             <td align="center">2023</td>
@@ -2326,24 +2326,24 @@ I burned `4573364 calories` doing so, that's about `16 938` pizza slices 🍕
     <tbody>
             <tr>
             <td align="center">0 - 30 km</td>
-            <td align="center">1714</td>
+            <td align="center">1717</td>
             <td align="center">
                                      10 <sup><sub>km avg</sub></sup> /
-                     16 558 <sup><sub>km total</sub></sup>
+                     16 566 <sup><sub>km total</sub></sup>
                             </td>
-            <td align="center">94 104 <sup><sub>m</sub></sup></td>
-            <td align="center">3w 22h 10m</td>
+            <td align="center">94 110 <sup><sub>m</sub></sup></td>
+            <td align="center">3w 22h 25m</td>
             <td align="center">31.5 <sup><sub>km/h</sub></sup></td>
         </tr>
             <tr>
             <td align="center">30 - 60 km</td>
-            <td align="center">1157</td>
+            <td align="center">1158</td>
             <td align="center">
                                      44 <sup><sub>km avg</sub></sup> /
-                     51 283 <sup><sub>km total</sub></sup>
+                     51 326 <sup><sub>km total</sub></sup>
                             </td>
-            <td align="center">241 125 <sup><sub>m</sub></sup></td>
-            <td align="center">2mos 1w 1d 17h</td>
+            <td align="center">241 487 <sup><sub>m</sub></sup></td>
+            <td align="center">2mos 1w 1d 18h 3m</td>
             <td align="center">33.0 <sup><sub>km/h</sub></sup></td>
         </tr>
             <tr>
@@ -4525,6 +4525,7 @@ I burned `4573364 calories` doing so, that's about `16 938` pizza slices 🍕
             <tr>
             <td align="center">2 days of activity for 4 weeks</td>
                         <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
                             </td>
                         <td align="center">
                                     <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>

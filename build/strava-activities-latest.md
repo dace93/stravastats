@@ -10,6 +10,58 @@
         <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/heart-rate.svg" width="30" alt="average heart rate" title="average heart rate"/></th>
     </tr>
             <tr>
+            <td>28-05-24</td>
+            <td>
+                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Pacer Group Ride: Tempus Fugit in Watopia with Bernie" title="Pacer Group Ride: Tempus Fugit in Watopia with Bernie"/>
+<a href="https://www.strava.com/activities/11518528449" title="Kcal: 32 | Gear: None ">Pacer Group Ride: Tempus F...</a>
+            </td>
+            <td align="center">3 <sup><sub>km</sub></sup></td>
+            <td align="center">1 <sup><sub>m</sub></sup></td>
+            <td align="center">6:08</td>
+            <td align="center">89 <sup><sub>w</sub></sup></td>
+            <td align="center">29.9 <sup><sub>km/h</sub></sup></td>
+            <td align="center">107</td>
+        </tr>
+            <tr>
+            <td>28-05-24</td>
+            <td>
+                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Group Ride: 3R PedalPlay EVOLVE Interval Ride [~2.9-3.2 w/kg avg] (C) on Downtown Dolphin in Crit City" title="Group Ride: 3R PedalPlay EVOLVE Interval Ride [~2.9-3.2 w/kg avg] (C) on Downtown Dolphin in Crit City"/>
+<a href="https://www.strava.com/activities/11518458639" title="Kcal: 866 | Gear: None ">Group Ride: 3R PedalPlay E...</a>
+            </td>
+            <td align="center">43 <sup><sub>km</sub></sup></td>
+            <td align="center">362 <sup><sub>m</sub></sup></td>
+            <td align="center">1:03:09</td>
+            <td align="center">238 <sup><sub>w</sub></sup></td>
+            <td align="center">41.1 <sup><sub>km/h</sub></sup></td>
+            <td align="center">144</td>
+        </tr>
+            <tr>
+            <td>28-05-24</td>
+            <td>
+                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Pacer Group Ride: Tempus Fugit in Watopia with Bernie" title="Pacer Group Ride: Tempus Fugit in Watopia with Bernie"/>
+<a href="https://www.strava.com/activities/11517875935" title="Kcal: 30 | Gear: None ">Pacer Group Ride: Tempus F...</a>
+            </td>
+            <td align="center">2 <sup><sub>km</sub></sup></td>
+            <td align="center">4 <sup><sub>m</sub></sup></td>
+            <td align="center">3:44</td>
+            <td align="center">136 <sup><sub>w</sub></sup></td>
+            <td align="center">33.3 <sup><sub>km/h</sub></sup></td>
+            <td align="center">98</td>
+        </tr>
+            <tr>
+            <td>28-05-24</td>
+            <td>
+                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Pacer Group Ride: Tempus Fugit in Watopia with Bernie" title="Pacer Group Ride: Tempus Fugit in Watopia with Bernie"/>
+<a href="https://www.strava.com/activities/11517834769" title="Kcal: 35 | Gear: None ">Pacer Group Ride: Tempus F...</a>
+            </td>
+            <td align="center">2 <sup><sub>km</sub></sup></td>
+            <td align="center">1 <sup><sub>m</sub></sup></td>
+            <td align="center">4:28</td>
+            <td align="center">133 <sup><sub>w</sub></sup></td>
+            <td align="center">32.4 <sup><sub>km/h</sub></sup></td>
+            <td align="center">98</td>
+        </tr>
+            <tr>
             <td>25-05-24</td>
             <td>
                 <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="&quot;Cédric heeft voor de eerste keer in langere tijd een rit geüpload&quot;" title="&quot;Cédric heeft voor de eerste keer in langere tijd een rit geüpload&quot;"/>
@@ -21,58 +73,6 @@
             <td align="center">201 <sup><sub>w</sub></sup></td>
             <td align="center">31.2 <sup><sub>km/h</sub></sup></td>
             <td align="center">123</td>
-        </tr>
-            <tr>
-            <td>25-05-24</td>
-            <td>
-                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Group Ride: 3R Endurance Steady Ride (C) on Casse-Pattes in France" title="Group Ride: 3R Endurance Steady Ride (C) on Casse-Pattes in France"/>
-<a href="https://www.strava.com/activities/11490871010" title="Kcal: 684 | Gear: None ">Group Ride: 3R Endurance S...</a>
-            </td>
-            <td align="center">40 <sup><sub>km</sub></sup></td>
-            <td align="center">201 <sup><sub>m</sub></sup></td>
-            <td align="center">1:08:20</td>
-            <td align="center">174 <sup><sub>w</sub></sup></td>
-            <td align="center">35.2 <sup><sub>km/h</sub></sup></td>
-            <td align="center">114</td>
-        </tr>
-            <tr>
-            <td>24-05-24</td>
-            <td>
-                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Morning Ride" title="Morning Ride"/>
-<a href="https://www.strava.com/activities/11484343657" title="Kcal: 1315 | Gear: None ">Morning Ride</a>
-            </td>
-            <td align="center">45 <sup><sub>km</sub></sup></td>
-            <td align="center">161 <sup><sub>m</sub></sup></td>
-            <td align="center">1:17:20</td>
-            <td align="center">258 <sup><sub>w</sub></sup></td>
-            <td align="center">35.1 <sup><sub>km/h</sub></sup></td>
-            <td align="center">157</td>
-        </tr>
-            <tr>
-            <td>23-05-24</td>
-            <td>
-                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Afternoon Ride" title="Afternoon Ride"/>
-<a href="https://www.strava.com/activities/11480613715" title="Kcal: 1436 | Gear: None ">Afternoon Ride</a>
-            </td>
-            <td align="center">51 <sup><sub>km</sub></sup></td>
-            <td align="center">167 <sup><sub>m</sub></sup></td>
-            <td align="center">1:51:26</td>
-            <td align="center">189 <sup><sub>w</sub></sup></td>
-            <td align="center">27.3 <sup><sub>km/h</sub></sup></td>
-            <td align="center">126</td>
-        </tr>
-            <tr>
-            <td>22-05-24</td>
-            <td>
-                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Afternoon Ride" title="Afternoon Ride"/>
-<a href="https://www.strava.com/activities/11473676147" title="Kcal: 2482 | Gear: None ">Afternoon Ride</a>
-            </td>
-            <td align="center">104 <sup><sub>km</sub></sup></td>
-            <td align="center">296 <sup><sub>m</sub></sup></td>
-            <td align="center">3:11:02</td>
-            <td align="center">191 <sup><sub>w</sub></sup></td>
-            <td align="center">32.7 <sup><sub>km/h</sub></sup></td>
-            <td align="center">127</td>
         </tr>
                 <tr>
             <td colspan="8" align="right"><a href="https://github.com/robiningelbrecht/strava-activities#activities">View all activities</a></td>
