@@ -10,6 +10,19 @@
         <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/heart-rate.svg" width="30" alt="average heart rate" title="average heart rate"/></th>
     </tr>
             <tr>
+            <td>30-05-24</td>
+            <td>
+                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Los 🌳" title="Los 🌳"/>
+<a href="https://www.strava.com/activities/11534858519" title="Kcal: 811 | Gear: None ">Los 🌳</a>
+            </td>
+            <td align="center">31 <sup><sub>km</sub></sup></td>
+            <td align="center">86 <sup><sub>m</sub></sup></td>
+            <td align="center">1:17:16</td>
+            <td align="center">149 <sup><sub>w</sub></sup></td>
+            <td align="center">24.1 <sup><sub>km/h</sub></sup></td>
+            <td align="center">105</td>
+        </tr>
+            <tr>
             <td>29-05-24</td>
             <td>
                 <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Voorritje + WTC Ruyslee + los" title="Voorritje + WTC Ruyslee + los"/>
@@ -59,19 +72,6 @@
             <td align="center">3:44</td>
             <td align="center">136 <sup><sub>w</sub></sup></td>
             <td align="center">33.3 <sup><sub>km/h</sub></sup></td>
-            <td align="center">98</td>
-        </tr>
-            <tr>
-            <td>28-05-24</td>
-            <td>
-                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Pacer Group Ride: Tempus Fugit in Watopia with Bernie" title="Pacer Group Ride: Tempus Fugit in Watopia with Bernie"/>
-<a href="https://www.strava.com/activities/11517834769" title="Kcal: 35 | Gear: None ">Pacer Group Ride: Tempus F...</a>
-            </td>
-            <td align="center">2 <sup><sub>km</sub></sup></td>
-            <td align="center">1 <sup><sub>m</sub></sup></td>
-            <td align="center">4:28</td>
-            <td align="center">133 <sup><sub>w</sub></sup></td>
-            <td align="center">32.4 <sup><sub>km/h</sub></sup></td>
             <td align="center">98</td>
         </tr>
                 <tr>
