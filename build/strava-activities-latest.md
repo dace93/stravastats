@@ -10,6 +10,32 @@
         <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/heart-rate.svg" width="30" alt="average heart rate" title="average heart rate"/></th>
     </tr>
             <tr>
+            <td>02-06-24</td>
+            <td>
+                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Lunch Ride" title="Lunch Ride"/>
+<a href="https://www.strava.com/activities/11554536516" title="Kcal: 24 | Gear: None ">Lunch Ride</a>
+            </td>
+            <td align="center">1 <sup><sub>km</sub></sup></td>
+            <td align="center">5 <sup><sub>m</sub></sup></td>
+            <td align="center">4:14</td>
+            <td align="center">68 <sup><sub>w</sub></sup></td>
+            <td align="center">18.6 <sup><sub>km/h</sub></sup></td>
+            <td align="center">112</td>
+        </tr>
+            <tr>
+            <td>02-06-24</td>
+            <td>
+                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="WTC Kruiskerke - Cadzand ⛱️" title="WTC Kruiskerke - Cadzand ⛱️"/>
+<a href="https://www.strava.com/activities/11554537297" title="Kcal: 3937 | Gear: None ">WTC Kruiskerke - Cadzand ⛱...</a>
+            </td>
+            <td align="center">142 <sup><sub>km</sub></sup></td>
+            <td align="center">320 <sup><sub>m</sub></sup></td>
+            <td align="center">4:18:02</td>
+            <td align="center">228 <sup><sub>w</sub></sup></td>
+            <td align="center">33.1 <sup><sub>km/h</sub></sup></td>
+            <td align="center">143</td>
+        </tr>
+            <tr>
             <td>01-06-24</td>
             <td>
                                 <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Climb Portal: Mt Fuji at 100% Elevation in Watopia" title="Climb Portal: Mt Fuji at 100% Elevation in Watopia"/>
@@ -47,32 +73,6 @@
             <td align="center">191 <sup><sub>w</sub></sup></td>
             <td align="center">33.1 <sup><sub>km/h</sub></sup></td>
             <td align="center">133</td>
-        </tr>
-            <tr>
-            <td>28-05-24</td>
-            <td>
-                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Pacer Group Ride: Tempus Fugit in Watopia with Bernie" title="Pacer Group Ride: Tempus Fugit in Watopia with Bernie"/>
-<a href="https://www.strava.com/activities/11518528449" title="Kcal: 32 | Gear: None ">Pacer Group Ride: Tempus F...</a>
-            </td>
-            <td align="center">3 <sup><sub>km</sub></sup></td>
-            <td align="center">1 <sup><sub>m</sub></sup></td>
-            <td align="center">6:08</td>
-            <td align="center">89 <sup><sub>w</sub></sup></td>
-            <td align="center">29.9 <sup><sub>km/h</sub></sup></td>
-            <td align="center">107</td>
-        </tr>
-            <tr>
-            <td>28-05-24</td>
-            <td>
-                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Group Ride: 3R PedalPlay EVOLVE Interval Ride [~2.9-3.2 w/kg avg] (C) on Downtown Dolphin in Crit City" title="Group Ride: 3R PedalPlay EVOLVE Interval Ride [~2.9-3.2 w/kg avg] (C) on Downtown Dolphin in Crit City"/>
-<a href="https://www.strava.com/activities/11518458639" title="Kcal: 866 | Gear: None ">Group Ride: 3R PedalPlay E...</a>
-            </td>
-            <td align="center">43 <sup><sub>km</sub></sup></td>
-            <td align="center">362 <sup><sub>m</sub></sup></td>
-            <td align="center">1:03:09</td>
-            <td align="center">238 <sup><sub>w</sub></sup></td>
-            <td align="center">41.1 <sup><sub>km/h</sub></sup></td>
-            <td align="center">144</td>
         </tr>
                 <tr>
             <td colspan="8" align="right"><a href="https://github.com/robiningelbrecht/strava-activities#activities">View all activities</a></td>
