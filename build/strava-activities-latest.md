@@ -10,6 +10,32 @@
         <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/heart-rate.svg" width="30" alt="average heart rate" title="average heart rate"/></th>
     </tr>
             <tr>
+            <td>13-06-24</td>
+            <td>
+                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="De zomer mag gaan komen 😴" title="De zomer mag gaan komen 😴"/>
+<a href="https://www.strava.com/activities/11645625901" title="Kcal: 1712 | Gear: None ">De zomer mag gaan komen 😴</a>
+            </td>
+            <td align="center">71 <sup><sub>km</sub></sup></td>
+            <td align="center">190 <sup><sub>m</sub></sup></td>
+            <td align="center">2:16:55</td>
+            <td align="center">183 <sup><sub>w</sub></sup></td>
+            <td align="center">31 <sup><sub>km/h</sub></sup></td>
+            <td align="center">108</td>
+        </tr>
+            <tr>
+            <td>12-06-24</td>
+            <td>
+                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Warmup - WTC &quot;Den tussenslag&quot; - los 🙃" title="Warmup - WTC &quot;Den tussenslag&quot; - los 🙃"/>
+<a href="https://www.strava.com/activities/11638020958" title="Kcal: 3626 | Gear: None ">Warmup - WTC &quot;Den tussensl...</a>
+            </td>
+            <td align="center">131 <sup><sub>km</sub></sup></td>
+            <td align="center">242 <sup><sub>m</sub></sup></td>
+            <td align="center">3:31:39</td>
+            <td align="center">260 <sup><sub>w</sub></sup></td>
+            <td align="center">37.2 <sup><sub>km/h</sub></sup></td>
+            <td align="center">143</td>
+        </tr>
+            <tr>
             <td>11-06-24</td>
             <td>
                 <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Garmin zegt: &quot;Te intensief&quot; 🤷" title="Garmin zegt: &quot;Te intensief&quot; 🤷"/>
@@ -47,32 +73,6 @@
             <td align="center">243 <sup><sub>w</sub></sup></td>
             <td align="center">33.8 <sup><sub>km/h</sub></sup></td>
             <td align="center">133</td>
-        </tr>
-            <tr>
-            <td>08-06-24</td>
-            <td>
-                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="VP met Pascal 🌤️ + H/T 🏡" title="VP met Pascal 🌤️ + H/T 🏡"/>
-<a href="https://www.strava.com/activities/11601797457" title="Kcal: 3689 | Gear: None ">VP met Pascal 🌤️ + H/T 🏡...</a>
-            </td>
-            <td align="center">141 <sup><sub>km</sub></sup></td>
-            <td align="center">241 <sup><sub>m</sub></sup></td>
-            <td align="center">4:00:29</td>
-            <td align="center">230 <sup><sub>w</sub></sup></td>
-            <td align="center">35.1 <sup><sub>km/h</sub></sup></td>
-            <td align="center">145</td>
-        </tr>
-            <tr>
-            <td>06-06-24</td>
-            <td>
-                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Uurtje los 😎" title="Uurtje los 😎"/>
-<a href="https://www.strava.com/activities/11590426330" title="Kcal: 675 | Gear: None ">Uurtje los 😎</a>
-            </td>
-            <td align="center">30 <sup><sub>km</sub></sup></td>
-            <td align="center">85 <sup><sub>m</sub></sup></td>
-            <td align="center">1:04:44</td>
-            <td align="center">148 <sup><sub>w</sub></sup></td>
-            <td align="center">28.2 <sup><sub>km/h</sub></sup></td>
-            <td align="center">102</td>
         </tr>
                 <tr>
             <td colspan="8" align="right"><a href="https://github.com/robiningelbrecht/strava-activities#activities">View all activities</a></td>
