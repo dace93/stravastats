@@ -10,6 +10,45 @@
         <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/heart-rate.svg" width="30" alt="average heart rate" title="average heart rate"/></th>
     </tr>
             <tr>
+            <td>15-06-24</td>
+            <td>
+                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Pacer Group Ride: Volcano Circuit in Watopia with Miguel" title="Pacer Group Ride: Volcano Circuit in Watopia with Miguel"/>
+<a href="https://www.strava.com/activities/11660295455" title="Kcal: 62 | Gear: None ">Pacer Group Ride: Volcano ...</a>
+            </td>
+            <td align="center">5 <sup><sub>km</sub></sup></td>
+            <td align="center">21 <sup><sub>m</sub></sup></td>
+            <td align="center">10:08</td>
+            <td align="center">105 <sup><sub>w</sub></sup></td>
+            <td align="center">30.3 <sup><sub>km/h</sub></sup></td>
+            <td align="center">103</td>
+        </tr>
+            <tr>
+            <td>15-06-24</td>
+            <td>
+                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Race: Zwift Epic Race - Shorelines and Summits (B) on Shorelines and Summits in Watopia" title="Race: Zwift Epic Race - Shorelines and Summits (B) on Shorelines and Summits in Watopia"/>
+<a href="https://www.strava.com/activities/11660231493" title="Kcal: 1360 | Gear: None ">Race: Zwift Epic Race - Sh...</a>
+            </td>
+            <td align="center">50 <sup><sub>km</sub></sup></td>
+            <td align="center">791 <sup><sub>m</sub></sup></td>
+            <td align="center">1:21:05</td>
+            <td align="center">291 <sup><sub>w</sub></sup></td>
+            <td align="center">37.3 <sup><sub>km/h</sub></sup></td>
+            <td align="center">149</td>
+        </tr>
+            <tr>
+            <td>15-06-24</td>
+            <td>
+                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Watopia" title="Watopia"/>
+<a href="https://www.strava.com/activities/11659696228" title="Kcal: 118 | Gear: None ">Watopia</a>
+            </td>
+            <td align="center">6 <sup><sub>km</sub></sup></td>
+            <td align="center">16 <sup><sub>m</sub></sup></td>
+            <td align="center">9:03</td>
+            <td align="center">225 <sup><sub>w</sub></sup></td>
+            <td align="center">40 <sup><sub>km/h</sub></sup></td>
+            <td align="center">117</td>
+        </tr>
+            <tr>
             <td>14-06-24</td>
             <td>
                 <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Droog gebleven 🤟" title="Droog gebleven 🤟"/>
@@ -34,45 +73,6 @@
             <td align="center">183 <sup><sub>w</sub></sup></td>
             <td align="center">31 <sup><sub>km/h</sub></sup></td>
             <td align="center">108</td>
-        </tr>
-            <tr>
-            <td>12-06-24</td>
-            <td>
-                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Warmup - WTC &quot;Den tussenslag&quot; - los 🙃" title="Warmup - WTC &quot;Den tussenslag&quot; - los 🙃"/>
-<a href="https://www.strava.com/activities/11638020958" title="Kcal: 3626 | Gear: None ">Warmup - WTC &quot;Den tussensl...</a>
-            </td>
-            <td align="center">131 <sup><sub>km</sub></sup></td>
-            <td align="center">242 <sup><sub>m</sub></sup></td>
-            <td align="center">3:31:39</td>
-            <td align="center">260 <sup><sub>w</sub></sup></td>
-            <td align="center">37.2 <sup><sub>km/h</sub></sup></td>
-            <td align="center">143</td>
-        </tr>
-            <tr>
-            <td>11-06-24</td>
-            <td>
-                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Garmin zegt: &quot;Te intensief&quot; 🤷" title="Garmin zegt: &quot;Te intensief&quot; 🤷"/>
-<a href="https://www.strava.com/activities/11629378291" title="Kcal: 2314 | Gear: None ">Garmin zegt: &quot;Te intensief...</a>
-            </td>
-            <td align="center">77 <sup><sub>km</sub></sup></td>
-            <td align="center">145 <sup><sub>m</sub></sup></td>
-            <td align="center">2:05:13</td>
-            <td align="center">282 <sup><sub>w</sub></sup></td>
-            <td align="center">36.8 <sup><sub>km/h</sub></sup></td>
-            <td align="center">144</td>
-        </tr>
-            <tr>
-            <td>10-06-24</td>
-            <td>
-                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Jurassic Coast in Watopia" title="Jurassic Coast in Watopia"/>
-<a href="https://www.strava.com/activities/11621040914" title="Kcal: 369 | Gear: None ">Jurassic Coast in Watopia</a>
-            </td>
-            <td align="center">20 <sup><sub>km</sub></sup></td>
-            <td align="center">219 <sup><sub>m</sub></sup></td>
-            <td align="center">40:12</td>
-            <td align="center">160 <sup><sub>w</sub></sup></td>
-            <td align="center">30.3 <sup><sub>km/h</sub></sup></td>
-            <td align="center">97</td>
         </tr>
                 <tr>
             <td colspan="8" align="right"><a href="https://github.com/robiningelbrecht/strava-activities#activities">View all activities</a></td>
