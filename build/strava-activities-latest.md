@@ -10,6 +10,45 @@
         <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/heart-rate.svg" width="30" alt="average heart rate" title="average heart rate"/></th>
     </tr>
             <tr>
+            <td>17-06-24</td>
+            <td>
+                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Retourtje Brugge 🔋" title="Retourtje Brugge 🔋"/>
+<a href="https://www.strava.com/activities/11675042768" title="Kcal: 1191 | Gear: None ">Retourtje Brugge 🔋</a>
+            </td>
+            <td align="center">53 <sup><sub>km</sub></sup></td>
+            <td align="center">101 <sup><sub>m</sub></sup></td>
+            <td align="center">1:51:03</td>
+            <td align="center">153 <sup><sub>w</sub></sup></td>
+            <td align="center">28.7 <sup><sub>km/h</sub></sup></td>
+            <td align="center">95</td>
+        </tr>
+            <tr>
+            <td>16-06-24</td>
+            <td>
+                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Gravelbike droogblazen na z&#039;n wasje 💨🌞" title="Gravelbike droogblazen na z&#039;n wasje 💨🌞"/>
+<a href="https://www.strava.com/activities/11667910968" title="Kcal: 855 | Gear: None ">Gravelbike droogblazen na ...</a>
+            </td>
+            <td align="center">33 <sup><sub>km</sub></sup></td>
+            <td align="center">111 <sup><sub>m</sub></sup></td>
+            <td align="center">1:13:46</td>
+            <td align="center">167 <sup><sub>w</sub></sup></td>
+            <td align="center">26.7 <sup><sub>km/h</sub></sup></td>
+            <td align="center">106</td>
+        </tr>
+            <tr>
+            <td>16-06-24</td>
+            <td>
+                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="&quot;Zij die proper willen blijven zullen de kop bedrijven&quot; 🌦️" title="&quot;Zij die proper willen blijven zullen de kop bedrijven&quot; 🌦️"/>
+<a href="https://www.strava.com/activities/11664076970" title="Kcal: 3548 | Gear: None ">&quot;Zij die proper willen bli...</a>
+            </td>
+            <td align="center">132 <sup><sub>km</sub></sup></td>
+            <td align="center">327 <sup><sub>m</sub></sup></td>
+            <td align="center">4:01:51</td>
+            <td align="center">219 <sup><sub>w</sub></sup></td>
+            <td align="center">32.8 <sup><sub>km/h</sub></sup></td>
+            <td align="center">129</td>
+        </tr>
+            <tr>
             <td>15-06-24</td>
             <td>
                                 <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Pacer Group Ride: Volcano Circuit in Watopia with Miguel" title="Pacer Group Ride: Volcano Circuit in Watopia with Miguel"/>
@@ -34,45 +73,6 @@
             <td align="center">291 <sup><sub>w</sub></sup></td>
             <td align="center">37.3 <sup><sub>km/h</sub></sup></td>
             <td align="center">149</td>
-        </tr>
-            <tr>
-            <td>15-06-24</td>
-            <td>
-                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Watopia" title="Watopia"/>
-<a href="https://www.strava.com/activities/11659696228" title="Kcal: 118 | Gear: None ">Watopia</a>
-            </td>
-            <td align="center">6 <sup><sub>km</sub></sup></td>
-            <td align="center">16 <sup><sub>m</sub></sup></td>
-            <td align="center">9:03</td>
-            <td align="center">225 <sup><sub>w</sub></sup></td>
-            <td align="center">40 <sup><sub>km/h</sub></sup></td>
-            <td align="center">117</td>
-        </tr>
-            <tr>
-            <td>14-06-24</td>
-            <td>
-                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Droog gebleven 🤟" title="Droog gebleven 🤟"/>
-<a href="https://www.strava.com/activities/11651848555" title="Kcal: 1518 | Gear: None ">Droog gebleven 🤟</a>
-            </td>
-            <td align="center">56 <sup><sub>km</sub></sup></td>
-            <td align="center">163 <sup><sub>m</sub></sup></td>
-            <td align="center">1:45:43</td>
-            <td align="center">214 <sup><sub>w</sub></sup></td>
-            <td align="center">31.8 <sup><sub>km/h</sub></sup></td>
-            <td align="center">125</td>
-        </tr>
-            <tr>
-            <td>13-06-24</td>
-            <td>
-                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="De zomer mag gaan komen 😴" title="De zomer mag gaan komen 😴"/>
-<a href="https://www.strava.com/activities/11645625901" title="Kcal: 1712 | Gear: None ">De zomer mag gaan komen 😴</a>
-            </td>
-            <td align="center">71 <sup><sub>km</sub></sup></td>
-            <td align="center">190 <sup><sub>m</sub></sup></td>
-            <td align="center">2:16:55</td>
-            <td align="center">183 <sup><sub>w</sub></sup></td>
-            <td align="center">31 <sup><sub>km/h</sub></sup></td>
-            <td align="center">108</td>
         </tr>
                 <tr>
             <td colspan="8" align="right"><a href="https://github.com/robiningelbrecht/strava-activities#activities">View all activities</a></td>
