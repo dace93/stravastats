@@ -10,6 +10,32 @@
         <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/heart-rate.svg" width="30" alt="average heart rate" title="average heart rate"/></th>
     </tr>
             <tr>
+            <td>18-06-24</td>
+            <td>
+                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Pacer Group Ride: Flat Route in Watopia with Miguel" title="Pacer Group Ride: Flat Route in Watopia with Miguel"/>
+<a href="https://www.strava.com/activities/11683759391" title="Kcal: 111 | Gear: None ">Pacer Group Ride: Flat Rou...</a>
+            </td>
+            <td align="center">8 <sup><sub>km</sub></sup></td>
+            <td align="center">57 <sup><sub>m</sub></sup></td>
+            <td align="center">16:41</td>
+            <td align="center">115 <sup><sub>w</sub></sup></td>
+            <td align="center">29.9 <sup><sub>km/h</sub></sup></td>
+            <td align="center">100</td>
+        </tr>
+            <tr>
+            <td>18-06-24</td>
+            <td>
+                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Watopia" title="Watopia"/>
+<a href="https://www.strava.com/activities/11683592888" title="Kcal: 1272 | Gear: None ">Watopia</a>
+            </td>
+            <td align="center">67 <sup><sub>km</sub></sup></td>
+            <td align="center">105 <sup><sub>m</sub></sup></td>
+            <td align="center">1:49:41</td>
+            <td align="center">202 <sup><sub>w</sub></sup></td>
+            <td align="center">36.5 <sup><sub>km/h</sub></sup></td>
+            <td align="center">124</td>
+        </tr>
+            <tr>
             <td>17-06-24</td>
             <td>
                 <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Retourtje Brugge 🔋" title="Retourtje Brugge 🔋"/>
@@ -47,32 +73,6 @@
             <td align="center">219 <sup><sub>w</sub></sup></td>
             <td align="center">32.8 <sup><sub>km/h</sub></sup></td>
             <td align="center">129</td>
-        </tr>
-            <tr>
-            <td>15-06-24</td>
-            <td>
-                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Pacer Group Ride: Volcano Circuit in Watopia with Miguel" title="Pacer Group Ride: Volcano Circuit in Watopia with Miguel"/>
-<a href="https://www.strava.com/activities/11660295455" title="Kcal: 62 | Gear: None ">Pacer Group Ride: Volcano ...</a>
-            </td>
-            <td align="center">5 <sup><sub>km</sub></sup></td>
-            <td align="center">21 <sup><sub>m</sub></sup></td>
-            <td align="center">10:08</td>
-            <td align="center">105 <sup><sub>w</sub></sup></td>
-            <td align="center">30.3 <sup><sub>km/h</sub></sup></td>
-            <td align="center">103</td>
-        </tr>
-            <tr>
-            <td>15-06-24</td>
-            <td>
-                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Race: Zwift Epic Race - Shorelines and Summits (B) on Shorelines and Summits in Watopia" title="Race: Zwift Epic Race - Shorelines and Summits (B) on Shorelines and Summits in Watopia"/>
-<a href="https://www.strava.com/activities/11660231493" title="Kcal: 1360 | Gear: None ">Race: Zwift Epic Race - Sh...</a>
-            </td>
-            <td align="center">50 <sup><sub>km</sub></sup></td>
-            <td align="center">791 <sup><sub>m</sub></sup></td>
-            <td align="center">1:21:05</td>
-            <td align="center">291 <sup><sub>w</sub></sup></td>
-            <td align="center">37.3 <sup><sub>km/h</sub></sup></td>
-            <td align="center">149</td>
         </tr>
                 <tr>
             <td colspan="8" align="right"><a href="https://github.com/robiningelbrecht/strava-activities#activities">View all activities</a></td>
