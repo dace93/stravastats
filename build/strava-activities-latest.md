@@ -10,6 +10,32 @@
         <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/heart-rate.svg" width="30" alt="average heart rate" title="average heart rate"/></th>
     </tr>
             <tr>
+            <td>20-07-24</td>
+            <td>
+                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Afternoon Ride" title="Afternoon Ride"/>
+<a href="https://www.strava.com/activities/11935073085" title="Kcal: 29 | Gear: None ">Afternoon Ride</a>
+            </td>
+            <td align="center">2 <sup><sub>km</sub></sup></td>
+            <td align="center">5 <sup><sub>m</sub></sup></td>
+            <td align="center">5:38</td>
+            <td align="center">62 <sup><sub>w</sub></sup></td>
+            <td align="center">16.6 <sup><sub>km/h</sub></sup></td>
+            <td align="center">106</td>
+        </tr>
+            <tr>
+            <td>20-07-24</td>
+            <td>
+                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="VP + blokjes + duur 🌧️ -&gt; 🌞" title="VP + blokjes + duur 🌧️ -&gt; 🌞"/>
+<a href="https://www.strava.com/activities/11935072964" title="Kcal: 5667 | Gear: None ">VP + blokjes + duur 🌧️ -&gt; ...</a>
+            </td>
+            <td align="center">206 <sup><sub>km</sub></sup></td>
+            <td align="center">508 <sup><sub>m</sub></sup></td>
+            <td align="center">6:03:12</td>
+            <td align="center">235 <sup><sub>w</sub></sup></td>
+            <td align="center">34.1 <sup><sub>km/h</sub></sup></td>
+            <td align="center">134</td>
+        </tr>
+            <tr>
             <td>19-07-24</td>
             <td>
                 <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Congé = naar zee 🌞😎" title="Congé = naar zee 🌞😎"/>
@@ -47,32 +73,6 @@
             <td align="center">205 <sup><sub>w</sub></sup></td>
             <td align="center">31.6 <sup><sub>km/h</sub></sup></td>
             <td align="center">115</td>
-        </tr>
-            <tr>
-            <td>16-07-24</td>
-            <td>
-                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Niet op reis, wél naar een vliegveld 🛩️" title="Niet op reis, wél naar een vliegveld 🛩️"/>
-<a href="https://www.strava.com/activities/11904817092" title="Kcal: 3823 | Gear: None ">Niet op reis, wél naar een...</a>
-            </td>
-            <td align="center">142 <sup><sub>km</sub></sup></td>
-            <td align="center">378 <sup><sub>m</sub></sup></td>
-            <td align="center">4:01:25</td>
-            <td align="center">238 <sup><sub>w</sub></sup></td>
-            <td align="center">35.3 <sup><sub>km/h</sub></sup></td>
-            <td align="center">129</td>
-        </tr>
-            <tr>
-            <td>15-07-24</td>
-            <td>
-                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="5x 300W 65rpm in Watopia" title="5x 300W 65rpm in Watopia"/>
-<a href="https://www.strava.com/activities/11896309010" title="Kcal: 1347 | Gear: None ">5x 300W 65rpm in Watopia</a>
-            </td>
-            <td align="center">60 <sup><sub>km</sub></sup></td>
-            <td align="center">91 <sup><sub>m</sub></sup></td>
-            <td align="center">1:32:40</td>
-            <td align="center">254 <sup><sub>w</sub></sup></td>
-            <td align="center">39 <sup><sub>km/h</sub></sup></td>
-            <td align="center">129</td>
         </tr>
                 <tr>
             <td colspan="8" align="right"><a href="https://github.com/robiningelbrecht/strava-activities#activities">View all activities</a></td>
