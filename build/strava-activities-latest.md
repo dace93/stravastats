@@ -10,6 +10,32 @@
         <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/heart-rate.svg" width="30" alt="average heart rate" title="average heart rate"/></th>
     </tr>
             <tr>
+            <td>21-07-24</td>
+            <td>
+                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Afternoon Ride" title="Afternoon Ride"/>
+<a href="https://www.strava.com/activities/11945420761" title="Kcal: 41 | Gear: None ">Afternoon Ride</a>
+            </td>
+            <td align="center">2 <sup><sub>km</sub></sup></td>
+            <td align="center">9 <sup><sub>m</sub></sup></td>
+            <td align="center">8:08</td>
+            <td align="center">59 <sup><sub>w</sub></sup></td>
+            <td align="center">16.9 <sup><sub>km/h</sub></sup></td>
+            <td align="center">94</td>
+        </tr>
+            <tr>
+            <td>21-07-24</td>
+            <td>
+                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="De Veluwe 🇳🇱🌦️" title="De Veluwe 🇳🇱🌦️"/>
+<a href="https://www.strava.com/activities/11945334904" title="Kcal: 6070 | Gear: None ">De Veluwe 🇳🇱🌦️</a>
+            </td>
+            <td align="center">209 <sup><sub>km</sub></sup></td>
+            <td align="center">1 332 <sup><sub>m</sub></sup></td>
+            <td align="center">6:33:54</td>
+            <td align="center">232 <sup><sub>w</sub></sup></td>
+            <td align="center">31.8 <sup><sub>km/h</sub></sup></td>
+            <td align="center">121</td>
+        </tr>
+            <tr>
             <td>20-07-24</td>
             <td>
                 <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Afternoon Ride" title="Afternoon Ride"/>
@@ -46,32 +72,6 @@
             <td align="center">3:38:46</td>
             <td align="center">206 <sup><sub>w</sub></sup></td>
             <td align="center">31.4 <sup><sub>km/h</sub></sup></td>
-            <td align="center">115</td>
-        </tr>
-            <tr>
-            <td>18-07-24</td>
-            <td>
-                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Op verplaatsing 🌡️" title="Op verplaatsing 🌡️"/>
-<a href="https://www.strava.com/activities/11921840174" title="Kcal: 2324 | Gear: None ">Op verplaatsing 🌡️</a>
-            </td>
-            <td align="center">76 <sup><sub>km</sub></sup></td>
-            <td align="center">70 <sup><sub>m</sub></sup></td>
-            <td align="center">2:10:09</td>
-            <td align="center">272 <sup><sub>w</sub></sup></td>
-            <td align="center">35.2 <sup><sub>km/h</sub></sup></td>
-            <td align="center">135</td>
-        </tr>
-            <tr>
-            <td>17-07-24</td>
-            <td>
-                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="WTC Ruyslee + extra uurtje" title="WTC Ruyslee + extra uurtje"/>
-<a href="https://www.strava.com/activities/11913578830" title="Kcal: 2664 | Gear: None ">WTC Ruyslee + extra uurtje</a>
-            </td>
-            <td align="center">101 <sup><sub>km</sub></sup></td>
-            <td align="center">234 <sup><sub>m</sub></sup></td>
-            <td align="center">3:12:08</td>
-            <td align="center">205 <sup><sub>w</sub></sup></td>
-            <td align="center">31.6 <sup><sub>km/h</sub></sup></td>
             <td align="center">115</td>
         </tr>
                 <tr>
