@@ -10,6 +10,19 @@
         <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/heart-rate.svg" width="30" alt="average heart rate" title="average heart rate"/></th>
     </tr>
             <tr>
+            <td>24-07-24</td>
+            <td>
+                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Rondje stoplichten en open bruggen🚦🙈" title="Rondje stoplichten en open bruggen🚦🙈"/>
+<a href="https://www.strava.com/activities/11970294751" title="Kcal: 5760 | Gear: None ">Rondje stoplichten en open...</a>
+            </td>
+            <td align="center">204 <sup><sub>km</sub></sup></td>
+            <td align="center">501 <sup><sub>m</sub></sup></td>
+            <td align="center">6:35:03</td>
+            <td align="center">220 <sup><sub>w</sub></sup></td>
+            <td align="center">30.9 <sup><sub>km/h</sub></sup></td>
+            <td align="center">109</td>
+        </tr>
+            <tr>
             <td>23-07-24</td>
             <td>
                 <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Genieten met een grote G van Gravel 👻" title="Genieten met een grote G van Gravel 👻"/>
@@ -60,19 +73,6 @@
             <td align="center">59 <sup><sub>w</sub></sup></td>
             <td align="center">16.9 <sup><sub>km/h</sub></sup></td>
             <td align="center">94</td>
-        </tr>
-            <tr>
-            <td>21-07-24</td>
-            <td>
-                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="De Veluwe 🇳🇱🌦️" title="De Veluwe 🇳🇱🌦️"/>
-<a href="https://www.strava.com/activities/11945334904" title="Kcal: 6070 | Gear: None ">De Veluwe 🇳🇱🌦️</a>
-            </td>
-            <td align="center">209 <sup><sub>km</sub></sup></td>
-            <td align="center">1 332 <sup><sub>m</sub></sup></td>
-            <td align="center">6:33:54</td>
-            <td align="center">232 <sup><sub>w</sub></sup></td>
-            <td align="center">31.8 <sup><sub>km/h</sub></sup></td>
-            <td align="center">121</td>
         </tr>
                 <tr>
             <td colspan="8" align="right"><a href="https://github.com/robiningelbrecht/strava-activities#activities">View all activities</a></td>
