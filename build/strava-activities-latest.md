@@ -10,6 +10,32 @@
         <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/heart-rate.svg" width="30" alt="average heart rate" title="average heart rate"/></th>
     </tr>
             <tr>
+            <td>27-07-24</td>
+            <td>
+                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Afternoon Ride" title="Afternoon Ride"/>
+<a href="https://www.strava.com/activities/11994229157" title="Kcal: 38 | Gear: None ">Afternoon Ride</a>
+            </td>
+            <td align="center">2 <sup><sub>km</sub></sup></td>
+            <td align="center">7 <sup><sub>m</sub></sup></td>
+            <td align="center">6:39</td>
+            <td align="center">69 <sup><sub>w</sub></sup></td>
+            <td align="center">19.4 <sup><sub>km/h</sub></sup></td>
+            <td align="center">97</td>
+        </tr>
+            <tr>
+            <td>27-07-24</td>
+            <td>
+                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="VP + familiebezoek aan zee ⛱️" title="VP + familiebezoek aan zee ⛱️"/>
+<a href="https://www.strava.com/activities/11994230691" title="Kcal: 6183 | Gear: None ">VP + familiebezoek aan zee...</a>
+            </td>
+            <td align="center">228 <sup><sub>km</sub></sup></td>
+            <td align="center">381 <sup><sub>m</sub></sup></td>
+            <td align="center">6:34:11</td>
+            <td align="center">236 <sup><sub>w</sub></sup></td>
+            <td align="center">34.7 <sup><sub>km/h</sub></sup></td>
+            <td align="center">131</td>
+        </tr>
+            <tr>
             <td>26-07-24</td>
             <td>
                 <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Weeral weekend 🙌" title="Weeral weekend 🙌"/>
@@ -47,32 +73,6 @@
             <td align="center">241 <sup><sub>w</sub></sup></td>
             <td align="center">31.7 <sup><sub>km/h</sub></sup></td>
             <td align="center">111</td>
-        </tr>
-            <tr>
-            <td>24-07-24</td>
-            <td>
-                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Rondje stoplichten en open bruggen🚦🙈" title="Rondje stoplichten en open bruggen🚦🙈"/>
-<a href="https://www.strava.com/activities/11970294751" title="Kcal: 5760 | Gear: None ">Rondje stoplichten en open...</a>
-            </td>
-            <td align="center">204 <sup><sub>km</sub></sup></td>
-            <td align="center">501 <sup><sub>m</sub></sup></td>
-            <td align="center">6:35:03</td>
-            <td align="center">220 <sup><sub>w</sub></sup></td>
-            <td align="center">30.9 <sup><sub>km/h</sub></sup></td>
-            <td align="center">109</td>
-        </tr>
-            <tr>
-            <td>23-07-24</td>
-            <td>
-                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Genieten met een grote G van Gravel 👻" title="Genieten met een grote G van Gravel 👻"/>
-<a href="https://www.strava.com/activities/11961635451" title="Kcal: 4200 | Gear: None ">Genieten met een grote G v...</a>
-            </td>
-            <td align="center">161 <sup><sub>km</sub></sup></td>
-            <td align="center">593 <sup><sub>m</sub></sup></td>
-            <td align="center">6:08:20</td>
-            <td align="center">165 <sup><sub>w</sub></sup></td>
-            <td align="center">26.3 <sup><sub>km/h</sub></sup></td>
-            <td align="center">101</td>
         </tr>
                 <tr>
             <td colspan="8" align="right"><a href="https://github.com/robiningelbrecht/strava-activities#activities">View all activities</a></td>
