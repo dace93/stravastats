@@ -10,6 +10,32 @@
         <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/heart-rate.svg" width="30" alt="average heart rate" title="average heart rate"/></th>
     </tr>
             <tr>
+            <td>28-07-24</td>
+            <td>
+                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Fietsfotozoektocht 👀🕵️‍♂️" title="Fietsfotozoektocht 👀🕵️‍♂️"/>
+<a href="https://www.strava.com/activities/12004223214" title="Kcal: 651 | Gear: None ">Fietsfotozoektocht 👀🕵️‍♂️...</a>
+            </td>
+            <td align="center">40 <sup><sub>km</sub></sup></td>
+            <td align="center">131 <sup><sub>m</sub></sup></td>
+            <td align="center">2:28:08</td>
+            <td align="center">48 <sup><sub>w</sub></sup></td>
+            <td align="center">16.2 <sup><sub>km/h</sub></sup></td>
+            <td align="center">88</td>
+        </tr>
+            <tr>
+            <td>28-07-24</td>
+            <td>
+                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="WTC Kruiskerke - Nieuwvliet + beetje extra 🌞" title="WTC Kruiskerke - Nieuwvliet + beetje extra 🌞"/>
+<a href="https://www.strava.com/activities/12001068642" title="Kcal: 4415 | Gear: None ">WTC Kruiskerke - Nieuwvlie...</a>
+            </td>
+            <td align="center">162 <sup><sub>km</sub></sup></td>
+            <td align="center">350 <sup><sub>m</sub></sup></td>
+            <td align="center">4:50:03</td>
+            <td align="center">228 <sup><sub>w</sub></sup></td>
+            <td align="center">33.5 <sup><sub>km/h</sub></sup></td>
+            <td align="center">116</td>
+        </tr>
+            <tr>
             <td>27-07-24</td>
             <td>
                 <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Afternoon Ride" title="Afternoon Ride"/>
@@ -47,32 +73,6 @@
             <td align="center">248 <sup><sub>w</sub></sup></td>
             <td align="center">34.4 <sup><sub>km/h</sub></sup></td>
             <td align="center">125</td>
-        </tr>
-            <tr>
-            <td>25-07-24</td>
-            <td>
-                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="10x 400W 40/20 in Watopia" title="10x 400W 40/20 in Watopia"/>
-<a href="https://www.strava.com/activities/11980388721" title="Kcal: 744 | Gear: None ">10x 400W 40/20 in Watopia</a>
-            </td>
-            <td align="center">34 <sup><sub>km</sub></sup></td>
-            <td align="center">53 <sup><sub>m</sub></sup></td>
-            <td align="center">52:26</td>
-            <td align="center">248 <sup><sub>w</sub></sup></td>
-            <td align="center">38.5 <sup><sub>km/h</sub></sup></td>
-            <td align="center">130</td>
-        </tr>
-            <tr>
-            <td>25-07-24</td>
-            <td>
-                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Geen zin in regen 🫠" title="Geen zin in regen 🫠"/>
-<a href="https://www.strava.com/activities/11979064595" title="Kcal: 806 | Gear: None ">Geen zin in regen 🫠</a>
-            </td>
-            <td align="center">27 <sup><sub>km</sub></sup></td>
-            <td align="center">147 <sup><sub>m</sub></sup></td>
-            <td align="center">50:33</td>
-            <td align="center">241 <sup><sub>w</sub></sup></td>
-            <td align="center">31.7 <sup><sub>km/h</sub></sup></td>
-            <td align="center">111</td>
         </tr>
                 <tr>
             <td colspan="8" align="right"><a href="https://github.com/robiningelbrecht/strava-activities#activities">View all activities</a></td>
