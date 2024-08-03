@@ -10,6 +10,45 @@
         <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/heart-rate.svg" width="30" alt="average heart rate" title="average heart rate"/></th>
     </tr>
             <tr>
+            <td>03-08-24</td>
+            <td>
+                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Part 2: Vlak ritje 👌" title="Part 2: Vlak ritje 👌"/>
+<a href="https://www.strava.com/activities/12053854471" title="Kcal: 1777 | Gear: None ">Part 2: Vlak ritje 👌</a>
+            </td>
+            <td align="center">70 <sup><sub>km</sub></sup></td>
+            <td align="center">240 <sup><sub>m</sub></sup></td>
+            <td align="center">2:11:46</td>
+            <td align="center">200 <sup><sub>w</sub></sup></td>
+            <td align="center">32 <sup><sub>km/h</sub></sup></td>
+            <td align="center">116</td>
+        </tr>
+            <tr>
+            <td>03-08-24</td>
+            <td>
+                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Lactaat wegfietsen 🙈" title="Lactaat wegfietsen 🙈"/>
+<a href="https://www.strava.com/activities/12052092906" title="Kcal: 66 | Gear: None ">Lactaat wegfietsen 🙈</a>
+            </td>
+            <td align="center">4 <sup><sub>km</sub></sup></td>
+            <td align="center">23 <sup><sub>m</sub></sup></td>
+            <td align="center">10:15</td>
+            <td align="center">83 <sup><sub>w</sub></sup></td>
+            <td align="center">20.7 <sup><sub>km/h</sub></sup></td>
+            <td align="center">99</td>
+        </tr>
+            <tr>
+            <td>03-08-24</td>
+            <td>
+                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="De Eifel ontdekken 😍" title="De Eifel ontdekken 😍"/>
+<a href="https://www.strava.com/activities/12051979921" title="Kcal: 4178 | Gear: None ">De Eifel ontdekken 😍</a>
+            </td>
+            <td align="center">133 <sup><sub>km</sub></sup></td>
+            <td align="center">2 340 <sup><sub>m</sub></sup></td>
+            <td align="center">4:21:18</td>
+            <td align="center">241 <sup><sub>w</sub></sup></td>
+            <td align="center">30.5 <sup><sub>km/h</sub></sup></td>
+            <td align="center">130</td>
+        </tr>
+            <tr>
             <td>02-08-24</td>
             <td>
                 <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Team 3R September meetup ride recon 🌡️🌞" title="Team 3R September meetup ride recon 🌡️🌞"/>
@@ -34,45 +73,6 @@
             <td align="center">231 <sup><sub>w</sub></sup></td>
             <td align="center">33.5 <sup><sub>km/h</sub></sup></td>
             <td align="center">119</td>
-        </tr>
-            <tr>
-            <td>31-07-24</td>
-            <td>
-                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Night Ride" title="Night Ride"/>
-<a href="https://www.strava.com/activities/12030023168" title="Kcal: 36 | Gear: None ">Night Ride</a>
-            </td>
-            <td align="center">2 <sup><sub>km</sub></sup></td>
-            <td align="center">5 <sup><sub>m</sub></sup></td>
-            <td align="center">8:17</td>
-            <td align="center">47 <sup><sub>w</sub></sup></td>
-            <td align="center">16.3 <sup><sub>km/h</sub></sup></td>
-            <td align="center">87</td>
-        </tr>
-            <tr>
-            <td>31-07-24</td>
-            <td>
-                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="52x11 blokjes 🌞" title="52x11 blokjes 🌞"/>
-<a href="https://www.strava.com/activities/12029952856" title="Kcal: 2869 | Gear: None ">52x11 blokjes 🌞</a>
-            </td>
-            <td align="center">104 <sup><sub>km</sub></sup></td>
-            <td align="center">159 <sup><sub>m</sub></sup></td>
-            <td align="center">3:01:57</td>
-            <td align="center">237 <sup><sub>w</sub></sup></td>
-            <td align="center">34.2 <sup><sub>km/h</sub></sup></td>
-            <td align="center">121</td>
-        </tr>
-            <tr>
-            <td>30-07-24</td>
-            <td>
-                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Als een kip in een airfryer 🍗🔥" title="Als een kip in een airfryer 🍗🔥"/>
-<a href="https://www.strava.com/activities/12021378852" title="Kcal: 3768 | Gear: None ">Als een kip in een airfrye...</a>
-            </td>
-            <td align="center">162 <sup><sub>km</sub></sup></td>
-            <td align="center">414 <sup><sub>m</sub></sup></td>
-            <td align="center">4:18:53</td>
-            <td align="center">216 <sup><sub>w</sub></sup></td>
-            <td align="center">37.6 <sup><sub>km/h</sub></sup></td>
-            <td align="center">125</td>
         </tr>
                 <tr>
             <td colspan="8" align="right"><a href="https://github.com/robiningelbrecht/strava-activities#activities">View all activities</a></td>
