@@ -4,19 +4,19 @@
 </p>
 
 Since I began cycling `13 years and 5 months` ago on `06-03-2012`,
-I had `2549 cycling days`.<br />
-I recorded a total distance of `214 422 km`
-(`5.35` trips around the world 🌍 and
-`0.558` trips to the moon 🌕),
-an elevation of `963 664 m`
-(`108.9` times Mount Everest 🏔)
-and a total time of `9mos 3w 3d 14h 52m` 🎉
+I had `2551 cycling days`.<br />
+I recorded a total distance of `214 698 km`
+(`5.36` trips around the world 🌍 and
+`0.559` trips to the moon 🌕),
+an elevation of `965 341 m`
+(`109.1` times Mount Everest 🏔)
+and a total time of `9mos 3w 3d 23h 34m` 🎉
 
 That's a daily average of `47 km`,
 a weekly average of `331 km` and a
-monthly average of `1 439 km` 🐣
+monthly average of `1 441 km` 🐣
 
-I burned `4764932 calories` doing so, that's about `17 648` pizza slices 🍕
+I burned `4772632 calories` doing so, that's about `17 676` pizza slices 🍕
 
 ---
 
@@ -52,6 +52,45 @@ I burned `4764932 calories` doing so, that's about `17 648` pizza slices 🍕
         <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/heart-rate.svg" width="30" alt="average heart rate" title="average heart rate"/></th>
     </tr>
             <tr>
+            <td>05-08-24</td>
+            <td>
+                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Met zin naar het Zwin 🌞🐦" title="Met zin naar het Zwin 🌞🐦"/>
+<a href="https://www.strava.com/activities/12070956394" title="Kcal: 2790 | Gear: Canyon ">Met zin naar het Zwin 🌞🐦...</a>
+            </td>
+            <td align="center">105 <sup><sub>km</sub></sup></td>
+            <td align="center">213 <sup><sub>m</sub></sup></td>
+            <td align="center">3:19:08</td>
+            <td align="center">208 <sup><sub>w</sub></sup></td>
+            <td align="center">31.8 <sup><sub>km/h</sub></sup></td>
+            <td align="center">107</td>
+        </tr>
+            <tr>
+            <td>04-08-24</td>
+            <td>
+                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Een week afsluiten met 999,6 km: niet met mij 🙈😅" title="Een week afsluiten met 999,6 km: niet met mij 🙈😅"/>
+<a href="https://www.strava.com/activities/12062898729" title="Kcal: 20 | Gear: Canyon ">Een week afsluiten met 999...</a>
+            </td>
+            <td align="center">1 <sup><sub>km</sub></sup></td>
+            <td align="center">3 <sup><sub>m</sub></sup></td>
+            <td align="center">3:19</td>
+            <td align="center">73 <sup><sub>w</sub></sup></td>
+            <td align="center">19.1 <sup><sub>km/h</sub></sup></td>
+            <td align="center">82</td>
+        </tr>
+            <tr>
+            <td>04-08-24</td>
+            <td>
+                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Schepdaal in de route opgenomen &amp; gemeentes afvinken 🏅🤘🇧🇪" title="Schepdaal in de route opgenomen &amp; gemeentes afvinken 🏅🤘🇧🇪"/>
+<a href="https://www.strava.com/activities/12062313230" title="Kcal: 4890 | Gear: Canyon Grizl CF SLX 8 Di2 ">Schepdaal in de route opge...</a>
+            </td>
+            <td align="center">169 <sup><sub>km</sub></sup></td>
+            <td align="center">1 461 <sup><sub>m</sub></sup></td>
+            <td align="center">5:19:52</td>
+            <td align="center">230 <sup><sub>w</sub></sup></td>
+            <td align="center">31.7 <sup><sub>km/h</sub></sup></td>
+            <td align="center">122</td>
+        </tr>
+            <tr>
             <td>03-08-24</td>
             <td>
                 <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Part 2: Vlak ritje 👌" title="Part 2: Vlak ritje 👌"/>
@@ -77,45 +116,6 @@ I burned `4764932 calories` doing so, that's about `17 648` pizza slices 🍕
             <td align="center">20.7 <sup><sub>km/h</sub></sup></td>
             <td align="center">99</td>
         </tr>
-            <tr>
-            <td>03-08-24</td>
-            <td>
-                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="De Eifel ontdekken 😍" title="De Eifel ontdekken 😍"/>
-<a href="https://www.strava.com/activities/12051979921" title="Kcal: 4178 | Gear: Canyon ">De Eifel ontdekken 😍</a>
-            </td>
-            <td align="center">133 <sup><sub>km</sub></sup></td>
-            <td align="center">2 340 <sup><sub>m</sub></sup></td>
-            <td align="center">4:21:18</td>
-            <td align="center">241 <sup><sub>w</sub></sup></td>
-            <td align="center">30.5 <sup><sub>km/h</sub></sup></td>
-            <td align="center">130</td>
-        </tr>
-            <tr>
-            <td>02-08-24</td>
-            <td>
-                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Team 3R September meetup ride recon 🌡️🌞" title="Team 3R September meetup ride recon 🌡️🌞"/>
-<a href="https://www.strava.com/activities/12045547324" title="Kcal: 5924 | Gear: Canyon ">Team 3R September meetup r...</a>
-            </td>
-            <td align="center">205 <sup><sub>km</sub></sup></td>
-            <td align="center">2 067 <sup><sub>m</sub></sup></td>
-            <td align="center">6:32:25</td>
-            <td align="center">226 <sup><sub>w</sub></sup></td>
-            <td align="center">31.4 <sup><sub>km/h</sub></sup></td>
-            <td align="center">129</td>
-        </tr>
-            <tr>
-            <td>01-08-24</td>
-            <td>
-                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="2 uur op de kop ✅" title="2 uur op de kop ✅"/>
-<a href="https://www.strava.com/activities/12037983340" title="Kcal: 1845 | Gear: Canyon ">2 uur op de kop ✅</a>
-            </td>
-            <td align="center">67 <sup><sub>km</sub></sup></td>
-            <td align="center">134 <sup><sub>m</sub></sup></td>
-            <td align="center">2:00:05</td>
-            <td align="center">231 <sup><sub>w</sub></sup></td>
-            <td align="center">33.5 <sup><sub>km/h</sub></sup></td>
-            <td align="center">119</td>
-        </tr>
         </table>
 <details>
     <summary>Older activities</summary>
@@ -131,10 +131,49 @@ I burned `4764932 calories` doing so, that's about `17 648` pizza slices 🍕
             <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/heart-rate.svg" width="30" alt="average heart rate" title="average heart rate"/></th>
         </tr>
                     <tr>
+                <td>03-08-24</td>
+                <td>
+                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="De Eifel ontdekken 😍" title="De Eifel ontdekken 😍"/>
+<a href="https://www.strava.com/activities/12051979921" title="Kcal: 4178 | Gear: Canyon ">De Eifel ontdekken 😍</a>
+                </td>
+                <td align="center">133 <sup><sub>km</sub></sup></td>
+                <td align="center">2 340 <sup><sub>m</sub></sup></td>
+                <td align="center">4:21:18</td>
+                <td align="center">241 <sup><sub>w</sub></sup></td>
+                <td align="center">30.5 <sup><sub>km/h</sub></sup></td>
+                <td align="center">130</td>
+            </tr>
+                    <tr>
+                <td>02-08-24</td>
+                <td>
+                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Team 3R September meetup ride recon 🌡️🌞" title="Team 3R September meetup ride recon 🌡️🌞"/>
+<a href="https://www.strava.com/activities/12045547324" title="Kcal: 5924 | Gear: Canyon ">Team 3R September meetup r...</a>
+                </td>
+                <td align="center">205 <sup><sub>km</sub></sup></td>
+                <td align="center">2 067 <sup><sub>m</sub></sup></td>
+                <td align="center">6:32:25</td>
+                <td align="center">226 <sup><sub>w</sub></sup></td>
+                <td align="center">31.4 <sup><sub>km/h</sub></sup></td>
+                <td align="center">129</td>
+            </tr>
+                    <tr>
+                <td>01-08-24</td>
+                <td>
+                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="2 uur op de kop ✅" title="2 uur op de kop ✅"/>
+<a href="https://www.strava.com/activities/12037983340" title="Kcal: 1845 | Gear: Canyon ">2 uur op de kop ✅</a>
+                </td>
+                <td align="center">67 <sup><sub>km</sub></sup></td>
+                <td align="center">134 <sup><sub>m</sub></sup></td>
+                <td align="center">2:00:05</td>
+                <td align="center">231 <sup><sub>w</sub></sup></td>
+                <td align="center">33.5 <sup><sub>km/h</sub></sup></td>
+                <td align="center">119</td>
+            </tr>
+                    <tr>
                 <td>31-07-24</td>
                 <td>
-                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Night Ride" title="Night Ride"/>
-<a href="https://www.strava.com/activities/12030023168" title="Kcal: 36 | Gear: Ridley Fenix SLX Disc ">Night Ride</a>
+                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Los" title="Los"/>
+<a href="https://www.strava.com/activities/12030023168" title="Kcal: 36 | Gear: Canyon ">Los</a>
                 </td>
                 <td align="center">2 <sup><sub>km</sub></sup></td>
                 <td align="center">5 <sup><sub>m</sub></sup></td>
@@ -741,45 +780,6 @@ I burned `4764932 calories` doing so, that's about `17 648` pizza slices 🍕
                 <td align="center">26 <sup><sub>km/h</sub></sup></td>
                 <td align="center">95</td>
             </tr>
-                    <tr>
-                <td>23-06-24</td>
-                <td>
-                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Naar m&#039;n favoriete standbeeld 🗽🌞" title="Naar m&#039;n favoriete standbeeld 🗽🌞"/>
-<a href="https://www.strava.com/activities/11718317885" title="Kcal: 3720 | Gear: Canyon ">Naar m&#039;n favoriete standbe...</a>
-                </td>
-                <td align="center">135 <sup><sub>km</sub></sup></td>
-                <td align="center">308 <sup><sub>m</sub></sup></td>
-                <td align="center">4:04:27</td>
-                <td align="center">229 <sup><sub>w</sub></sup></td>
-                <td align="center">33.1 <sup><sub>km/h</sub></sup></td>
-                <td align="center">123</td>
-            </tr>
-                    <tr>
-                <td>22-06-24</td>
-                <td>
-                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="VP ⛅ + duurritje 🌦️" title="VP ⛅ + duurritje 🌦️"/>
-<a href="https://www.strava.com/activities/11711576120" title="Kcal: 5600 | Gear: Canyon ">VP ⛅ + duurritje 🌦️</a>
-                </td>
-                <td align="center">211 <sup><sub>km</sub></sup></td>
-                <td align="center">465 <sup><sub>m</sub></sup></td>
-                <td align="center">6:10:43</td>
-                <td align="center">227 <sup><sub>w</sub></sup></td>
-                <td align="center">34.2 <sup><sub>km/h</sub></sup></td>
-                <td align="center">134</td>
-            </tr>
-                    <tr>
-                <td>21-06-24</td>
-                <td>
-                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Fietstochtje 🚴‍♂️ &gt; Terrasje 🥂" title="Fietstochtje 🚴‍♂️ &gt; Terrasje 🥂"/>
-<a href="https://www.strava.com/activities/11706709012" title="Kcal: 1782 | Gear: Canyon ">Fietstochtje 🚴‍♂️ &gt; Terras...</a>
-                </td>
-                <td align="center">68 <sup><sub>km</sub></sup></td>
-                <td align="center">173 <sup><sub>m</sub></sup></td>
-                <td align="center">2:05:19</td>
-                <td align="center">211 <sup><sub>w</sub></sup></td>
-                <td align="center">32.6 <sup><sub>km/h</sub></sup></td>
-                <td align="center">112</td>
-            </tr>
             </table>
 </details>
 
@@ -800,11 +800,11 @@ I burned `4764932 calories` doing so, that's about `17 648` pizza slices 🍕
     <tbody>
             <tr>
             <td align="center">August 2024</td>
-            <td align="center">5</td>
-            <td align="center">479 <sup><sub>km</sub></sup></td>
-            <td align="center">4 804 <sup><sub>m</sub></sup></td>
-            <td align="center">15h 15m</td>
-            <td align="center">5</td>
+            <td align="center">8</td>
+            <td align="center">754 <sup><sub>km</sub></sup></td>
+            <td align="center">6 481 <sup><sub>m</sub></sup></td>
+            <td align="center">23h 58m</td>
+            <td align="center">6</td>
         </tr>
             <tr>
             <td align="center">July 2024</td>
@@ -1792,18 +1792,18 @@ I burned `4764932 calories` doing so, that's about `17 648` pizza slices 🍕
     </tr>
     <tr>
         <td align="center"><b>Outside</b></td>
-        <td align="center"><b>2184</td>
-        <td align="center"><b>137 979 <sup><sub>km</sub></sup></b></td>
-        <td align="center"><b>534 031 <sup><sub>m</sub></sup></b></td>
-        <td align="center"><b>6mos 3w 3d 14h 21m</b></td>
+        <td align="center"><b>2187</td>
+        <td align="center"><b>138 255 <sup><sub>km</sub></sup></b></td>
+        <td align="center"><b>535 708 <sup><sub>m</sub></sup></b></td>
+        <td align="center"><b>6mos 3w 3d 23h 4m</b></td>
         <td align="center"></td>
     </tr>
     <tr>
         <td align="center"><b>Total</b></td>
-        <td align="center"><b>4224</td>
-        <td align="center"><b>214 422 <sup><sub>km</sub></sup></b></td>
-        <td align="center"><b>963 664 <sup><sub>m</sub></sup></b></td>
-        <td align="center"><b>9mos 3w 3d 14h 52m</b></td>
+        <td align="center"><b>4227</td>
+        <td align="center"><b>214 698 <sup><sub>km</sub></sup></b></td>
+        <td align="center"><b>965 341 <sup><sub>m</sub></sup></b></td>
+        <td align="center"><b>9mos 3w 3d 23h 34m</b></td>
         <td align="center"></td>
     </tr>
     </tbody>
@@ -1831,13 +1831,13 @@ I burned `4764932 calories` doing so, that's about `17 648` pizza slices 🍕
     <tbody>
             <tr>
             <td align="center">Monday</td>
-            <td align="center">409</td>
+            <td align="center">410</td>
             <td align="center">
-                                    45 <sup><sub>km avg</sub></sup> /
-                    18 571 <sup><sub>km total</sub></sup>
+                                    46 <sup><sub>km avg</sub></sup> /
+                    18 676 <sup><sub>km total</sub></sup>
                             </td>
-            <td align="center">86 077 <sup><sub>m</sub></sup></td>
-            <td align="center">3w 2d 23h 12m</td>
+            <td align="center">86 290 <sup><sub>m</sub></sup></td>
+            <td align="center">3w 3d 2h 31m</td>
             <td align="center">32.3 <sup><sub>km/h</sub></sup></td>
         </tr>
             <tr>
@@ -1897,13 +1897,13 @@ I burned `4764932 calories` doing so, that's about `17 648` pizza slices 🍕
         </tr>
             <tr>
             <td align="center">Sunday</td>
-            <td align="center">747</td>
+            <td align="center">749</td>
             <td align="center">
-                                    63 <sup><sub>km avg</sub></sup> /
-                    47 404 <sup><sub>km total</sub></sup>
+                                    64 <sup><sub>km avg</sub></sup> /
+                    47 574 <sup><sub>km total</sub></sup>
                             </td>
-            <td align="center">190 367 <sup><sub>m</sub></sup></td>
-            <td align="center">2mos 5d 20h 38m</td>
+            <td align="center">191 831 <sup><sub>m</sub></sup></td>
+            <td align="center">2mos 6d 2h 1m</td>
             <td align="center">31.9 <sup><sub>km/h</sub></sup></td>
         </tr>
         </tbody>
@@ -1939,24 +1939,24 @@ I burned `4764932 calories` doing so, that's about `17 648` pizza slices 🍕
         </tr>
             <tr>
             <td align="center">Afternoon (12h - 17h)</td>
-            <td align="center">629</td>
+            <td align="center">630</td>
             <td align="center">
                                     38 <sup><sub>km avg</sub></sup> /
-                    23 628 <sup><sub>km total</sub></sup>
+                    23 797 <sup><sub>km total</sub></sup>
                             </td>
-            <td align="center">97 226 <sup><sub>m</sub></sup></td>
-            <td align="center">1mo 5d 13h 22m</td>
-            <td align="center">29.3 <sup><sub>km/h</sub></sup></td>
+            <td align="center">98 687 <sup><sub>m</sub></sup></td>
+            <td align="center">1mo 5d 18h 42m</td>
+            <td align="center">29.4 <sup><sub>km/h</sub></sup></td>
         </tr>
             <tr>
             <td align="center">Evening (17h - 23h)</td>
-            <td align="center">2274</td>
+            <td align="center">2276</td>
             <td align="center">
                                     34 <sup><sub>km avg</sub></sup> /
-                    78 085 <sup><sub>km total</sub></sup>
+                    78 191 <sup><sub>km total</sub></sup>
                             </td>
-            <td align="center">352 582 <sup><sub>m</sub></sup></td>
-            <td align="center">3mos 1w 19h 40m</td>
+            <td align="center">352 798 <sup><sub>m</sub></sup></td>
+            <td align="center">3mos 1w 23h 3m</td>
             <td align="center">35.4 <sup><sub>km/h</sub></sup></td>
         </tr>
             <tr>
@@ -2000,13 +2000,13 @@ I burned `4764932 calories` doing so, that's about `17 648` pizza slices 🍕
         </tr>
             <tr>
             <td align="center">Ridley Fenix SLX Disc</td>
-            <td align="center">772</td>
+            <td align="center">771</td>
             <td align="center">
                                     88 <sup><sub>km avg</sub></sup> /
-                    68 056 <sup><sub>km total</sub></sup>
+                    68 053 <sup><sub>km total</sub></sup>
                             </td>
-            <td align="center">281 892 <sup><sub>m</sub></sup></td>
-            <td align="center">3mos 6d 11h 40m</td>
+            <td align="center">281 887 <sup><sub>m</sub></sup></td>
+            <td align="center">3mos 6d 11h 32m</td>
             <td align="center">31.3 <sup><sub>km/h</sub></sup></td>
         </tr>
             <tr>
@@ -2022,25 +2022,25 @@ I burned `4764932 calories` doing so, that's about `17 648` pizza slices 🍕
         </tr>
             <tr>
             <td align="center">Canyon</td>
-            <td align="center">98</td>
+            <td align="center">101</td>
             <td align="center">
-                                    107 <sup><sub>km avg</sub></sup> /
-                    10 496 <sup><sub>km total</sub></sup>
+                                    105 <sup><sub>km avg</sub></sup> /
+                    10 605 <sup><sub>km total</sub></sup>
                             </td>
-            <td align="center">48 944 <sup><sub>m</sub></sup></td>
-            <td align="center">1w 6d 16h 55m</td>
+            <td align="center">49 165 <sup><sub>m</sub></sup></td>
+            <td align="center">1w 6d 20h 26m</td>
             <td align="center">31.9 <sup><sub>km/h</sub></sup></td>
         </tr>
             <tr>
             <td align="center">Canyon Grizl CF SLX 8 Di2</td>
-            <td align="center">100</td>
+            <td align="center">101</td>
             <td align="center">
-                                    74 <sup><sub>km avg</sub></sup> /
-                    7 409 <sup><sub>km total</sub></sup>
+                                    75 <sup><sub>km avg</sub></sup> /
+                    7 578 <sup><sub>km total</sub></sup>
                             </td>
-            <td align="center">29 853 <sup><sub>m</sub></sup></td>
-            <td align="center">1w 4d 7h 17m</td>
-            <td align="center">27.3 <sup><sub>km/h</sub></sup></td>
+            <td align="center">31 314 <sup><sub>m</sub></sup></td>
+            <td align="center">1w 4d 12h 37m</td>
+            <td align="center">27.4 <sup><sub>km/h</sub></sup></td>
         </tr>
             <tr>
             <td align="center">Scatoo</td>
@@ -2217,12 +2217,12 @@ I burned `4764932 calories` doing so, that's about `17 648` pizza slices 🍕
     <tbody>
             <tr>
             <td align="center">2024</td>
-            <td align="center">21 438 <sup><sub>km</sub></sup></td>
+            <td align="center">21 714 <sup><sub>km</sub></sup></td>
             <td align="center">
-                                    -19 733 <sup><sub>km</sub></sup>
+                                    -19 457 <sup><sub>km</sub></sup>
                             </td>
-            <td align="center">95 740 <sup><sub>m</sub></sup></td>
-            <td align="center">3w 5d 11h 9m</td>
+            <td align="center">97 417 <sup><sub>m</sub></sup></td>
+            <td align="center">3w 5d 19h 51m</td>
         </tr>
             <tr>
             <td align="center">2023</td>
@@ -2350,13 +2350,13 @@ I burned `4764932 calories` doing so, that's about `17 648` pizza slices 🍕
     <tbody>
             <tr>
             <td align="center">0 - 30 km</td>
-            <td align="center">1732</td>
+            <td align="center">1733</td>
             <td align="center">
                                      10 <sup><sub>km avg</sub></sup> /
-                     16 675 <sup><sub>km total</sub></sup>
+                     16 676 <sup><sub>km total</sub></sup>
                             </td>
-            <td align="center">95 193 <sup><sub>m</sub></sup></td>
-            <td align="center">3w 1d 2h 34m</td>
+            <td align="center">95 196 <sup><sub>m</sub></sup></td>
+            <td align="center">3w 1d 2h 38m</td>
             <td align="center">31.4 <sup><sub>km/h</sub></sup></td>
         </tr>
             <tr>
@@ -2383,13 +2383,13 @@ I burned `4764932 calories` doing so, that's about `17 648` pizza slices 🍕
         </tr>
             <tr>
             <td align="center">90 - 120 km</td>
-            <td align="center">503</td>
+            <td align="center">504</td>
             <td align="center">
                                      106 <sup><sub>km avg</sub></sup> /
-                     53 152 <sup><sub>km total</sub></sup>
+                     53 257 <sup><sub>km total</sub></sup>
                             </td>
-            <td align="center">197 711 <sup><sub>m</sub></sup></td>
-            <td align="center">2mos 1w 2d 10h</td>
+            <td align="center">197 924 <sup><sub>m</sub></sup></td>
+            <td align="center">2mos 1w 2d 13h 19m</td>
             <td align="center">33.9 <sup><sub>km/h</sub></sup></td>
         </tr>
             <tr>
@@ -2405,13 +2405,13 @@ I burned `4764932 calories` doing so, that's about `17 648` pizza slices 🍕
         </tr>
             <tr>
             <td align="center">150 - 180 km</td>
-            <td align="center">82</td>
+            <td align="center">83</td>
             <td align="center">
                                      162 <sup><sub>km avg</sub></sup> /
-                     13 263 <sup><sub>km total</sub></sup>
+                     13 432 <sup><sub>km total</sub></sup>
                             </td>
-            <td align="center">71 871 <sup><sub>m</sub></sup></td>
-            <td align="center">2w 3d 5h 32m</td>
+            <td align="center">73 332 <sup><sub>m</sub></sup></td>
+            <td align="center">2w 3d 10h 52m</td>
             <td align="center">32.1 <sup><sub>km/h</sub></sup></td>
         </tr>
             <tr>
@@ -3050,6 +3050,7 @@ I burned `4764932 calories` doing so, that's about `17 648` pizza slices 🍕
             <tr>
             <td align="center">Ride a total of 600km</td>
                         <td align="center">
+                                    <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
                             </td>
                         <td align="center">
                                     <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/check-mark.svg" width="20" alt="Check mark" title="Check mark"/>
@@ -5000,7 +5001,7 @@ I burned `4764932 calories` doing so, that's about `17 648` pizza slices 🍕
 
 ## Completed challenges
 
-<a href="https://www.strava.com/challenges/shokz-a-day-with-jan-frodeno"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/e0b7be8e-3370-4d46-921a-ba6404efde13.png" alt="Shokz: A day with Jan Frodeno" title="Shokz: A day with Jan Frodeno" width="75" /></a><a href="https://www.strava.com/challenges/August-Gran-Fondo-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/56d64ded-0a0b-4f0c-a5b9-a65c734c3e9f.png" alt="August Gran Fondo Challenge" title="August Gran Fondo Challenge" width="75" /></a><a href="https://www.strava.com/challenges/August-400-Minute-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/a9abe5c4-1133-4dc7-a6bf-509ba0aa342f.png" alt="August 400-Minute Challenge" title="August 400-Minute Challenge" width="75" /></a><a href="https://www.strava.com/challenges/le-col-keep-the-momentum-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/80ee9c0e-b4da-4782-a71f-cffd18ae6565.png" alt="Le Col Keep The Momentum" title="Le Col Keep The Momentum" width="75" /></a><a href="https://www.strava.com/challenges/August-Ride-200K-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/fcb9a002-5de7-4e55-a16f-df906bab48e0.png" alt="August Ride 200K Challenge" title="August Ride 200K Challenge" width="75" /></a><a href="https://www.strava.com/challenges/The-MAAP-Flow-State-Challenge"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/ff939b97-23dd-4b80-b28f-e94683fa7be6.png" alt="The MAAP Flow State Challenge" title="The MAAP Flow State Challenge" width="75" /></a><a href="https://www.strava.com/challenges/July-Cycling-Elevation-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/25e6472b-0c59-432e-8683-99c89ce0b9af.png" alt="July Cycling Elevation Challenge" title="July Cycling Elevation Challenge" width="75" /></a><a href="https://www.strava.com/challenges/July-Ride-600K-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/b61397ed-eff2-4068-a5aa-0d624293c685.png" alt="July Ride 600K Challenge" title="July Ride 600K Challenge" width="75" /></a><a href="https://www.strava.com/challenges/July-Ride-200K-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/93b4717e-5864-4c5f-bd35-9f52b1d8a22b.png" alt="July Ride 200K Challenge" title="July Ride 200K Challenge" width="75" /></a><a href="https://www.strava.com/challenges/July-5K-x-Brooks-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/063c0ff1-de38-4252-b4f1-dece6d8de6d6.png" alt="July 5K x Brooks Challenge" title="July 5K x Brooks Challenge" width="75" /></a><a href="https://www.strava.com/challenges/le-col-tour-challenge-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/c0f420d5-f030-4a4a-b481-539e3b558f16.png" alt="The Le Col Tour Challenge" title="The Le Col Tour Challenge" width="75" /></a><a href="https://www.strava.com/challenges/July-Streak-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/55efc887-de2a-4d3e-a4ab-f767156fe01c.png" alt="July Streak Challenge" title="July Streak Challenge" width="75" /></a><a href="https://www.strava.com/challenges/June-Sweat-With-Pride-Challenge-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/3e7ade36-5bc1-4c17-aaf9-320538636cd8.png" alt="Sweat With Pride Challenge" title="Sweat With Pride Challenge" width="75" /></a><a href="https://www.strava.com/challenges/le-col-keep-the-pace-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/a719fcad-4697-43a9-87fe-56d2ee512572.png" alt="Le Col Keep The Pace Challenge" title="Le Col Keep The Pace Challenge" width="75" /></a><a href="https://www.strava.com/challenges/June-Ride-600K-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/95860b86-51f4-465b-8ecf-d984ad1fbfec.png" alt="June Ride 600K Challenge" title="June Ride 600K Challenge" width="75" /></a><a href="https://www.strava.com/challenges/June-Ride-200K-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/a9d3bf7e-7bf5-436e-a4a0-b20c8f6be4d6.png" alt="June Ride 200K Challenge" title="June Ride 200K Challenge" width="75" /></a><a href="https://www.strava.com/challenges/solstice-to-starting-line-by-gorewear"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/5b59dfa0-a459-4570-a922-df7850544c2c.png" alt="Solstice to Starting Line by GOREWEAR" title="Solstice to Starting Line by GOREWEAR" width="75" /></a><a href="https://www.strava.com/challenges/June-Cycling-Elevation-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/b1fde63f-c5dd-488e-84d6-2f18630a8ea0.png" alt="June Cycling Elevation Challenge" title="June Cycling Elevation Challenge" width="75" /></a><a href="https://www.strava.com/challenges/June-Streak-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/4e088758-6741-49ab-9565-4241cd6cb73f.png" alt="June Streak Challenge" title="June Streak Challenge" width="75" /></a><a href="https://www.strava.com/challenges/le-col-8848-challenge-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/98bdb74c-98ad-4e50-bb8a-94d6c9666667.png" alt="The Le Col x Strava 8848 Climbing Challenge" title="The Le Col x Strava 8848 Climbing Challenge" width="75" /></a><a href="https://www.strava.com/challenges/Fizik-Spring-Leadout"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/76afa713-0db1-4e8f-9f7f-165230d88c4e.png" alt="fizik Spring Leadout" title="fizik Spring Leadout" width="75" /></a><a href="https://www.strava.com/challenges/April-Ride-600K-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/5f27e8a1-33c4-4bf7-b0a3-46e46592db22.png" alt="April Ride 600K Challenge" title="April Ride 600K Challenge" width="75" /></a><a href="https://www.strava.com/challenges/April-Ride-200K-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/694fdb15-9422-42ca-8d3e-f400088073d0.png" alt="April Ride 200K Challenge" title="April Ride 200K Challenge" width="75" /></a><a href="https://www.strava.com/challenges/April-Gran-Fondo-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/4ca9e244-6ddb-4e70-a58f-e4a3009496f5.png" alt="April Gran Fondo Challenge" title="April Gran Fondo Challenge" width="75" /></a><a href="https://www.strava.com/challenges/April-Days-Active-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/afc71038-c85a-421d-be9c-63cb3aede449.png" alt="April Ten Days Active Challenge" title="April Ten Days Active Challenge" width="75" /></a><a href="https://www.strava.com/challenges/le-col-classics-challenge-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/fbdc239b-87d4-44ca-bfa7-0279634b4d43.png" alt="Le Col Classics Challenge" title="Le Col Classics Challenge" width="75" /></a><a href="https://www.strava.com/challenges/April-Cycling-Elevation-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/98b62ab0-25c7-4a48-918d-1eb8cd8efa0e.png" alt="April Cycling Elevation Challenge" title="April Cycling Elevation Challenge" width="75" /></a><a href="https://www.strava.com/challenges/pedaled-breakaway"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/861cc77c-4aa2-4508-a85e-70a00985bf74.png" alt="PEdALED Breakaway Challenge" title="PEdALED Breakaway Challenge" width="75" /></a><a href="https://www.strava.com/challenges/March-400-Minute-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/2939f1c3-c141-4f0a-acb2-87e41e5cb918.png" alt="March 400-Minute Challenge" title="March 400-Minute Challenge" width="75" /></a><a href="https://www.strava.com/challenges/March-Gran-Fondo-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/fbef5efd-1e50-48d9-8239-06283fd7007a.png" alt="March Gran Fondo Challenge" title="March Gran Fondo Challenge" width="75" /></a><a href="https://www.strava.com/challenges/March-Ride-200K-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/4fc82434-cf0b-415a-b4b9-cfb37611eebd.png" alt="March Ride 200K Challenge" title="March Ride 200K Challenge" width="75" /></a><a href="https://www.strava.com/challenges/March-Ride-600K-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/925d6e61-4d78-49ce-b27d-a764773a6dc7.png" alt="March Ride 600K Challenge" title="March Ride 600K Challenge" width="75" /></a><a href="https://www.strava.com/challenges/March-Days-Active-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/c355ff01-2985-4405-a4d5-391dc7cd97e2.png" alt="March Ten Days Active Challenge" title="March Ten Days Active Challenge" width="75" /></a><a href="https://www.strava.com/challenges/March-Cycling-Elevation-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/33055c82-4e2c-4df9-aecd-53a4f5bfb1a4.png" alt="March Cycling Elevation Challenge" title="March Cycling Elevation Challenge" width="75" /></a><a href="https://www.strava.com/challenges/March-Streak-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/14a796d3-0fac-4427-ad74-d5a6a666105d.png" alt="March Streak Challenge" title="March Streak Challenge" width="75" /></a><a href="https://www.strava.com/challenges/February-400-Minute-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/675a47d9-9d91-4032-80d2-919df84cab10.png" alt="February 400-Minute Challenge" title="February 400-Minute Challenge" width="75" /></a><a href="https://www.strava.com/challenges/February-Gran-Fondo-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/b000c1fe-bbe3-4d1a-b455-f1fcd84c47d6.png" alt="February Gran Fondo Challenge" title="February Gran Fondo Challenge" width="75" /></a><a href="https://www.strava.com/challenges/February-Ride-200K-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/dac79d8f-4ebc-4607-b1f4-f4467e62e70a.png" alt="February Ride 200K Challenge" title="February Ride 200K Challenge" width="75" /></a><a href="https://www.strava.com/challenges/February-Ride-600K-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/e1c30e28-58cb-4033-8736-390a9ac71ffa.png" alt="February Ride 600K Challenge" title="February Ride 600K Challenge" width="75" /></a><a href="https://www.strava.com/challenges/February-Cycling-Elevation-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/132af0a3-5723-43ac-9d36-bbc9f8614b76.png" alt="February Cycling Elevation Challenge" title="February Cycling Elevation Challenge" width="75" /></a><a href="https://www.strava.com/challenges/le-col-form-finder-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/9add953c-a0e4-461a-bc4e-4a796699662e.png" alt="Le Col Form Finder Challenge" title="Le Col Form Finder Challenge" width="75" /></a><a href="https://www.strava.com/challenges/February-Streak-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/27cf92f1-2890-42ad-beec-867bab9c4f1a.png" alt="February Streak Challenge" title="February Streak Challenge" width="75" /></a><a href="https://www.strava.com/challenges/le-col-project-24-challenge"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/dbd6afe5-8dcc-407b-8cd3-3ef70dd23670.png" alt="Le Col Project 24 Challenge" title="Le Col Project 24 Challenge" width="75" /></a><a href="https://www.strava.com/challenges/January-Cycling-Elevation-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/9de898b7-bfa8-443f-bc8a-7452dee27a38.png" alt="January Cycling Elevation Challenge" title="January Cycling Elevation Challenge" width="75" /></a><a href="https://www.strava.com/challenges/January-Fresh-Start-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/48b3803b-d557-4be7-94cd-cf2800684599.png" alt="January Fresh Start Challenge" title="January Fresh Start Challenge" width="75" /></a><a href="https://www.strava.com/challenges/January-Ride-600K-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/611474ff-5633-42ce-8402-8832f25c2c64.png" alt="January Ride 600K Challenge" title="January Ride 600K Challenge" width="75" /></a><a href="https://www.strava.com/challenges/ROKA-Winter-Warrior-200"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/855e7606-f8a2-4a1c-97df-d0c0daf7c803.png" alt="ROKA Winter Warrior 200" title="ROKA Winter Warrior 200" width="75" /></a><a href="https://www.strava.com/challenges/January-Streak-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/5c257e9b-64ce-45da-ba7d-204d5b061b00.png" alt="January Streak Challenge" title="January Streak Challenge" width="75" /></a>
+<a href="https://www.strava.com/challenges/shokz-a-day-with-jan-frodeno"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/e0b7be8e-3370-4d46-921a-ba6404efde13.png" alt="Shokz: A day with Jan Frodeno" title="Shokz: A day with Jan Frodeno" width="75" /></a><a href="https://www.strava.com/challenges/August-Gran-Fondo-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/56d64ded-0a0b-4f0c-a5b9-a65c734c3e9f.png" alt="August Gran Fondo Challenge" title="August Gran Fondo Challenge" width="75" /></a><a href="https://www.strava.com/challenges/August-400-Minute-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/a9abe5c4-1133-4dc7-a6bf-509ba0aa342f.png" alt="August 400-Minute Challenge" title="August 400-Minute Challenge" width="75" /></a><a href="https://www.strava.com/challenges/le-col-keep-the-momentum-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/80ee9c0e-b4da-4782-a71f-cffd18ae6565.png" alt="Le Col Keep The Momentum" title="Le Col Keep The Momentum" width="75" /></a><a href="https://www.strava.com/challenges/August-Ride-200K-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/fcb9a002-5de7-4e55-a16f-df906bab48e0.png" alt="August Ride 200K Challenge" title="August Ride 200K Challenge" width="75" /></a><a href="https://www.strava.com/challenges/August-Ride-600K-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/f3f08b6d-a50b-4be3-b408-3e1f917091b9.png" alt="August Ride 600K Challenge" title="August Ride 600K Challenge" width="75" /></a><a href="https://www.strava.com/challenges/The-MAAP-Flow-State-Challenge"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/ff939b97-23dd-4b80-b28f-e94683fa7be6.png" alt="The MAAP Flow State Challenge" title="The MAAP Flow State Challenge" width="75" /></a><a href="https://www.strava.com/challenges/July-Cycling-Elevation-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/25e6472b-0c59-432e-8683-99c89ce0b9af.png" alt="July Cycling Elevation Challenge" title="July Cycling Elevation Challenge" width="75" /></a><a href="https://www.strava.com/challenges/July-Ride-600K-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/b61397ed-eff2-4068-a5aa-0d624293c685.png" alt="July Ride 600K Challenge" title="July Ride 600K Challenge" width="75" /></a><a href="https://www.strava.com/challenges/July-Ride-200K-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/93b4717e-5864-4c5f-bd35-9f52b1d8a22b.png" alt="July Ride 200K Challenge" title="July Ride 200K Challenge" width="75" /></a><a href="https://www.strava.com/challenges/July-5K-x-Brooks-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/063c0ff1-de38-4252-b4f1-dece6d8de6d6.png" alt="July 5K x Brooks Challenge" title="July 5K x Brooks Challenge" width="75" /></a><a href="https://www.strava.com/challenges/le-col-tour-challenge-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/c0f420d5-f030-4a4a-b481-539e3b558f16.png" alt="The Le Col Tour Challenge" title="The Le Col Tour Challenge" width="75" /></a><a href="https://www.strava.com/challenges/July-Streak-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/55efc887-de2a-4d3e-a4ab-f767156fe01c.png" alt="July Streak Challenge" title="July Streak Challenge" width="75" /></a><a href="https://www.strava.com/challenges/June-Sweat-With-Pride-Challenge-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/3e7ade36-5bc1-4c17-aaf9-320538636cd8.png" alt="Sweat With Pride Challenge" title="Sweat With Pride Challenge" width="75" /></a><a href="https://www.strava.com/challenges/le-col-keep-the-pace-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/a719fcad-4697-43a9-87fe-56d2ee512572.png" alt="Le Col Keep The Pace Challenge" title="Le Col Keep The Pace Challenge" width="75" /></a><a href="https://www.strava.com/challenges/June-Ride-600K-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/95860b86-51f4-465b-8ecf-d984ad1fbfec.png" alt="June Ride 600K Challenge" title="June Ride 600K Challenge" width="75" /></a><a href="https://www.strava.com/challenges/June-Ride-200K-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/a9d3bf7e-7bf5-436e-a4a0-b20c8f6be4d6.png" alt="June Ride 200K Challenge" title="June Ride 200K Challenge" width="75" /></a><a href="https://www.strava.com/challenges/solstice-to-starting-line-by-gorewear"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/5b59dfa0-a459-4570-a922-df7850544c2c.png" alt="Solstice to Starting Line by GOREWEAR" title="Solstice to Starting Line by GOREWEAR" width="75" /></a><a href="https://www.strava.com/challenges/June-Cycling-Elevation-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/b1fde63f-c5dd-488e-84d6-2f18630a8ea0.png" alt="June Cycling Elevation Challenge" title="June Cycling Elevation Challenge" width="75" /></a><a href="https://www.strava.com/challenges/June-Streak-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/4e088758-6741-49ab-9565-4241cd6cb73f.png" alt="June Streak Challenge" title="June Streak Challenge" width="75" /></a><a href="https://www.strava.com/challenges/le-col-8848-challenge-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/98bdb74c-98ad-4e50-bb8a-94d6c9666667.png" alt="The Le Col x Strava 8848 Climbing Challenge" title="The Le Col x Strava 8848 Climbing Challenge" width="75" /></a><a href="https://www.strava.com/challenges/Fizik-Spring-Leadout"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/76afa713-0db1-4e8f-9f7f-165230d88c4e.png" alt="fizik Spring Leadout" title="fizik Spring Leadout" width="75" /></a><a href="https://www.strava.com/challenges/April-Ride-600K-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/5f27e8a1-33c4-4bf7-b0a3-46e46592db22.png" alt="April Ride 600K Challenge" title="April Ride 600K Challenge" width="75" /></a><a href="https://www.strava.com/challenges/April-Ride-200K-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/694fdb15-9422-42ca-8d3e-f400088073d0.png" alt="April Ride 200K Challenge" title="April Ride 200K Challenge" width="75" /></a><a href="https://www.strava.com/challenges/April-Gran-Fondo-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/4ca9e244-6ddb-4e70-a58f-e4a3009496f5.png" alt="April Gran Fondo Challenge" title="April Gran Fondo Challenge" width="75" /></a><a href="https://www.strava.com/challenges/April-Days-Active-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/afc71038-c85a-421d-be9c-63cb3aede449.png" alt="April Ten Days Active Challenge" title="April Ten Days Active Challenge" width="75" /></a><a href="https://www.strava.com/challenges/le-col-classics-challenge-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/fbdc239b-87d4-44ca-bfa7-0279634b4d43.png" alt="Le Col Classics Challenge" title="Le Col Classics Challenge" width="75" /></a><a href="https://www.strava.com/challenges/April-Cycling-Elevation-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/98b62ab0-25c7-4a48-918d-1eb8cd8efa0e.png" alt="April Cycling Elevation Challenge" title="April Cycling Elevation Challenge" width="75" /></a><a href="https://www.strava.com/challenges/pedaled-breakaway"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/861cc77c-4aa2-4508-a85e-70a00985bf74.png" alt="PEdALED Breakaway Challenge" title="PEdALED Breakaway Challenge" width="75" /></a><a href="https://www.strava.com/challenges/March-400-Minute-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/2939f1c3-c141-4f0a-acb2-87e41e5cb918.png" alt="March 400-Minute Challenge" title="March 400-Minute Challenge" width="75" /></a><a href="https://www.strava.com/challenges/March-Gran-Fondo-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/fbef5efd-1e50-48d9-8239-06283fd7007a.png" alt="March Gran Fondo Challenge" title="March Gran Fondo Challenge" width="75" /></a><a href="https://www.strava.com/challenges/March-Ride-200K-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/4fc82434-cf0b-415a-b4b9-cfb37611eebd.png" alt="March Ride 200K Challenge" title="March Ride 200K Challenge" width="75" /></a><a href="https://www.strava.com/challenges/March-Ride-600K-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/925d6e61-4d78-49ce-b27d-a764773a6dc7.png" alt="March Ride 600K Challenge" title="March Ride 600K Challenge" width="75" /></a><a href="https://www.strava.com/challenges/March-Days-Active-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/c355ff01-2985-4405-a4d5-391dc7cd97e2.png" alt="March Ten Days Active Challenge" title="March Ten Days Active Challenge" width="75" /></a><a href="https://www.strava.com/challenges/March-Cycling-Elevation-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/33055c82-4e2c-4df9-aecd-53a4f5bfb1a4.png" alt="March Cycling Elevation Challenge" title="March Cycling Elevation Challenge" width="75" /></a><a href="https://www.strava.com/challenges/March-Streak-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/14a796d3-0fac-4427-ad74-d5a6a666105d.png" alt="March Streak Challenge" title="March Streak Challenge" width="75" /></a><a href="https://www.strava.com/challenges/February-400-Minute-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/675a47d9-9d91-4032-80d2-919df84cab10.png" alt="February 400-Minute Challenge" title="February 400-Minute Challenge" width="75" /></a><a href="https://www.strava.com/challenges/February-Gran-Fondo-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/b000c1fe-bbe3-4d1a-b455-f1fcd84c47d6.png" alt="February Gran Fondo Challenge" title="February Gran Fondo Challenge" width="75" /></a><a href="https://www.strava.com/challenges/February-Ride-200K-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/dac79d8f-4ebc-4607-b1f4-f4467e62e70a.png" alt="February Ride 200K Challenge" title="February Ride 200K Challenge" width="75" /></a><a href="https://www.strava.com/challenges/February-Ride-600K-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/e1c30e28-58cb-4033-8736-390a9ac71ffa.png" alt="February Ride 600K Challenge" title="February Ride 600K Challenge" width="75" /></a><a href="https://www.strava.com/challenges/February-Cycling-Elevation-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/132af0a3-5723-43ac-9d36-bbc9f8614b76.png" alt="February Cycling Elevation Challenge" title="February Cycling Elevation Challenge" width="75" /></a><a href="https://www.strava.com/challenges/le-col-form-finder-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/9add953c-a0e4-461a-bc4e-4a796699662e.png" alt="Le Col Form Finder Challenge" title="Le Col Form Finder Challenge" width="75" /></a><a href="https://www.strava.com/challenges/February-Streak-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/27cf92f1-2890-42ad-beec-867bab9c4f1a.png" alt="February Streak Challenge" title="February Streak Challenge" width="75" /></a><a href="https://www.strava.com/challenges/le-col-project-24-challenge"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/dbd6afe5-8dcc-407b-8cd3-3ef70dd23670.png" alt="Le Col Project 24 Challenge" title="Le Col Project 24 Challenge" width="75" /></a><a href="https://www.strava.com/challenges/January-Cycling-Elevation-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/9de898b7-bfa8-443f-bc8a-7452dee27a38.png" alt="January Cycling Elevation Challenge" title="January Cycling Elevation Challenge" width="75" /></a><a href="https://www.strava.com/challenges/January-Fresh-Start-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/48b3803b-d557-4be7-94cd-cf2800684599.png" alt="January Fresh Start Challenge" title="January Fresh Start Challenge" width="75" /></a><a href="https://www.strava.com/challenges/January-Ride-600K-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/611474ff-5633-42ce-8402-8832f25c2c64.png" alt="January Ride 600K Challenge" title="January Ride 600K Challenge" width="75" /></a><a href="https://www.strava.com/challenges/ROKA-Winter-Warrior-200"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/855e7606-f8a2-4a1c-97df-d0c0daf7c803.png" alt="ROKA Winter Warrior 200" title="ROKA Winter Warrior 200" width="75" /></a><a href="https://www.strava.com/challenges/January-Streak-2024"><img src="https://raw.githubusercontent.com/dace93/stravastats/master/files/challenges/5c257e9b-64ce-45da-ba7d-204d5b061b00.png" alt="January Streak Challenge" title="January Streak Challenge" width="75" /></a>
 ## Want to have these statistics for yourself?
 
 Follow [this tutorial](https://github.com/robiningelbrecht/strava-activities-template)

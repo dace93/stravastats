@@ -10,6 +10,45 @@
         <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/heart-rate.svg" width="30" alt="average heart rate" title="average heart rate"/></th>
     </tr>
             <tr>
+            <td>05-08-24</td>
+            <td>
+                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Met zin naar het Zwin 🌞🐦" title="Met zin naar het Zwin 🌞🐦"/>
+<a href="https://www.strava.com/activities/12070956394" title="Kcal: 2790 | Gear: None ">Met zin naar het Zwin 🌞🐦...</a>
+            </td>
+            <td align="center">105 <sup><sub>km</sub></sup></td>
+            <td align="center">213 <sup><sub>m</sub></sup></td>
+            <td align="center">3:19:08</td>
+            <td align="center">208 <sup><sub>w</sub></sup></td>
+            <td align="center">31.8 <sup><sub>km/h</sub></sup></td>
+            <td align="center">107</td>
+        </tr>
+            <tr>
+            <td>04-08-24</td>
+            <td>
+                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Een week afsluiten met 999,6 km: niet met mij 🙈😅" title="Een week afsluiten met 999,6 km: niet met mij 🙈😅"/>
+<a href="https://www.strava.com/activities/12062898729" title="Kcal: 20 | Gear: None ">Een week afsluiten met 999...</a>
+            </td>
+            <td align="center">1 <sup><sub>km</sub></sup></td>
+            <td align="center">3 <sup><sub>m</sub></sup></td>
+            <td align="center">3:19</td>
+            <td align="center">73 <sup><sub>w</sub></sup></td>
+            <td align="center">19.1 <sup><sub>km/h</sub></sup></td>
+            <td align="center">82</td>
+        </tr>
+            <tr>
+            <td>04-08-24</td>
+            <td>
+                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Schepdaal in de route opgenomen &amp; gemeentes afvinken 🏅🤘🇧🇪" title="Schepdaal in de route opgenomen &amp; gemeentes afvinken 🏅🤘🇧🇪"/>
+<a href="https://www.strava.com/activities/12062313230" title="Kcal: 4890 | Gear: None ">Schepdaal in de route opge...</a>
+            </td>
+            <td align="center">169 <sup><sub>km</sub></sup></td>
+            <td align="center">1 461 <sup><sub>m</sub></sup></td>
+            <td align="center">5:19:52</td>
+            <td align="center">230 <sup><sub>w</sub></sup></td>
+            <td align="center">31.7 <sup><sub>km/h</sub></sup></td>
+            <td align="center">122</td>
+        </tr>
+            <tr>
             <td>03-08-24</td>
             <td>
                 <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Part 2: Vlak ritje 👌" title="Part 2: Vlak ritje 👌"/>
@@ -34,45 +73,6 @@
             <td align="center">83 <sup><sub>w</sub></sup></td>
             <td align="center">20.7 <sup><sub>km/h</sub></sup></td>
             <td align="center">99</td>
-        </tr>
-            <tr>
-            <td>03-08-24</td>
-            <td>
-                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="De Eifel ontdekken 😍" title="De Eifel ontdekken 😍"/>
-<a href="https://www.strava.com/activities/12051979921" title="Kcal: 4178 | Gear: None ">De Eifel ontdekken 😍</a>
-            </td>
-            <td align="center">133 <sup><sub>km</sub></sup></td>
-            <td align="center">2 340 <sup><sub>m</sub></sup></td>
-            <td align="center">4:21:18</td>
-            <td align="center">241 <sup><sub>w</sub></sup></td>
-            <td align="center">30.5 <sup><sub>km/h</sub></sup></td>
-            <td align="center">130</td>
-        </tr>
-            <tr>
-            <td>02-08-24</td>
-            <td>
-                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Team 3R September meetup ride recon 🌡️🌞" title="Team 3R September meetup ride recon 🌡️🌞"/>
-<a href="https://www.strava.com/activities/12045547324" title="Kcal: 5924 | Gear: None ">Team 3R September meetup r...</a>
-            </td>
-            <td align="center">205 <sup><sub>km</sub></sup></td>
-            <td align="center">2 067 <sup><sub>m</sub></sup></td>
-            <td align="center">6:32:25</td>
-            <td align="center">226 <sup><sub>w</sub></sup></td>
-            <td align="center">31.4 <sup><sub>km/h</sub></sup></td>
-            <td align="center">129</td>
-        </tr>
-            <tr>
-            <td>01-08-24</td>
-            <td>
-                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="2 uur op de kop ✅" title="2 uur op de kop ✅"/>
-<a href="https://www.strava.com/activities/12037983340" title="Kcal: 1845 | Gear: None ">2 uur op de kop ✅</a>
-            </td>
-            <td align="center">67 <sup><sub>km</sub></sup></td>
-            <td align="center">134 <sup><sub>m</sub></sup></td>
-            <td align="center">2:00:05</td>
-            <td align="center">231 <sup><sub>w</sub></sup></td>
-            <td align="center">33.5 <sup><sub>km/h</sub></sup></td>
-            <td align="center">119</td>
         </tr>
                 <tr>
             <td colspan="8" align="right"><a href="https://github.com/robiningelbrecht/strava-activities#activities">View all activities</a></td>
