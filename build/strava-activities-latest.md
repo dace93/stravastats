@@ -10,6 +10,32 @@
         <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/heart-rate.svg" width="30" alt="average heart rate" title="average heart rate"/></th>
     </tr>
             <tr>
+            <td>06-08-24</td>
+            <td>
+                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Night Ride" title="Night Ride"/>
+<a href="https://www.strava.com/activities/12080351706" title="Kcal: 23 | Gear: None ">Night Ride</a>
+            </td>
+            <td align="center">1 <sup><sub>km</sub></sup></td>
+            <td align="center">5 <sup><sub>m</sub></sup></td>
+            <td align="center">5:08</td>
+            <td align="center">48 <sup><sub>w</sub></sup></td>
+            <td align="center">14.3 <sup><sub>km/h</sub></sup></td>
+            <td align="center">87</td>
+        </tr>
+            <tr>
+            <td>06-08-24</td>
+            <td>
+                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Poging tot vliegen met een fiets 🛩️🌞" title="Poging tot vliegen met een fiets 🛩️🌞"/>
+<a href="https://www.strava.com/activities/12080352071" title="Kcal: 3890 | Gear: None ">Poging tot vliegen met een...</a>
+            </td>
+            <td align="center">162 <sup><sub>km</sub></sup></td>
+            <td align="center">422 <sup><sub>m</sub></sup></td>
+            <td align="center">4:18:57</td>
+            <td align="center">225 <sup><sub>w</sub></sup></td>
+            <td align="center">37.6 <sup><sub>km/h</sub></sup></td>
+            <td align="center">120</td>
+        </tr>
+            <tr>
             <td>05-08-24</td>
             <td>
                 <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Met zin naar het Zwin 🌞🐦" title="Met zin naar het Zwin 🌞🐦"/>
@@ -47,32 +73,6 @@
             <td align="center">230 <sup><sub>w</sub></sup></td>
             <td align="center">31.7 <sup><sub>km/h</sub></sup></td>
             <td align="center">122</td>
-        </tr>
-            <tr>
-            <td>03-08-24</td>
-            <td>
-                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Part 2: Vlak ritje 👌" title="Part 2: Vlak ritje 👌"/>
-<a href="https://www.strava.com/activities/12053854471" title="Kcal: 1777 | Gear: None ">Part 2: Vlak ritje 👌</a>
-            </td>
-            <td align="center">70 <sup><sub>km</sub></sup></td>
-            <td align="center">240 <sup><sub>m</sub></sup></td>
-            <td align="center">2:11:46</td>
-            <td align="center">200 <sup><sub>w</sub></sup></td>
-            <td align="center">32 <sup><sub>km/h</sub></sup></td>
-            <td align="center">116</td>
-        </tr>
-            <tr>
-            <td>03-08-24</td>
-            <td>
-                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Lactaat wegfietsen 🙈" title="Lactaat wegfietsen 🙈"/>
-<a href="https://www.strava.com/activities/12052092906" title="Kcal: 66 | Gear: None ">Lactaat wegfietsen 🙈</a>
-            </td>
-            <td align="center">4 <sup><sub>km</sub></sup></td>
-            <td align="center">23 <sup><sub>m</sub></sup></td>
-            <td align="center">10:15</td>
-            <td align="center">83 <sup><sub>w</sub></sup></td>
-            <td align="center">20.7 <sup><sub>km/h</sub></sup></td>
-            <td align="center">99</td>
         </tr>
                 <tr>
             <td colspan="8" align="right"><a href="https://github.com/robiningelbrecht/strava-activities#activities">View all activities</a></td>
