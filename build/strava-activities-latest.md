@@ -10,6 +10,45 @@
         <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/heart-rate.svg" width="30" alt="average heart rate" title="average heart rate"/></th>
     </tr>
             <tr>
+            <td>09-09-24</td>
+            <td>
+                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Group Ride: Zwift Racing League Recon Ride (Cryo-Gen) (E) on Douce France in France" title="Group Ride: Zwift Racing League Recon Ride (Cryo-Gen) (E) on Douce France in France"/>
+<a href="https://www.strava.com/activities/12367813315" title="Kcal: 451 | Gear: None ">Group Ride: Zwift Racing L...</a>
+            </td>
+            <td align="center">25 <sup><sub>km</sub></sup></td>
+            <td align="center">136 <sup><sub>m</sub></sup></td>
+            <td align="center">43:27</td>
+            <td align="center">180 <sup><sub>w</sub></sup></td>
+            <td align="center">35.1 <sup><sub>km/h</sub></sup></td>
+            <td align="center">115</td>
+        </tr>
+            <tr>
+            <td>09-09-24</td>
+            <td>
+                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Z2 on Tick Tock in Watopia" title="Z2 on Tick Tock in Watopia"/>
+<a href="https://www.strava.com/activities/12367376110" title="Kcal: 411 | Gear: None ">Z2 on Tick Tock in Watopia</a>
+            </td>
+            <td align="center">20 <sup><sub>km</sub></sup></td>
+            <td align="center">32 <sup><sub>m</sub></sup></td>
+            <td align="center">31:42</td>
+            <td align="center">227 <sup><sub>w</sub></sup></td>
+            <td align="center">38.1 <sup><sub>km/h</sub></sup></td>
+            <td align="center">127</td>
+        </tr>
+            <tr>
+            <td>08-09-24</td>
+            <td>
+                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="WTC Kruiskerke - Kluis 💨" title="WTC Kruiskerke - Kluis 💨"/>
+<a href="https://www.strava.com/activities/12355950538" title="Kcal: 3127 | Gear: None ">WTC Kruiskerke - Kluis 💨</a>
+            </td>
+            <td align="center">109 <sup><sub>km</sub></sup></td>
+            <td align="center">533 <sup><sub>m</sub></sup></td>
+            <td align="center">3:19:35</td>
+            <td align="center">235 <sup><sub>w</sub></sup></td>
+            <td align="center">32.8 <sup><sub>km/h</sub></sup></td>
+            <td align="center">138</td>
+        </tr>
+            <tr>
             <td>07-09-24</td>
             <td>
                 <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="VP + H/T 🏡" title="VP + H/T 🏡"/>
@@ -34,45 +73,6 @@
             <td align="center">208 <sup><sub>w</sub></sup></td>
             <td align="center">33.3 <sup><sub>km/h</sub></sup></td>
             <td align="center">144</td>
-        </tr>
-            <tr>
-            <td>31-08-24</td>
-            <td>
-                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="VP + H/T 🏡" title="VP + H/T 🏡"/>
-<a href="https://www.strava.com/activities/12287193798" title="Kcal: 2827 | Gear: None ">VP + H/T 🏡</a>
-            </td>
-            <td align="center">107 <sup><sub>km</sub></sup></td>
-            <td align="center">209 <sup><sub>m</sub></sup></td>
-            <td align="center">3:02:28</td>
-            <td align="center">233 <sup><sub>w</sub></sup></td>
-            <td align="center">35.2 <sup><sub>km/h</sub></sup></td>
-            <td align="center">147</td>
-        </tr>
-            <tr>
-            <td>24-08-24</td>
-            <td>
-                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Vélomédiane Claudy Criquielion - DNF 🌞" title="Vélomédiane Claudy Criquielion - DNF 🌞"/>
-<a href="https://www.strava.com/activities/12228692185" title="Kcal: 3186 | Gear: None ">Vélomédiane Claudy Criquie...</a>
-            </td>
-            <td align="center">106 <sup><sub>km</sub></sup></td>
-            <td align="center">1 890 <sup><sub>m</sub></sup></td>
-            <td align="center">3:44:29</td>
-            <td align="center">210 <sup><sub>w</sub></sup></td>
-            <td align="center">28.4 <sup><sub>km/h</sub></sup></td>
-            <td align="center">136</td>
-        </tr>
-            <tr>
-            <td>22-08-24</td>
-            <td>
-                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="4x 4&#039; Z4 in New York" title="4x 4&#039; Z4 in New York"/>
-<a href="https://www.strava.com/activities/12216592744" title="Kcal: 569 | Gear: None ">4x 4&#039; Z4 in New York</a>
-            </td>
-            <td align="center">20 <sup><sub>km</sub></sup></td>
-            <td align="center">341 <sup><sub>m</sub></sup></td>
-            <td align="center">35:17</td>
-            <td align="center">281 <sup><sub>w</sub></sup></td>
-            <td align="center">34.3 <sup><sub>km/h</sub></sup></td>
-            <td align="center">148</td>
         </tr>
                 <tr>
             <td colspan="8" align="right"><a href="https://github.com/robiningelbrecht/strava-activities#activities">View all activities</a></td>
