@@ -10,6 +10,32 @@
         <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/heart-rate.svg" width="30" alt="average heart rate" title="average heart rate"/></th>
     </tr>
             <tr>
+            <td>11-09-24</td>
+            <td>
+                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Pacer Group Ride: Volcano Flat in Watopia with Bernie" title="Pacer Group Ride: Volcano Flat in Watopia with Bernie"/>
+<a href="https://www.strava.com/activities/12386391369" title="Kcal: 20 | Gear: None ">Pacer Group Ride: Volcano ...</a>
+            </td>
+            <td align="center">2 <sup><sub>km</sub></sup></td>
+            <td align="center">8 <sup><sub>m</sub></sup></td>
+            <td align="center">6:08</td>
+            <td align="center">58 <sup><sub>w</sub></sup></td>
+            <td align="center">20.3 <sup><sub>km/h</sub></sup></td>
+            <td align="center">100</td>
+        </tr>
+            <tr>
+            <td>11-09-24</td>
+            <td>
+                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Group Ride: 3R Steady State Endurance Ride (B) on Greater London Flat in London" title="Group Ride: 3R Steady State Endurance Ride (B) on Greater London Flat in London"/>
+<a href="https://www.strava.com/activities/12386341067" title="Kcal: 2117 | Gear: None ">Group Ride: 3R Steady Stat...</a>
+            </td>
+            <td align="center">101 <sup><sub>km</sub></sup></td>
+            <td align="center">476 <sup><sub>m</sub></sup></td>
+            <td align="center">2:30:26</td>
+            <td align="center">245 <sup><sub>w</sub></sup></td>
+            <td align="center">40.3 <sup><sub>km/h</sub></sup></td>
+            <td align="center">134</td>
+        </tr>
+            <tr>
             <td>10-09-24</td>
             <td>
                                 <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Watopia" title="Watopia"/>
@@ -47,32 +73,6 @@
             <td align="center">227 <sup><sub>w</sub></sup></td>
             <td align="center">38.1 <sup><sub>km/h</sub></sup></td>
             <td align="center">127</td>
-        </tr>
-            <tr>
-            <td>08-09-24</td>
-            <td>
-                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="WTC Kruiskerke - Kluis 💨" title="WTC Kruiskerke - Kluis 💨"/>
-<a href="https://www.strava.com/activities/12355950538" title="Kcal: 3127 | Gear: None ">WTC Kruiskerke - Kluis 💨</a>
-            </td>
-            <td align="center">109 <sup><sub>km</sub></sup></td>
-            <td align="center">533 <sup><sub>m</sub></sup></td>
-            <td align="center">3:19:35</td>
-            <td align="center">235 <sup><sub>w</sub></sup></td>
-            <td align="center">32.8 <sup><sub>km/h</sub></sup></td>
-            <td align="center">138</td>
-        </tr>
-            <tr>
-            <td>07-09-24</td>
-            <td>
-                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="VP + H/T 🏡" title="VP + H/T 🏡"/>
-<a href="https://www.strava.com/activities/12346985494" title="Kcal: 3457 | Gear: None ">VP + H/T 🏡</a>
-            </td>
-            <td align="center">116 <sup><sub>km</sub></sup></td>
-            <td align="center">190 <sup><sub>m</sub></sup></td>
-            <td align="center">3:11:02</td>
-            <td align="center">275 <sup><sub>w</sub></sup></td>
-            <td align="center">36.5 <sup><sub>km/h</sub></sup></td>
-            <td align="center">147</td>
         </tr>
                 <tr>
             <td colspan="8" align="right"><a href="https://github.com/robiningelbrecht/strava-activities#activities">View all activities</a></td>
