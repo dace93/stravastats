@@ -10,6 +10,32 @@
         <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/heart-rate.svg" width="30" alt="average heart rate" title="average heart rate"/></th>
     </tr>
             <tr>
+            <td>12-09-24</td>
+            <td>
+                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="TTT: WTRL Team Time Trial - Zone 21 (FRAPPE) on Tempus Fugit in Watopia" title="TTT: WTRL Team Time Trial - Zone 21 (FRAPPE) on Tempus Fugit in Watopia"/>
+<a href="https://www.strava.com/activities/12394205605" title="Kcal: 96 | Gear: None ">TTT: WTRL Team Time Trial ...</a>
+            </td>
+            <td align="center">5 <sup><sub>km</sub></sup></td>
+            <td align="center">6 <sup><sub>m</sub></sup></td>
+            <td align="center">6:38</td>
+            <td align="center">238 <sup><sub>w</sub></sup></td>
+            <td align="center">41.6 <sup><sub>km/h</sub></sup></td>
+            <td align="center">131</td>
+        </tr>
+            <tr>
+            <td>12-09-24</td>
+            <td>
+                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Pacer Group Ride: Tempus Fugit in Watopia with Coco" title="Pacer Group Ride: Tempus Fugit in Watopia with Coco"/>
+<a href="https://www.strava.com/activities/12393908349" title="Kcal: 146 | Gear: None ">Pacer Group Ride: Tempus F...</a>
+            </td>
+            <td align="center">8 <sup><sub>km</sub></sup></td>
+            <td align="center">13 <sup><sub>m</sub></sup></td>
+            <td align="center">12:00</td>
+            <td align="center">209 <sup><sub>w</sub></sup></td>
+            <td align="center">40.5 <sup><sub>km/h</sub></sup></td>
+            <td align="center">116</td>
+        </tr>
+            <tr>
             <td>11-09-24</td>
             <td>
                                 <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Pacer Group Ride: Volcano Flat in Watopia with Bernie" title="Pacer Group Ride: Volcano Flat in Watopia with Bernie"/>
@@ -47,32 +73,6 @@
             <td align="center">220 <sup><sub>w</sub></sup></td>
             <td align="center">39.8 <sup><sub>km/h</sub></sup></td>
             <td align="center">118</td>
-        </tr>
-            <tr>
-            <td>09-09-24</td>
-            <td>
-                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Group Ride: Zwift Racing League Recon Ride (Cryo-Gen) (E) on Douce France in France" title="Group Ride: Zwift Racing League Recon Ride (Cryo-Gen) (E) on Douce France in France"/>
-<a href="https://www.strava.com/activities/12367813315" title="Kcal: 451 | Gear: None ">Group Ride: Zwift Racing L...</a>
-            </td>
-            <td align="center">25 <sup><sub>km</sub></sup></td>
-            <td align="center">136 <sup><sub>m</sub></sup></td>
-            <td align="center">43:27</td>
-            <td align="center">180 <sup><sub>w</sub></sup></td>
-            <td align="center">35.1 <sup><sub>km/h</sub></sup></td>
-            <td align="center">115</td>
-        </tr>
-            <tr>
-            <td>09-09-24</td>
-            <td>
-                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Z2 on Tick Tock in Watopia" title="Z2 on Tick Tock in Watopia"/>
-<a href="https://www.strava.com/activities/12367376110" title="Kcal: 411 | Gear: None ">Z2 on Tick Tock in Watopia</a>
-            </td>
-            <td align="center">20 <sup><sub>km</sub></sup></td>
-            <td align="center">32 <sup><sub>m</sub></sup></td>
-            <td align="center">31:42</td>
-            <td align="center">227 <sup><sub>w</sub></sup></td>
-            <td align="center">38.1 <sup><sub>km/h</sub></sup></td>
-            <td align="center">127</td>
         </tr>
                 <tr>
             <td colspan="8" align="right"><a href="https://github.com/robiningelbrecht/strava-activities#activities">View all activities</a></td>
