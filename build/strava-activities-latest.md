@@ -10,6 +10,19 @@
         <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/heart-rate.svg" width="30" alt="average heart rate" title="average heart rate"/></th>
     </tr>
             <tr>
+            <td>13-09-24</td>
+            <td>
+                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Pacer Group Ride: Tempus Fugit in Watopia with Coco" title="Pacer Group Ride: Tempus Fugit in Watopia with Coco"/>
+<a href="https://www.strava.com/activities/12402020228" title="Kcal: 543 | Gear: None ">Pacer Group Ride: Tempus F...</a>
+            </td>
+            <td align="center">35 <sup><sub>km</sub></sup></td>
+            <td align="center">52 <sup><sub>m</sub></sup></td>
+            <td align="center">1:02:11</td>
+            <td align="center">152 <sup><sub>w</sub></sup></td>
+            <td align="center">33.8 <sup><sub>km/h</sub></sup></td>
+            <td align="center">96</td>
+        </tr>
+            <tr>
             <td>12-09-24</td>
             <td>
                                 <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="TTT: WTRL Team Time Trial - Zone 21 (FRAPPE) on Tempus Fugit in Watopia" title="TTT: WTRL Team Time Trial - Zone 21 (FRAPPE) on Tempus Fugit in Watopia"/>
@@ -60,19 +73,6 @@
             <td align="center">245 <sup><sub>w</sub></sup></td>
             <td align="center">40.3 <sup><sub>km/h</sub></sup></td>
             <td align="center">134</td>
-        </tr>
-            <tr>
-            <td>10-09-24</td>
-            <td>
-                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Watopia" title="Watopia"/>
-<a href="https://www.strava.com/activities/12376762954" title="Kcal: 260 | Gear: None ">Watopia</a>
-            </td>
-            <td align="center">14 <sup><sub>km</sub></sup></td>
-            <td align="center">36 <sup><sub>m</sub></sup></td>
-            <td align="center">20:34</td>
-            <td align="center">220 <sup><sub>w</sub></sup></td>
-            <td align="center">39.8 <sup><sub>km/h</sub></sup></td>
-            <td align="center">118</td>
         </tr>
                 <tr>
             <td colspan="8" align="right"><a href="https://github.com/robiningelbrecht/strava-activities#activities">View all activities</a></td>
