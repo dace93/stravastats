@@ -10,6 +10,32 @@
         <th align="center"><img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/heart-rate.svg" width="30" alt="average heart rate" title="average heart rate"/></th>
     </tr>
             <tr>
+            <td>02-10-24</td>
+            <td>
+                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Group Ride: 3R Steady State Endurance Ride (C) on Eastern Eight in Watopia" title="Group Ride: 3R Steady State Endurance Ride (C) on Eastern Eight in Watopia"/>
+<a href="https://www.strava.com/activities/12558058316" title="Kcal: 213 | Gear: None ">Group Ride: 3R Steady Stat...</a>
+            </td>
+            <td align="center">10 <sup><sub>km</sub></sup></td>
+            <td align="center">16 <sup><sub>m</sub></sup></td>
+            <td align="center">16:09</td>
+            <td align="center">224 <sup><sub>w</sub></sup></td>
+            <td align="center">38.3 <sup><sub>km/h</sub></sup></td>
+            <td align="center">151</td>
+        </tr>
+            <tr>
+            <td>02-10-24</td>
+            <td>
+                                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Pacer Group Ride: Volcano Flat in Watopia with Coco" title="Pacer Group Ride: Volcano Flat in Watopia with Coco"/>
+<a href="https://www.strava.com/activities/12557895420" title="Kcal: 104 | Gear: None ">Pacer Group Ride: Volcano ...</a>
+            </td>
+            <td align="center">5 <sup><sub>km</sub></sup></td>
+            <td align="center">14 <sup><sub>m</sub></sup></td>
+            <td align="center">8:05</td>
+            <td align="center">223 <sup><sub>w</sub></sup></td>
+            <td align="center">39.7 <sup><sub>km/h</sub></sup></td>
+            <td align="center">146</td>
+        </tr>
+            <tr>
             <td>01-10-24</td>
             <td>
                                 <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-virtual-ride-zwift.svg" width="12" alt="Pacer Group Ride: Volcano Flat in Watopia with Coco" title="Pacer Group Ride: Volcano Flat in Watopia with Coco"/>
@@ -47,32 +73,6 @@
             <td align="center">202 <sup><sub>w</sub></sup></td>
             <td align="center">34 <sup><sub>km/h</sub></sup></td>
             <td align="center">126</td>
-        </tr>
-            <tr>
-            <td>19-09-24</td>
-            <td>
-                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="Goede benen of goede wind, wie zal het zeggen? 😋" title="Goede benen of goede wind, wie zal het zeggen? 😋"/>
-<a href="https://www.strava.com/activities/12447677681" title="Kcal: 1151 | Gear: None ">Goede benen of goede wind,...</a>
-            </td>
-            <td align="center">36 <sup><sub>km</sub></sup></td>
-            <td align="center">75 <sup><sub>m</sub></sup></td>
-            <td align="center">1:01:20</td>
-            <td align="center">290 <sup><sub>w</sub></sup></td>
-            <td align="center">35.6 <sup><sub>km/h</sub></sup></td>
-            <td align="center">144</td>
-        </tr>
-            <tr>
-            <td>18-09-24</td>
-            <td>
-                <img src="https://raw.githubusercontent.com/robiningelbrecht/strava-activities/master/public/activity-ride.svg" width="12" alt="🏢 -&gt; 🏡" title="🏢 -&gt; 🏡"/>
-<a href="https://www.strava.com/activities/12443663830" title="Kcal: 1026 | Gear: None ">🏢 -&gt; 🏡</a>
-            </td>
-            <td align="center">43 <sup><sub>km</sub></sup></td>
-            <td align="center">105 <sup><sub>m</sub></sup></td>
-            <td align="center">1:38:04</td>
-            <td align="center">149 <sup><sub>w</sub></sup></td>
-            <td align="center">26.1 <sup><sub>km/h</sub></sup></td>
-            <td align="center">119</td>
         </tr>
                 <tr>
             <td colspan="8" align="right"><a href="https://github.com/robiningelbrecht/strava-activities#activities">View all activities</a></td>
