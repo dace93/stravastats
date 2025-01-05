@@ -413,6 +413,19 @@
         ],
         "series": [
             {
+                "name": "2025",
+                "type": "line",
+                "smooth": true,
+                "showSymbol": false,
+                "data": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    17
+                ]
+            },
+            {
                 "name": "2024",
                 "type": "line",
                 "smooth": true,
